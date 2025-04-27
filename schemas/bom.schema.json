@@ -1,0 +1,14 @@
+{
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "PartNumber": { "type": "string" },
+        "PartDesc":   { "type": "string" },
+        "Quantity":   { "type": "integer" },
+        "ProjectID":  { "type": "string" }
+      },
+      "required": ["PartNumber","PartDesc","Quantity","ProjectID"]
+    }
+  }
+  
