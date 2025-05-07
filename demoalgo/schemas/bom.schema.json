@@ -3,9 +3,9 @@
     "items": {
       "type": "object",
       "properties": {
-        "PartNumber": { "type": "string" },
+        "PartNumber": { "type": "string", "function": "get_part_num()" },
         "PartDesc":   { "type": "string" },
-        "Quantity":   { "type": "integer" },
+        "Quantity":   { "type": "integer", "function": "price * quantity"  },
         "ProjectID":  { "type": "string" }
       },
       "required": ["PartNumber","PartDesc","Quantity","ProjectID"]
