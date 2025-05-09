@@ -1,11 +1,10 @@
 import { NextResponse } from 'next/server'
-import { getManifest } from '../../../../../services/aps'
+import { getManifest } from '@/services/aps'
 
 export async function GET(
   _req: Request,
   context: { params: Promise<{ urn: string }> }
 ) {
-  // await the params promise before reading .urn
   const { urn } = await context.params
 
   const manifest = await getManifest(urn)
@@ -13,7 +12,7 @@ export async function GET(
     return NextResponse.json({ status: 'n/a' })
   }
 
-  let messages: any[] = []
+  const messages: any[] = []
   for (const d of manifest.derivatives || []) {
     messages.push(...(d.messages || []))
     for (const c of d.children || []) messages.push(...(c.messages || []))
