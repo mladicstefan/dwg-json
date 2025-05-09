@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aps_sdk/authentication": "^1.0.0",
     "@aps_sdk/model-derivative": "^1.1.0",
     "@aps_sdk/oss": "^1.1.1",
     "formidable": "^3.5.4",
