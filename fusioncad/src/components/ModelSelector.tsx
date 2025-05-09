@@ -1,5 +1,5 @@
 import React from 'react'
-import { Model } from './Header'
+import { Model } from './types'
 
 interface Props {
   busy: boolean
@@ -10,17 +10,13 @@ interface Props {
 
 const ModelSelector: React.FC<Props> = ({ busy, models, selected, onSelect }) => (
   <select
+    className="border rounded p-1 text-foreground"
     disabled={busy}
     value={selected}
     onChange={e => onSelect(e.target.value)}
-    className="border rounded p-1 mr-2"
   >
     <option value="">Select model</option>
-    {models.map(m => (
-      <option key={m.urn} value={m.urn}>
-        {m.name}
-      </option>
-    ))}
+    {models.map(m => <option key={m.urn} value={m.urn}>{m.name}</option>)}
   </select>
 )
 

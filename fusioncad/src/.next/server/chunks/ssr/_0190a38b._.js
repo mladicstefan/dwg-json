@@ -158,7 +158,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const StatusOverlay = ({ message })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "bg-white p-4 rounded",
+            className: "bg-white p-4 rounded color-foreground",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 dangerouslySetInnerHTML: {
                     __html: message
@@ -196,34 +196,55 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const Viewer = ({ getToken, onViewerReady })=>{
     const viewerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        if (window.Autodesk && viewerRef.current) {
-            window.Autodesk.Viewing.Initializer({
-                env: 'AutodeskProduction',
-                getAccessToken: (cb)=>{
-                    getToken().then(({ access_token, expires_in })=>cb(access_token, expires_in)).catch(()=>alert('Failed to get access token'));
+        const loadViewerScript = ()=>{
+            return new Promise((resolve, reject)=>{
+                // Skip if already loaded
+                if (window.Autodesk && window.Autodesk.Viewing) {
+                    resolve();
+                    return;
                 }
-            }, ()=>{
-                const config = {
-                    extensions: [
-                        'Autodesk.DocumentBrowser'
-                    ]
-                };
-                const v = new window.Autodesk.Viewing.GuiViewer3D(viewerRef.current, config);
-                v.start();
-                v.setTheme('light-theme');
-                onViewerReady(v);
+                const script = document.createElement('script');
+                script.src = 'https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.js';
+                script.onload = ()=>resolve();
+                script.onerror = ()=>reject(new Error('Viewer script failed to load'));
+                document.head.appendChild(script);
             });
-        }
+        };
+        const initialize = async ()=>{
+            try {
+                await loadViewerScript();
+                if (!viewerRef.current) return;
+                window.Autodesk.Viewing.Initializer({
+                    env: 'AutodeskProduction',
+                    getAccessToken: (cb)=>{
+                        getToken().then(({ access_token, expires_in })=>cb(access_token, expires_in));
+                    }
+                }, ()=>{
+                    const config = {
+                        extensions: [
+                            'Autodesk.DocumentBrowser'
+                        ]
+                    };
+                    const v = new window.Autodesk.Viewing.GuiViewer3D(viewerRef.current, config);
+                    v.start();
+                    v.setTheme('light-theme');
+                    onViewerReady(v);
+                });
+            } catch (err) {
+                console.error(err);
+            }
+        };
+        initialize();
     }, [
         getToken,
         onViewerReady
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: viewerRef,
-        className: "flex-1"
+        className: "relative flex-1"
     }, void 0, false, {
         fileName: "[project]/components/Viewer.tsx",
-        lineNumber: 39,
+        lineNumber: 56,
         columnNumber: 10
     }, this);
 };
@@ -255,12 +276,25 @@ function HomePage() {
     const [selected, setSelected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
     const [busy, setBusy] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [statusMessage, setStatusMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
-    const viewerInstance = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const [viewer, setViewer] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    // Fetch models
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         fetch('/api/models').then((r)=>r.json()).then(setModels).catch(()=>alert('Could not list models'));
     }, []);
+    // Set initial selection from URL hash once models load
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        if (!viewerInstance.current || !selected) return;
+        if (models.length > 0 && !selected) {
+            const hash = window.location.hash.substring(1);
+            if (hash && models.some((m)=>m.urn === hash)) setSelected(hash);
+        }
+    }, [
+        models,
+        selected
+    ]);
+    // Poll and load once viewer is ready and a model is selected
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!viewer || !selected) return;
+        window.location.hash = selected;
         setStatusMessage('Checking model status...');
         const check = async ()=>{
             const res = await fetch(`/api/models/${selected}/status`);
@@ -273,11 +307,13 @@ function HomePage() {
                 console.error(data.messages);
             } else {
                 setStatusMessage(null);
-                window.Autodesk.Viewing.Document.load('urn:' + selected, (doc)=>viewerInstance.current.loadDocumentNode(doc, doc.getRoot().getDefaultGeometry()), (code, msg)=>console.error(code, msg));
+                viewer.setLightPreset(0);
+                window.Autodesk.Viewing.Document.load('urn:' + selected, (doc)=>viewer.loadDocumentNode(doc, doc.getRoot().getDefaultGeometry()), (code, msg)=>console.error(code, msg));
             }
         };
         check();
     }, [
+        viewer,
         selected
     ]);
     const getToken = ()=>fetch('/api/auth/token').then((r)=>r.json());
@@ -316,22 +352,22 @@ function HomePage() {
                 onUpload: handleUpload
             }, void 0, false, {
                 fileName: "[project]/app/(public)/(homepage)/page.tsx",
-                lineNumber: 77,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             statusMessage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$StatusOverlay$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 message: statusMessage
             }, void 0, false, {
                 fileName: "[project]/app/(public)/(homepage)/page.tsx",
-                lineNumber: 78,
+                lineNumber: 88,
                 columnNumber: 25
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Viewer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 getToken: getToken,
-                onViewerReady: (v)=>viewerInstance.current = v
+                onViewerReady: setViewer
             }, void 0, false, {
                 fileName: "[project]/app/(public)/(homepage)/page.tsx",
-                lineNumber: 79,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -339,13 +375,13 @@ function HomePage() {
                 strategy: "beforeInteractive"
             }, void 0, false, {
                 fileName: "[project]/app/(public)/(homepage)/page.tsx",
-                lineNumber: 80,
+                lineNumber: 90,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/(public)/(homepage)/page.tsx",
-        lineNumber: 76,
+        lineNumber: 86,
         columnNumber: 5
     }, this);
 }

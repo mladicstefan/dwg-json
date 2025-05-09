@@ -13,10 +13,10 @@ const UploadButton: React.FC<Props> = ({ busy, onUpload }) => {
   }
   return (
     <label className="cursor-pointer">
-      <div className="p-1 bg-blue-500 text-white rounded">
+      <button className="bg-blue-600 text-white px-3 py-1 rounded">
         {busy ? 'Please wait...' : 'Upload'}
-      </div>
-      <input type="file" onChange={handleChange} className="hidden" />
+      </button>
+      <input type="file" className="hidden" onChange={handleChange} />
     </label>
   )
 }
