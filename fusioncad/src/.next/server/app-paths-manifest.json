@@ -1,0 +1,5 @@
+{
+  "/(public)/(homepage)/page": "app/(public)/(homepage)/page.js",
+  "/api/auth/token/route": "app/api/auth/token/route.js",
+  "/api/models/route": "app/api/models/route.js"
+}

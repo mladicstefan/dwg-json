@@ -1,7 +1,6 @@
 import 'dotenv/config'
 import { AuthenticationClient, Scopes } from '@aps_sdk/authentication'
 import { APS_CLIENT } from '../config'
-
 const authClient = new AuthenticationClient();
 
 

@@ -1,6 +1,5 @@
 import 'dotenv/config'
-import { AuthenticationClient, Scopes } from '@aps_sdk/authentication'
-import { APS_BUCKET, APS_CLIENT } from '../config'
+import { APS_BUCKET } from '../config'
 import { ModelDerivativeClient,View,OutputType } from '@aps_sdk/model-derivative'
 import {
   OssClient,
@@ -47,7 +46,32 @@ export async function uploadObject(objectName: string, filePath: string) {
     await ensureBucketExists(APS_BUCKET)
     const token = await getInternalToken()
     return await ossClient.uploadObject(APS_BUCKET, objectName, filePath, { accessToken: token })
+    }
+
+export async function translateObject(urn: string, rootFilename?:string){
+    const token = await getInternalToken();
+    const job = await derivativeClient.startJob(
+        {
+          input: { urn, compressedUrn: !!rootFilename, rootFilename },
+          output: {
+            formats: [{ type: OutputType.Svf2, views: [View._2d, View._3d] }]
+          }
+        },
+        { accessToken: token }
+      )
+      return job.result
+}
+
+export async function getManifest(urn: string) {
+    const token = await getInternalToken()
+    try {
+      return await derivativeClient.getManifest(urn, { accessToken: token })
+    } catch (err: any) {
+      if (err.axiosError?.response?.status === 404) return null
+      throw err
+    }
   }
-
-
-
+  
+  export function urnify(id: string) {
+    return Buffer.from(id).toString('base64').replace(/=/g, '')
+  }

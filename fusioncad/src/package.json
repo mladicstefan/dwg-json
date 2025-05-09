@@ -12,6 +12,7 @@
     "@aps_sdk/authentication": "^1.0.0",
     "@aps_sdk/model-derivative": "^1.1.0",
     "@aps_sdk/oss": "^1.1.1",
+    "dotenv": "^16.5.0",
     "formidable": "^3.5.4",
     "next": "15.3.2",
     "react": "^19.0.0",
