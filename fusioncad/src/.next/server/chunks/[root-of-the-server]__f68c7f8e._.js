@@ -230,8 +230,12 @@ var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
     "ensureBucketExists": (()=>ensureBucketExists),
+    "getAllProperties": (()=>getAllProperties),
     "getManifest": (()=>getManifest),
+    "getObjectTree": (()=>getObjectTree),
+    "listModelViews": (()=>listModelViews),
     "listObjects": (()=>listObjects),
+    "queryProperties": (()=>queryProperties),
     "translateObject": (()=>translateObject),
     "uploadObject": (()=>uploadObject),
     "urnify": (()=>urnify)
@@ -239,8 +243,6 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dotenv$2f$config$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/dotenv/config.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/config.ts [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$model$2d$derivative$2f$dist$2f$esm$2f$custom$2d$code$2f$modelDerivativeClient$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@aps_sdk/model-derivative/dist/esm/custom-code/modelDerivativeClient.js [app-route] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$model$2d$derivative$2f$dist$2f$esm$2f$model$2f$view$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@aps_sdk/model-derivative/dist/esm/model/view.js [app-route] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$model$2d$derivative$2f$dist$2f$esm$2f$model$2f$outputType$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@aps_sdk/model-derivative/dist/esm/model/outputType.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$oss$2f$dist$2f$esm$2f$custom$2d$code$2f$ossClient$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@aps_sdk/oss/dist/esm/custom-code/ossClient.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$oss$2f$dist$2f$esm$2f$model$2f$region$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@aps_sdk/oss/dist/esm/model/region.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$oss$2f$dist$2f$esm$2f$model$2f$policyKey$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@aps_sdk/oss/dist/esm/model/policyKey.js [app-route] (ecmascript)");
@@ -250,6 +252,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$auth$2e$ts__$5b$
 ;
 ;
 ;
+const BASE_URL = 'https://developer.api.autodesk.com';
 const derivativeClient = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$model$2d$derivative$2f$dist$2f$esm$2f$custom$2d$code$2f$modelDerivativeClient$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["ModelDerivativeClient"]();
 const ossClient = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$oss$2f$dist$2f$esm$2f$custom$2d$code$2f$ossClient$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["OssClient"]();
 async function ensureBucketExists(bucketKey) {
@@ -296,30 +299,6 @@ async function uploadObject(objectName, filePath) {
         accessToken: token
     });
 }
-async function translateObject(urn, rootFilename) {
-    const token = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getInternalToken"])();
-    const job = await derivativeClient.startJob({
-        input: {
-            urn,
-            compressedUrn: !!rootFilename,
-            rootFilename
-        },
-        output: {
-            formats: [
-                {
-                    type: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$model$2d$derivative$2f$dist$2f$esm$2f$model$2f$outputType$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["OutputType"].Svf2,
-                    views: [
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$model$2d$derivative$2f$dist$2f$esm$2f$model$2f$view$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["View"]._2d,
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$aps_sdk$2f$model$2d$derivative$2f$dist$2f$esm$2f$model$2f$view$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["View"]._3d
-                    ]
-                }
-            ]
-        }
-    }, {
-        accessToken: token
-    });
-    return job.result;
-}
 async function getManifest(urn) {
     const token = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getInternalToken"])();
     try {
@@ -333,6 +312,97 @@ async function getManifest(urn) {
 }
 function urnify(id) {
     return Buffer.from(id).toString('base64').replace(/=/g, '');
+}
+async function translateObject(urn, rootFilename) {
+    const token = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getInternalToken"])();
+    const body = {
+        input: {
+            urn
+        }
+    };
+    if (rootFilename) body.input.rootFilename = rootFilename;
+    body.output = {
+        formats: [
+            {
+                type: 'svf2',
+                views: [
+                    '2d',
+                    '3d'
+                ]
+            }
+        ]
+    };
+    const res = await fetch(`${BASE_URL}/modelderivative/v2/designdata/job`, {
+        method: 'POST',
+        headers: {
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+    });
+    if (!res.ok) {
+        throw new Error(`translateObject failed: ${res.statusText}`);
+    }
+}
+async function listModelViews(urn) {
+    const token = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getInternalToken"])();
+    const res = await fetch(`${BASE_URL}/modelderivative/v2/designdata/${urn}/metadata`, {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    });
+    if (!res.ok) {
+        throw new Error(`listModelViews failed: ${res.statusText}`);
+    }
+    const { data } = await res.json();
+    return data.metadata;
+}
+async function getObjectTree(urn, modelGuid, objectId) {
+    const token = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getInternalToken"])();
+    let url = `${BASE_URL}/modelderivative/v2/designdata/${urn}/metadata/${modelGuid}`;
+    if (objectId != null) url += `?${objectId}`;
+    const res = await fetch(url, {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    });
+    if (!res.ok) {
+        throw new Error(`getObjectTree failed: ${res.statusText}`);
+    }
+    return res.json();
+}
+async function getAllProperties(urn, modelGuid) {
+    const token = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getInternalToken"])();
+    const res = await fetch(`${BASE_URL}/modelderivative/v2/designdata/${urn}/metadata/${modelGuid}/properties`, {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    });
+    if (!res.ok) {
+        throw new Error(`getAllProperties failed: ${res.statusText}`);
+    }
+    return res.json();
+}
+async function queryProperties(urn, modelGuid, objectIds, propCategories) {
+    const token = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getInternalToken"])();
+    const body = {
+        objectIds,
+        propFilter: {
+            categories: propCategories
+        }
+    };
+    const res = await fetch(`${BASE_URL}/modelderivative/v2/designdata/${urn}/metadata/${modelGuid}/properties:query`, {
+        method: 'POST',
+        headers: {
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+    });
+    if (!res.ok) {
+        throw new Error(`queryProperties failed: ${res.statusText}`);
+    }
+    return res.json();
 }
 }}),
 "[project]/app/api/models/route.ts [app-route] (ecmascript)": ((__turbopack_context__) => {

@@ -1,0 +1,1008 @@
+        }
+        }
+      },
+      {
+        "objectid": 1567,
+        "name": "Arc [B27]",
+        "externalId": "B27",
+        "properties": {
+          "General": {
+            "Handle": "b27",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1568,
+        "name": "Arc [B28]",
+        "externalId": "B28",
+        "properties": {
+          "General": {
+            "Handle": "b28",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1569,
+        "name": "Arc [B29]",
+        "externalId": "B29",
+        "properties": {
+          "General": {
+            "Handle": "b29",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1570,
+        "name": "Arc [B2A]",
+        "externalId": "B2A",
+        "properties": {
+          "General": {
+            "Handle": "b2a",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1571,
+        "name": "Arc [B2B]",
+        "externalId": "B2B",
+        "properties": {
+          "General": {
+            "Handle": "b2b",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1572,
+        "name": "Arc [B2C]",
+        "externalId": "B2C",
+        "properties": {
+          "General": {
+            "Handle": "b2c",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1573,
+        "name": "Arc [B2D]",
+        "externalId": "B2D",
+        "properties": {
+          "General": {
+            "Handle": "b2d",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1574,
+        "name": "Arc [B2E]",
+        "externalId": "B2E",
+        "properties": {
+          "General": {
+            "Handle": "b2e",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1575,
+        "name": "Arc [B2F]",
+        "externalId": "B2F",
+        "properties": {
+          "General": {
+            "Handle": "b2f",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1576,
+        "name": "Arc [B30]",
+        "externalId": "B30",
+        "properties": {
+          "General": {
+            "Handle": "b30",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1577,
+        "name": "Arc [B31]",
+        "externalId": "B31",
+        "properties": {
+          "General": {
+            "Handle": "b31",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1578,
+        "name": "Arc [B32]",
+        "externalId": "B32",
+        "properties": {
+          "General": {
+            "Handle": "b32",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1579,
+        "name": "Arc [B33]",
+        "externalId": "B33",
+        "properties": {
+          "General": {
+            "Handle": "b33",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1580,
+        "name": "Arc [B34]",
+        "externalId": "B34",
+        "properties": {
+          "General": {
+            "Handle": "b34",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1581,
+        "name": "Arc [B35]",
+        "externalId": "B35",
+        "properties": {
+          "General": {
+            "Handle": "b35",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1582,
+        "name": "Arc [B36]",
+        "externalId": "B36",
+        "properties": {
+          "General": {
+            "Handle": "b36",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1583,
+        "name": "Arc [B37]",
+        "externalId": "B37",
+        "properties": {
+          "General": {
+            "Handle": "b37",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1584,
+        "name": "Arc [B38]",
+        "externalId": "B38",
+        "properties": {
+          "General": {
+            "Handle": "b38",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1585,
+        "name": "Arc [B39]",
+        "externalId": "B39",
+        "properties": {
+          "General": {
+            "Handle": "b39",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1586,
+        "name": "Arc [B3A]",
+        "externalId": "B3A",
+        "properties": {
+          "General": {
+            "Handle": "b3a",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1587,
+        "name": "Arc [B3B]",
+        "externalId": "B3B",
+        "properties": {
+          "General": {
+            "Handle": "b3b",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1588,
+        "name": "Arc [B3C]",
+        "externalId": "B3C",
+        "properties": {
+          "General": {
+            "Handle": "b3c",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1589,
+        "name": "Arc [B3D]",
+        "externalId": "B3D",
+        "properties": {
+          "General": {
+            "Handle": "b3d",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1590,
+        "name": "Arc [B3E]",
+        "externalId": "B3E",
+        "properties": {
+          "General": {
+            "Handle": "b3e",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1591,
+        "name": "Arc [B3F]",
+        "externalId": "B3F",
+        "properties": {
+          "General": {
+            "Handle": "b3f",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1592,
+        "name": "Arc [B40]",
+        "externalId": "B40",
+        "properties": {
+          "General": {
+            "Handle": "b40",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1593,
+        "name": "Arc [B41]",
+        "externalId": "B41",
+        "properties": {
+          "General": {
+            "Handle": "b41",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1594,
+        "name": "Arc [B42]",
+        "externalId": "B42",
+        "properties": {
+          "General": {
+            "Handle": "b42",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1595,
+        "name": "Arc [B43]",
+        "externalId": "B43",
+        "properties": {
+          "General": {
+            "Handle": "b43",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1596,
+        "name": "Arc [B44]",
+        "externalId": "B44",
+        "properties": {
+          "General": {
+            "Handle": "b44",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1597,
+        "name": "Arc [B45]",
+        "externalId": "B45",
+        "properties": {
+          "General": {
+            "Handle": "b45",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1598,
+        "name": "Arc [B46]",
+        "externalId": "B46",
+        "properties": {
+          "General": {
+            "Handle": "b46",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "316.161 deg",
+            "End angle": "43.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 1599,
+        "name": "Arc [B47]",
+        "externalId": "B47",
+        "properties": {
+          "General": {
+            "Handle": "b47",
+            "Name ": "Arc",
+            "Color": "ByLayer",
+            "Layer": "A-DETL",
+            "Linetype": "Dash",
+            "Linetype scale": "1.000",
+            "Plot style": "ByColor",
+            "Lineweight": "0.09 mm",
+            "Transparency": "ByLayer",
+            "Thickness": "0.000 mm"
+          },
+          "3D Visualization ": {
+            "Material": "ByLayer"
+          },
+          "Geometry": {
+            "Radius": "22.348 mm",
+            "Start angle": "136.161 deg",
+            "End angle": "223.839 deg",
+            "Total angle": "87.678 deg",
+            "Arc length": "34.199 mm",
+            "Area": "132.628"
+          }
+        }
+      },
+      {
+        "objectid": 8614,
+        "name": "Arcs (120)",
+        "externalId": "Arcs",
+        "properties": {}
+      },
+      {
+        "objectid": 110,
+        "name": "Model",
+        "externalId": "70",
+        "properties": {}
+      }
+    ]
+  }
+}

@@ -10,52 +10,34 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 ;
-const ModelSelector = ({ busy, models, selected, onSelect })=>{
-    const handleChange = async (e)=>{
-        const urn = e.target.value;
-        onSelect(urn);
-        if (urn) {
-            try {
-                await fetch(`/api/models/${urn}/metadata/`, {
-                    method: 'GET',
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-            } catch (err) {
-                console.error('Failed to fetch metadata log for URN:', urn, err);
-            }
-        }
-    };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+const ModelSelector = ({ busy, models, selected, onSelect })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
         className: "border rounded p-1 text-foreground",
         disabled: busy,
         value: selected,
-        onChange: handleChange,
+        onChange: (e)=>onSelect(e.target.value),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                 value: "",
                 children: "Select model"
             }, void 0, false, {
                 fileName: "[project]/components/ModelSelector.tsx",
-                lineNumber: 34,
-                columnNumber: 7
+                lineNumber: 18,
+                columnNumber: 5
             }, this),
             models.map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                     value: m.urn,
                     children: m.name
                 }, m.urn, false, {
                     fileName: "[project]/components/ModelSelector.tsx",
-                    lineNumber: 36,
-                    columnNumber: 9
+                    lineNumber: 19,
+                    columnNumber: 22
                 }, this))
         ]
     }, void 0, true, {
         fileName: "[project]/components/ModelSelector.tsx",
-        lineNumber: 28,
-        columnNumber: 5
+        lineNumber: 12,
+        columnNumber: 3
     }, this);
-};
 const __TURBOPACK__default__export__ = ModelSelector;
 }}),
 "[project]/components/UploadButton.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
@@ -192,6 +174,84 @@ const StatusOverlay = ({ message })=>/*#__PURE__*/ (0, __TURBOPACK__imported__mo
     }, this);
 const __TURBOPACK__default__export__ = StatusOverlay;
 }}),
+"[project]/components/MetadataPanel.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>MetadataPanel)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+'use client';
+;
+;
+function MetadataPanel({ urn }) {
+    const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!urn) return;
+        async function fetchMetadata() {
+            try {
+                const res = await fetch(`/api/models/${urn}/metadata/log`);
+                const json = await res.json();
+                console.log('Fetched metadata:', json) // ← browser console
+                ;
+                setData(json);
+            } catch (e) {
+                console.error('Metadata fetch error:', e) // ← browser console
+                ;
+                setError(e.message);
+            }
+        }
+        fetchMetadata();
+    }, [
+        urn
+    ]);
+    if (!urn) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "p-4",
+        children: "No model selected"
+    }, void 0, false, {
+        fileName: "[project]/components/MetadataPanel.tsx",
+        lineNumber: 29,
+        columnNumber: 22
+    }, this);
+    if (error) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "p-4 text-red-500",
+        children: [
+            "Error: ",
+            error
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/MetadataPanel.tsx",
+        lineNumber: 30,
+        columnNumber: 23
+    }, this);
+    if (!data) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "p-4",
+        children: "Loading metadata…"
+    }, void 0, false, {
+        fileName: "[project]/components/MetadataPanel.tsx",
+        lineNumber: 31,
+        columnNumber: 23
+    }, this);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "overflow-auto p-4 text-sm bg-gray-50",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("pre", {
+            children: JSON.stringify(data, null, 2)
+        }, void 0, false, {
+            fileName: "[project]/components/MetadataPanel.tsx",
+            lineNumber: 35,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/MetadataPanel.tsx",
+        lineNumber: 34,
+        columnNumber: 9
+    }, this);
+}
+}}),
 "[project]/app/(public)/(homepage)/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -204,7 +264,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Header.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$StatusOverlay$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/StatusOverlay.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MetadataPanel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/MetadataPanel.tsx [app-ssr] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -259,7 +321,6 @@ function HomePage() {
         setBusy(false);
         setSelected(file.name);
     };
-    // Poll translation status and load model
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         let timer;
         const check = async ()=>{
@@ -297,11 +358,88 @@ function HomePage() {
                 lineNumber: 100,
                 columnNumber: 7
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-col h-screen",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        busy: busy,
+                        models: models,
+                        selected: selected,
+                        onSelect: setSelected,
+                        onUpload: handleUpload
+                    }, void 0, false, {
+                        fileName: "[project]/app/(public)/(homepage)/page.tsx",
+                        lineNumber: 108,
+                        columnNumber: 8
+                    }, this),
+                    message && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$StatusOverlay$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        message: message
+                    }, void 0, false, {
+                        fileName: "[project]/app/(public)/(homepage)/page.tsx",
+                        lineNumber: 115,
+                        columnNumber: 20
+                    }, this),
+                    "-      ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        ref: viewerRef,
+                        className: "flex-1 relative"
+                    }, void 0, false, {
+                        fileName: "[project]/app/(public)/(homepage)/page.tsx",
+                        lineNumber: 117,
+                        columnNumber: 8
+                    }, this),
+                    "+      ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex-1 flex overflow-hidden",
+                        children: [
+                            "+        ",
+                            "+        ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                ref: viewerRef,
+                                className: "flex-1 relative"
+                            }, void 0, false, {
+                                fileName: "[project]/app/(public)/(homepage)/page.tsx",
+                                lineNumber: 120,
+                                columnNumber: 10
+                            }, this),
+                            "+ +        ",
+                            "+        ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-1/3 border-l border-gray-200",
+                                children: [
+                                    "+          ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MetadataPanel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        urn: selected
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/(public)/(homepage)/page.tsx",
+                                        lineNumber: 124,
+                                        columnNumber: 12
+                                    }, this),
+                                    "+        "
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/(public)/(homepage)/page.tsx",
+                                lineNumber: 123,
+                                columnNumber: 10
+                            }, this),
+                            "+      "
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/(public)/(homepage)/page.tsx",
+                        lineNumber: 118,
+                        columnNumber: 8
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/(public)/(homepage)/page.tsx",
+                lineNumber: 107,
+                columnNumber: 7
+            }, this),
             message && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$StatusOverlay$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 message: message
             }, void 0, false, {
                 fileName: "[project]/app/(public)/(homepage)/page.tsx",
-                lineNumber: 107,
+                lineNumber: 128,
                 columnNumber: 19
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -309,7 +447,7 @@ function HomePage() {
                 className: "flex-1 relative"
             }, void 0, false, {
                 fileName: "[project]/app/(public)/(homepage)/page.tsx",
-                lineNumber: 108,
+                lineNumber: 129,
                 columnNumber: 7
             }, this)
         ]
@@ -330,4 +468,4 @@ module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/serve
 
 };
 
-//# sourceMappingURL=_b02275a6._.js.map
+//# sourceMappingURL=_e3b70aca._.js.map

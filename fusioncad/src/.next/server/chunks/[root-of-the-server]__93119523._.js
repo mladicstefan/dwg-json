@@ -1,6 +1,6 @@
 module.exports = {
 
-"[project]/.next-internal/server/app/api/models/[urn]/status/route/actions.js [app-rsc] (server actions loader, ecmascript)": (function(__turbopack_context__) {
+"[project]/.next-internal/server/app/api/models/[urn]/metadata/route/actions.js [app-rsc] (server actions loader, ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
@@ -397,7 +397,7 @@ async function queryProperties(urn, modelGuid, objectIds, propCategories) {
     return res.json();
 }
 }}),
-"[project]/app/api/models/[urn]/status/route.ts [app-route] (ecmascript)": ((__turbopack_context__) => {
+"[project]/app/api/models/[urn]/metadata/route.ts [app-route] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname } = __turbopack_context__;
@@ -409,27 +409,46 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$serv
 var __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/services/aps.ts [app-route] (ecmascript)");
 ;
 ;
-async function GET(_req, context) {
-    const { urn } = await context.params;
-    const manifest = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getManifest"])(urn);
-    if (!manifest) {
+async function GET(_req, { params }) {
+    const { urn } = params;
+    try {
+        const views = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["listModelViews"])(urn);
+        console.log('🗂️  Model Views:', JSON.stringify(views, null, 2));
+        const firstGuid = views[0]?.guid;
+        if (!firstGuid) {
+            console.log('⚠️  No viewables found for URN:', urn);
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+                error: 'No viewables found'
+            }, {
+                status: 404
+            });
+        }
+        const objectTree = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getObjectTree"])(urn, firstGuid);
+        console.log('🌲 Object Tree:', JSON.stringify(objectTree, null, 2));
+        const allProps = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getAllProperties"])(urn, firstGuid);
+        console.log('📋 All Properties:', JSON.stringify(allProps, null, 2));
+        const objectIds = objectTree?.data?.objects?.map((o)=>o.objectid).slice(0, 5) || [];
+        const queriedProps = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["queryProperties"])(urn, firstGuid, objectIds, [
+            'Dimensions'
+        ]);
+        console.log('🔍 Queried Properties:', JSON.stringify(queriedProps, null, 2));
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            status: 'n/a'
+            views,
+            objectTree,
+            allProps,
+            queriedProps
+        });
+    } catch (error) {
+        console.error('❌ Error fetching metadata for URN', urn, error);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            error: error.message
+        }, {
+            status: 500
         });
     }
-    const messages = [];
-    for (const d of manifest.derivatives || []){
-        messages.push(...d.messages || []);
-        for (const c of d.children || [])messages.push(...c.messages || []);
-    }
-    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-        status: manifest.status,
-        progress: manifest.progress,
-        messages
-    });
 }
 }}),
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__d979dd6b._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__93119523._.js.map
