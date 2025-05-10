@@ -1,60 +1,58 @@
-// app/api/models/[urn]/metadata/route.ts
 
 import { NextResponse } from 'next/server'
 import {
   getManifest,
   listModelViews,
   getObjectTree,
-  getAllProperties,
-  queryProperties
+  getAllProperties
 } from '@/services/aps'
 
 export async function GET(
   _req: Request,
   context: { params: Promise<{ urn: string }> }
 ) {
-  // Await dynamic params
   const { urn } = await context.params
 
   try {
     const manifest = await getManifest(urn)
-    console.log('📝 Manifest:', JSON.stringify(manifest, null, 2))
+    console.log('📝 Full Manifest:', JSON.stringify(manifest, null, 2))
+
+    if (manifest.progress !== 'complete' || manifest.status !== 'success') {
+      return NextResponse.json(
+        { status: manifest.progress || manifest.status },
+        { status: 202 }
+      )
+    }
 
     const views = await listModelViews(urn)
     console.log('🗂️ Model Views:', JSON.stringify(views, null, 2))
 
-    const objectTrees: Record<string, any> = {}
-    const allProperties: Record<string, any> = {}
-    const queriedProperties: Record<string, any> = {}
+    const results: Record<string, any> = {}
 
-    for (const view of views) {
-      const guid = view.guid
+    for (const { guid, name, role } of views) {
+      let tree
+      do {
+        tree = await getObjectTree(urn, guid)
+      } while (!tree.data || !Array.isArray(tree.data.objects))
+      console.log(`🌲 Object Tree [${guid} - ${role}/${name}]:`, JSON.stringify(tree.data.objects, null, 2))
 
-      const tree = await getObjectTree(urn, guid)
-      console.log(`🌲 Object Tree [${guid}]:`, JSON.stringify(tree, null, 2))
-      objectTrees[guid] = tree
+      let props
+      do {
+        props = await getAllProperties(urn, guid)
+      } while (!props.data || !Array.isArray(props.data.collection))
+      console.log(`📋 Properties [${guid} - ${role}/${name}]:`, JSON.stringify(props.data.collection, null, 2))
 
-      const props = await getAllProperties(urn, guid)
-      console.log(`📋 All Properties [${guid}]:`, JSON.stringify(props, null, 2))
-      allProperties[guid] = props
-
-      try {
-        const ids = tree?.data?.objects?.map((o: any) => o.objectid)
-        if (Array.isArray(ids) && ids.length) {
-          const subset = ids.slice(0, 10)
-          const qp = await queryProperties(urn, guid, subset, ['Dimensions'])
-          console.log(`🔍 Queried Dimensions [${guid}]:`, JSON.stringify(qp, null, 2))
-          queriedProperties[guid] = qp
-        }
-      } catch (e) {
-        console.warn(`⚠️ queryProperties failed for view ${guid}:`, e)
+      results[guid] = {
+        viewName: name,
+        viewRole: role,
+        objects: tree.data.objects,
+        properties: props.data.collection
       }
     }
 
-    return NextResponse.json({ manifest, views, objectTrees, allProperties, queriedProperties })
-
+    return NextResponse.json({ manifest, views, results })
   } catch (error: any) {
-    console.error('❌ Error extracting metadata for URN', context, error)
+    console.error('❌ Error extracting metadata for URN', urn, error)
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
 }

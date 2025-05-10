@@ -402,6 +402,7 @@ async function queryProperties(urn, modelGuid, objectIds, propCategories) {
 
 var { g: global, __dirname } = __turbopack_context__;
 {
+// app/api/models/[urn]/metadata/route.ts
 __turbopack_context__.s({
     "GET": (()=>GET)
 });
@@ -409,37 +410,53 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$serv
 var __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/services/aps.ts [app-route] (ecmascript)");
 ;
 ;
-async function GET(_req, { params }) {
-    const { urn } = params;
+async function GET(_req, context) {
+    const { urn } = await context.params;
     try {
-        const views = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["listModelViews"])(urn);
-        console.log('🗂️  Model Views:', JSON.stringify(views, null, 2));
-        const firstGuid = views[0]?.guid;
-        if (!firstGuid) {
-            console.log('⚠️  No viewables found for URN:', urn);
+        // 1) Fetch full manifest
+        const manifest = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getManifest"])(urn);
+        console.log('📝 Full Manifest:', JSON.stringify(manifest, null, 2));
+        // 2) If translation not complete, return 202
+        if (manifest.progress !== 'complete' || manifest.status !== 'success') {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                error: 'No viewables found'
+                status: manifest.progress || manifest.status
             }, {
-                status: 404
+                status: 202
             });
         }
-        const objectTree = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getObjectTree"])(urn, firstGuid);
-        console.log('🌲 Object Tree:', JSON.stringify(objectTree, null, 2));
-        const allProps = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getAllProperties"])(urn, firstGuid);
-        console.log('📋 All Properties:', JSON.stringify(allProps, null, 2));
-        const objectIds = objectTree?.data?.objects?.map((o)=>o.objectid).slice(0, 5) || [];
-        const queriedProps = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["queryProperties"])(urn, firstGuid, objectIds, [
-            'Dimensions'
-        ]);
-        console.log('🔍 Queried Properties:', JSON.stringify(queriedProps, null, 2));
+        // 3) List all viewables
+        const views = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["listModelViews"])(urn);
+        console.log('🗂️ Model Views:', JSON.stringify(views, null, 2));
+        const results = {};
+        // 4) For each viewable GUID, fetch tree & properties
+        for (const { guid, name, role } of views){
+            // 4a) Object tree
+            let tree;
+            do {
+                tree = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getObjectTree"])(urn, guid);
+            }while (!tree.data || !Array.isArray(tree.data.objects))
+            console.log(`🌲 Object Tree [${guid} - ${role}/${name}]:`, JSON.stringify(tree.data.objects, null, 2));
+            // 4b) All properties
+            let props;
+            do {
+                props = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getAllProperties"])(urn, guid);
+            }while (!props.data || !Array.isArray(props.data.collection))
+            console.log(`📋 Properties [${guid} - ${role}/${name}]:`, JSON.stringify(props.data.collection, null, 2));
+            results[guid] = {
+                viewName: name,
+                viewRole: role,
+                objects: tree.data.objects,
+                properties: props.data.collection
+            };
+        }
+        // 5) Return manifest, views, and all metadata
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            manifest,
             views,
-            objectTree,
-            allProps,
-            queriedProps
+            results
         });
     } catch (error) {
-        console.error('❌ Error fetching metadata for URN', urn, error);
+        console.error('❌ Error extracting metadata for URN', urn, error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             error: error.message
         }, {
