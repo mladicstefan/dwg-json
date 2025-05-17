@@ -402,7 +402,6 @@ async function queryProperties(urn, modelGuid, objectIds, propCategories) {
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-// app/api/models/[urn]/metadata/route.ts
 __turbopack_context__.s({
     "GET": (()=>GET)
 });
@@ -413,10 +412,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$a
 async function GET(_req, context) {
     const { urn } = await context.params;
     try {
-        // 1) Fetch full manifest
         const manifest = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getManifest"])(urn);
         console.log('📝 Full Manifest:', JSON.stringify(manifest, null, 2));
-        // 2) If translation not complete, return 202
         if (manifest.progress !== 'complete' || manifest.status !== 'success') {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 status: manifest.progress || manifest.status
@@ -424,19 +421,15 @@ async function GET(_req, context) {
                 status: 202
             });
         }
-        // 3) List all viewables
         const views = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["listModelViews"])(urn);
         console.log('🗂️ Model Views:', JSON.stringify(views, null, 2));
         const results = {};
-        // 4) For each viewable GUID, fetch tree & properties
         for (const { guid, name, role } of views){
-            // 4a) Object tree
             let tree;
             do {
                 tree = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getObjectTree"])(urn, guid);
             }while (!tree.data || !Array.isArray(tree.data.objects))
             console.log(`🌲 Object Tree [${guid} - ${role}/${name}]:`, JSON.stringify(tree.data.objects, null, 2));
-            // 4b) All properties
             let props;
             do {
                 props = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$aps$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getAllProperties"])(urn, guid);
@@ -449,7 +442,6 @@ async function GET(_req, context) {
                 properties: props.data.collection
             };
         }
-        // 5) Return manifest, views, and all metadata
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             manifest,
             views,
