@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
+
 const fs        = require('fs');
 const path      = require('path');
 const DxfParser = require('dxf-parser');
 
 if (process.argv.length < 3) {
-  console.error('Usage: node bom‐from‐dxf.js path/to/file.dxf');
+  console.error('Usage: node extract-notes-full.js <file.dxf>');
   process.exit(1);
 }
 
@@ -27,83 +28,79 @@ try {
   process.exit(1);
 }
 
-// strip formatting and unify newlines
-function cleanText(raw) {
-  if (!raw) return '';
-  return raw
-    .replace(/\\f[^;]*;/g, '')   // strip font codes
-    .replace(/\\P/g, ' ')        // paragraph marks → space
-    .trim();
-}
 
-function distance(a, b) {
-  return Math.hypot(a.x - b.x, a.y - b.y);
-}
 
-// 1) collect all TEXT & MTEXT from modelspace
 const textEntities = (dxf.entities || [])
   .filter(e => e.type === 'TEXT' || e.type === 'MTEXT')
-  .map(e => ({
-    x: e.position.x,
-    y: e.position.y,
-    text: cleanText(e.text || e.plainText?.() || '')
-  }));
+  .map(e => {
+    const pos = e.position || e.insertionPoint || { x: 0, y: 0, z: 0 };
+    return {
+      handle:   e.handle,
+      type:     e.type,
+      layer:    e.layer,
+      position: { x: pos.x, y: pos.y },
+      entity:   JSON.parse(JSON.stringify(e))  // deep-clone all props
+    };
+  });
 
-// 2) collect all INSERTs (block references) with position & ATTRIBs
+
 const inserts = [];
-;(function extractInserts(entities) {
-  if (!Array.isArray(entities)) return;
-  for (const ent of entities) {
+;(function walk(ents) {
+  for (const ent of ents) {
     if (ent.type === 'INSERT') {
       const pos = ent.position || { x: 0, y: 0, z: 0 };
-      // map ATTRIBs
+      // collect ATTRIB tags
       const attrs = {};
       (ent.attributes || []).forEach(a => {
-        attrs[a.tag] = cleanText(a.text || a.value);
+        attrs[a.tag] = a.text != null
+          ? a.text.trim()
+          : (a.value != null ? String(a.value).trim() : '');
       });
-      // find all callouts within RADIUS
-      const RADIUS = 200;  // adjust to your drawing units
-      const notes = textEntities
-        .filter(t => distance(t, pos) <= RADIUS)
-        .map(t => t.text)
-        .filter(t => t.length > 0);
+
+      // **DROP THE RADIUS FILTER** — include every note
+      const allNotes = textEntities.map(t => t.entity);
+
       inserts.push({
-        block: ent.name,
-        position: pos,
+        block:    ent.name,
         attrs,
-        notes
+        notes:    allNotes,
+        position: { x: pos.x, y: pos.y }
       });
     }
-    // if you need nested inside blocks/blocks['...'].entities, do that too
+    // recurse into nested block definitions
+    if (Array.isArray(ent.entities)) {
+      walk(ent.entities);
+    }
   }
 })(dxf.entities);
 
-// 3) group into a BOM map
+
 const bomMap = new Map();
 for (const ins of inserts) {
   const key = ins.block;
   if (!bomMap.has(key)) {
     bomMap.set(key, {
       block: key,
-      qty: 0,
-      attrs: {},        // will merge common ATTRIBs
-      notes: new Set()  // use a Set to dedupe identical callouts
+      qty:   0,
+      attrs: {},
+      notes: new Map()   // handle → entity
     });
   }
   const entry = bomMap.get(key);
   entry.qty++;
-  // merge ATTRIBs (last‐one‐wins)
   Object.assign(entry.attrs, ins.attrs);
-  // collect notes
-  ins.notes.forEach(n => entry.notes.add(n));
+  ins.notes.forEach(n => {
+    if (n.handle) entry.notes.set(n.handle, n);
+  });
 }
 
-// 4) produce final JSON
+
 const bom = Array.from(bomMap.values()).map(e => ({
-  block:       e.block,
-  qty:         e.qty,
-  attrs:       e.attrs,
-  notes:       Array.from(e.notes)
+  block: e.block,
+  qty:   e.qty,
+  attrs: e.attrs,
+  // Array of TEXT/MTEXT entities (deduped by handle)
+  notes: Array.from(e.notes.values())
 }));
 
 console.log(JSON.stringify(bom, null, 2));
