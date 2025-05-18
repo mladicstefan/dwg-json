@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-extract_connect.py
 
 Usage:
-    python extract_connect.py <file.dxf> [lineTol] [chainTol] [maxTol]
+    python dxf_parser <file.dxf> [lineTol] [chainTol] [maxTol]
 
 Produces:
     texts.json
