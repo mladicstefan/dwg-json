@@ -14,19 +14,16 @@ logger = logging.getLogger(__name__)
 
 verify_match_schema: Dict[str, Any] = {
     "name": "verify_match",
-    "description": "Verify or correct which object each note belongs to",
+    "description": "Verify or correct which object a single note belongs to",
     "parameters": {
-        "type": "array",
-        "items": {
-            "type": "object",
-            "properties": {
-                "objectId": {"type": ["string", "null"]},
-                "note": {"type": "string"},
-                "verified": {"type": "boolean"},
-                "correction": {"type": ["string", "null"]},
-            },
-            "required": ["note", "verified"],
+        "type": "object",
+        "properties": {
+            "objectId": {"type": ["string", "null"]},
+            "note": {"type": "string"},
+            "verified": {"type": "boolean"},
+            "correction": {"type": ["string", "null"]},
         },
+        "required": ["note", "verified"],
     },
 }
 
@@ -83,6 +80,7 @@ class HybridBomBuilder:
         self.object_embeddings: List[Tuple[str, List[float]]] = []
 
     def run(self) -> None:
+
         verified = self.first_pass_verify()
         unverified = [v for v in verified if not v["verified"]]
         if unverified:
@@ -95,33 +93,49 @@ class HybridBomBuilder:
         logger.info("Hybrid BOM complete: %d items", len(final))
 
     def first_pass_verify(self) -> List[Dict[str, Any]]:
-        data = self.notes_json.read_text()
-        resp = self.client.chat.completions.create(  # type: ignore[arg-type]
-            model="gpt-4.1-mini",
-            temperature=0.0,
-            messages=[
-                {
-                    "role": "system",
-                    "content": (
-                        "You have the full objects-with-notes JSON. "
-                        "For each note, confirm if it belongs to the given objectId. "
-                        "Return exactly one verify_match function call per entry."
-                    ),
-                },
-                {"role": "user", "content": data},
-            ],
-            functions=[verify_match_schema],  # type: ignore[arg-type]
-            function_call="auto",
+
+        full_context = self.notes_json.read_text()
+        notes = json.loads(full_context)
+
+        total_notes = sum(len(e.get("notes", [])) for e in notes if isinstance(e, dict))
+        logger.info("About to verify %d notes", total_notes)
+
+        verified: List[Dict[str, Any]] = []
+        for entry in notes:
+            oid = (entry.get("object") or {}).get("id")
+            for note in entry.get("notes", []):
+                # call the function for this single note
+                resp = self.client.chat.completions.create(
+                    model="gpt-4.1-mini",
+                    temperature=0.0,
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": (
+                                "You have the full objects-with-notes JSON loaded. "
+                                "Now: for the note below, confirm whether it belongs to objectId "
+                                f"{oid!r}. Return exactly one verify_match function call."
+                            ),
+                        },
+                        {"role": "user", "content": note},
+                    ],
+                    functions=[verify_match_schema],  # type: ignore[arg-type]
+                    function_call="auto",
+                )
+                fc = resp.choices[0].message.function_call
+                if fc is None or not hasattr(fc, "arguments"):
+                    raise RuntimeError("No function_call returned in first pass")
+                args = json.loads(fc.arguments)
+
+                args["objectId"] = args.get("objectId", oid)
+                verified.append(args)
+
+        logger.info(
+            "Stage1: verified %d/%d notes",
+            sum(1 for v in verified if v["verified"]),
+            len(verified),
         )
-        fc = resp.choices[0].message.function_call
-        if fc is None or not hasattr(fc, "arguments"):
-            raise RuntimeError("No function_call returned in first pass")
-        args_json = fc.arguments  # type: ignore[attr-defined]
-        items: List[Dict[str, Any]] = json.loads(args_json)
-        checked = len(items)
-        passed = sum(1 for i in items if i.get("verified"))
-        logger.info("Stage1: verified %d/%d notes", passed, checked)
-        return items
+        return verified
 
     def load_or_compute_embeddings(self) -> None:
         if self.object_embeddings_path.exists():
