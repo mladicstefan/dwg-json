@@ -1,136 +1,151 @@
-# parser/core.py
 import logging
 from pathlib import Path
 from typing import Any, Dict, List
+import statistics
+
 from .entities import DXFParser
 from .relations import RelationBuilder
+
 from utils.duplicate import remove_duplicates
 from utils.file_io import write_json
 from utils.optimizer import find_best_max_tol
 from utils.geometry import distance
-import statistics
 
 logger = logging.getLogger(__name__)
 
 
 class ParserService:
     def __init__(self, path: str):
+        logger.info("Initializing parser for %s", path)
         self.parser = DXFParser(path)
-        self.line_tol = 1.0
-        self.chain_tol = 1.0
-        self.max_tol = 1.0
 
-    def _cluster_texts(
-        self, texts: List[Dict[str, Any]], y_tol: float, x_gap: float
-    ) -> List[Dict[str, Any]]:
-        logger.info(
-            "Clustering %d text fragments (y_tol=%.3f, x_gap=%.3f)",
-            len(texts),
-            y_tol,
-            x_gap,
-        )
-        clusters: List[List[Dict[str, Any]]] = []
-        for txt in texts:
-            placed = False
-            for cl in clusters:
-                if abs(cl[0]["position"]["y"] - txt["position"]["y"]) < y_tol:
-                    cl.append(txt)
-                    placed = True
-                    break
-            if not placed:
-                clusters.append([txt])
+    def _cluster_texts(self, raw_texts: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        if not raw_texts:
+            return []
+
+        # sort descending Y
+        texts = sorted(raw_texts, key=lambda t: -t["position"]["y"])
+        ys = [t["position"]["y"] for t in texts]
+        # y‐tolerance = median of the smallest half of adjacent Y‐gaps
+        gaps = sorted(abs(y2 - y1) for y1, y2 in zip(ys, ys[1:]))
+        half = max(1, len(gaps) // 2)
+        y_tol = statistics.median(gaps[:half])
+        logger.info("Clustering %d texts with y_tol=%.3f", len(texts), y_tol)
+
+        # group into lines
+        lines: List[List[Dict[str, Any]]] = []
+        for t in texts:
+            if (
+                not lines
+                or abs(lines[-1][0]["position"]["y"] - t["position"]["y"]) > y_tol
+            ):
+                lines.append([t])
+            else:
+                lines[-1].append(t)
+
+        # within each line, compute x_tol and merge
         merged: List[Dict[str, Any]] = []
-        for cl in clusters:
-            frags = sorted(cl, key=lambda t: t["position"]["x"])
-            lines = [[frags[0]]]
-            for curr in frags[1:]:
-                prev = lines[-1][-1]
-                if curr["position"]["x"] - prev["position"]["x"] > x_gap:
-                    lines.append([curr])
+        for line in lines:
+            xs = [t["position"]["x"] for t in line]
+            if len(xs) < 2:
+                x_tol = 0.0
+            else:
+                x_gaps = sorted(xs[i + 1] - xs[i] for i in range(len(xs) - 1))
+                halfx = max(1, len(x_gaps) // 2)
+                x_tol = statistics.median(x_gaps[:halfx])
+            logger.debug(
+                " Line at y=%.3f → x_tol=%.3f (%d fragments)",
+                line[0]["position"]["y"],
+                x_tol,
+                len(line),
+            )
+
+            cluster: List[Dict[str, Any]] = [line[0]]
+            last_x = line[0]["position"]["x"]
+            for t in line[1:]:
+                x = t["position"]["x"]
+                if x - last_x <= x_tol:
+                    cluster.append(t)
                 else:
-                    lines[-1].append(curr)
-            for line in lines:
-                xs = [t["position"]["x"] for t in line]
-                ys = [t["position"]["y"] for t in line]
-                merged.append(
-                    {
-                        "id": line[0]["id"],
-                        "position": {"x": sum(xs) / len(xs), "y": sum(ys) / len(ys)},
-                        "text": " ".join(t["text"] for t in line),
-                    }
-                )
-        logger.info("Produced %d clustered notes", len(merged))
+                    merged.append(self._merge(cluster))
+                    cluster = [t]
+                last_x = x
+            merged.append(self._merge(cluster))
+
+        logger.info("Produced %d merged text blocks", len(merged))
         return merged
 
-    def run(self) -> None:
-        logger.info("Gathering entities from DXF")
-        ents = self.parser.gather_entities()
+    def _merge(self, cluster: List[Dict[str, Any]]) -> Dict[str, Any]:
+        xs = [c["position"]["x"] for c in cluster]
+        ys = [c["position"]["y"] for c in cluster]
+        return {
+            "id": cluster[0]["id"],
+            "position": {"x": statistics.mean(xs), "y": statistics.mean(ys)},
+            "text": " ".join(c["text"] for c in cluster),
+        }
 
-        logger.info("Extracting texts, inserts, and lines")
-        raw_texts = self.parser.extract_texts(ents)
+    def run(self) -> None:
+        # 1) load and extract
+        ents = self.parser.gather_entities()
+        raw_txt = self.parser.extract_texts(ents)
         objects = self.parser.extract_inserts(ents)
         lines = self.parser.extract_lines(ents)
         logger.info(
-            "Got %d texts, %d objects, %d lines",
-            len(raw_texts),
+            "Extracted %d texts, %d objects, %d lines",
+            len(raw_txt),
             len(objects),
             len(lines),
         )
 
-        write_json(Path("texts.json"), raw_texts)
+        write_json(Path("texts.json"), raw_txt)
         write_json(Path("objects.json"), objects)
         write_json(Path("lines.json"), lines)
 
-        # recalc line/chain tolerances from geometry
-        lengths = [distance(l["start"], l["end"]) for l in lines]
-        if lengths:
-            self.line_tol = min(lengths)
-            self.chain_tol = max(lengths)
-        logger.info("Auto line_tol=%.3f, chain_tol=%.3f", self.line_tol, self.chain_tol)
-
-        # compute clustering tolerances from text distribution
-        y_vals = [t["position"]["y"] for t in raw_texts]
-        if len(y_vals) > 1:
-            ys_sorted = sorted(y_vals)
-            deltas = [
-                ys_sorted[i + 1] - ys_sorted[i] for i in range(len(ys_sorted) - 1)
-            ]
-            med_delta = statistics.median(deltas)
-            cluster_y_tol = med_delta * 0.6  # half a typical line‐spacing
-            x_gap = med_delta * 2.0  # break at twice that spacing
+        # 2) auto‐compute line_tol and chain_tol from actual line‐lengths
+        dists = [distance(l["start"], l["end"]) for l in lines]
+        if dists:
+            line_tol = min(dists)
+            chain_tol = max(dists)
         else:
-            cluster_y_tol = self.line_tol
-            x_gap = self.chain_tol
-        logger.info("Computed cluster_y_tol=%.3f, x_gap=%.3f", cluster_y_tol, x_gap)
-
-        texts = self._cluster_texts(raw_texts, y_tol=cluster_y_tol, x_gap=x_gap)
-        write_json(Path("clustered-texts.json"), texts)
-
-        # optimize max_tol (minimize nulls & overlaps)
-        best_mt = find_best_max_tol(
-            raw_texts, objects, max_tol_bound=max(lengths) if lengths else 500.0
+            line_tol = chain_tol = 0.0
+        logger.info(
+            "Auto‐tolerances: line_tol=%.3f chain_tol=%.3f", line_tol, chain_tol
         )
-        self.max_tol = best_mt
-        logger.info("Optimized max_tol=%.3f", self.max_tol)
 
-        # build, dedupe, group
+        # 3) find best max_tol
+        max_tol = find_best_max_tol(raw_txt, objects, max_tol_bound=chain_tol or 100.0)
+        logger.info("Optimized max_tol=%.3f", max_tol)
+        write_json(
+            Path("tols.json"),
+            {"line_tol": line_tol, "chain_tol": chain_tol, "max_tol": max_tol},
+        )
+
+        # 4) cluster the texts *before* matching
+        clustered = self._cluster_texts(raw_txt)
+        write_json(Path("clustered-texts.json"), clustered)
+
+        # 5) build relations & dedupe
         relations = RelationBuilder(
-            texts, objects, lines, self.line_tol, self.chain_tol, self.max_tol
+            clustered, objects, lines, line_tol, chain_tol, max_tol
         ).build()
-        relations = remove_duplicates(relations, texts, objects)
-        write_json(Path("relations.json"), relations)
-        notes = self._group(relations, objects)
-        logger.info("Grouped into %d objects with notes", len(notes))
-        write_json(Path("objects-with-notes.json"), notes)
+        logger.info("Built %d raw relations", len(relations))
 
-    def _group(
-        self, notes: List[Dict[str, Any]], objects: List[Dict[str, Any]]
-    ) -> List[Dict[str, Any]]:
+        relations = remove_duplicates(relations, clustered, objects)
+        logger.info("After dedupe: %d relations", len(relations))
+        write_json(Path("relations.json"), relations)
+
+        # 6) group into objects-with-notes
         by_obj: Dict[Any, Dict[str, Any]] = {}
-        for r in notes:
-            key = r["objectId"]
-            obj = next((o for o in objects if o["id"] == key), None)
-            by_obj.setdefault(key, {"object": obj, "notes": []})["notes"].append(
-                r["note"]
-            )
-        return list(by_obj.values())
+        for r in relations:
+            oid = r["objectId"]
+            by_obj.setdefault(
+                oid,
+                {
+                    "object": next((o for o in objects if o["id"] == oid), None),
+                    "notes": [],
+                },
+            )["notes"].append(r["note"])
+        notes = list(by_obj.values())
+
+        write_json(Path("objects-with-notes.json"), notes)
+        logger.info("Wrote %d objects‐with‐notes", len(notes))

@@ -1,9 +1,14 @@
 import logging
 from collections import deque
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, TypedDict
 from utils.geometry import distance
 
 logger = logging.getLogger(__name__)
+
+
+class _QueueEntry(TypedDict):
+    pos: Dict[str, float]
+    path: List[str]
 
 
 class RelationBuilder:
@@ -24,11 +29,15 @@ class RelationBuilder:
         self.max_tol = max_tol
 
     def build(self) -> List[Dict[str, Any]]:
-        logger.info("Building relations for %d texts", len(self.texts))
-        relations: List[Dict[str, Any]] = []
+        logger.info(
+            "Building relations (%d texts → %d objects)",
+            len(self.texts),
+            len(self.objects),
+        )
+        results: List[Dict[str, Any]] = []
         for txt in self.texts:
-            found, path = self._find_object(txt)
-            relations.append(
+            found, path = self._find_object(txt["position"])
+            results.append(
                 {
                     "textId": txt["id"],
                     "objectId": found["id"] if found else None,
@@ -36,57 +45,59 @@ class RelationBuilder:
                     "linePath": path,
                 }
             )
-        logger.info("Finished relations: %d total", len(relations))
-        return relations
+        logger.info("Relations complete: %d items", len(results))
+        return results
 
     def _find_object(
-        self, txt: Dict[str, Any]
+        self, pos: Dict[str, float]
     ) -> Tuple[Optional[Dict[str, Any]], List[str]]:
         tol = self.line_tol
+        # try expanding bbox
         while tol <= self.max_tol:
-            hits = [
-                o
-                for o in self.objects
-                if self._in_bbox(txt["position"], o["bbox"], tol)
-            ]
+            hits = [o for o in self.objects if self._in_bbox(pos, o["bbox"], tol)]
             if hits:
+                # pick smallest bbox first
                 hits.sort(
-                    key=lambda o: (o["bbox"]["maxx"] - o["bbox"]["minx"])
-                    * (o["bbox"]["maxy"] - o["bbox"]["miny"])
+                    key=lambda o: (
+                        (o["bbox"]["maxx"] - o["bbox"]["minx"])
+                        * (o["bbox"]["maxy"] - o["bbox"]["miny"])
+                    )
                 )
                 return hits[0], []
-            found, path = self._bfs(txt["position"], tol)
+            found, path = self._bfs(pos, tol)
             if found:
                 return found, path
             tol *= 2
         return None, []
 
-    def _in_bbox(self, pos: Any, bbox: Dict[str, float], tol: float) -> bool:
+    def _in_bbox(
+        self, pos: Dict[str, float], bbox: Dict[str, float], tol: float
+    ) -> bool:
         return (
             bbox["minx"] - tol <= pos["x"] <= bbox["maxx"] + tol
             and bbox["miny"] - tol <= pos["y"] <= bbox["maxy"] + tol
         )
 
     def _bfs(
-        self, start: Any, tol: float
+        self, start: Dict[str, float], tol: float
     ) -> Tuple[Optional[Dict[str, Any]], List[str]]:
         visited = set()
-        queue = deque([{"pos": start, "path": []}])
+        queue: deque[_QueueEntry] = deque([{"pos": start, "path": []}])
         while queue:
             cur = queue.popleft()
-            if any(self._in_bbox(cur["pos"], o["bbox"], tol) for o in self.objects):
-                target = next(
-                    o for o in self.objects if self._in_bbox(cur["pos"], o["bbox"], tol)
-                )
-                return target, cur["path"]
-            for l in self.lines:
-                lid = l["id"]
+            # direct bbox hit?
+            for o in self.objects:
+                if self._in_bbox(cur["pos"], o["bbox"], tol):
+                    return o, cur["path"]
+            # follow line‐chains
+            for ln in self.lines:
+                lid = ln["id"]
                 if lid in visited:
                     continue
                 maxd = self.chain_tol if cur["path"] else self.line_tol
                 for end in ("start", "end"):
-                    if distance(cur["pos"], l[end]) <= maxd:
+                    if distance(cur["pos"], ln[end]) <= maxd:
                         visited.add(lid)
                         other = "end" if end == "start" else "start"
-                        queue.append({"pos": l[other], "path": cur["path"] + [lid]})
+                        queue.append({"pos": ln[other], "path": cur["path"] + [lid]})
         return None, []
