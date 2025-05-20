@@ -7,6 +7,16 @@
     },
     {
       "object_id": "40AC",
+      "note_raw": "\\Lrechtergebouw noordoostgevel",
+      "note_clean": "noordoostgevel"
+    },
+    {
+      "object_id": "40AC",
+      "note_raw": "\\Lrechtergebouw zuidoostgevel",
+      "note_clean": "zuidoostgevel"
+    },
+    {
+      "object_id": "40AC",
       "note_raw": "\\Llinkergebouw zuidwestgevel",
       "note_clean": "zuidwestgevel"
     },
@@ -32,11 +42,6 @@
     },
     {
       "object_id": "40AC",
-      "note_raw": "\\Lrechtergebouw noordoostgevel",
-      "note_clean": "noordoostgevel"
-    },
-    {
-      "object_id": "40AC",
       "note_raw": "\\Lrechtergebouw zuidwestgevel",
       "note_clean": "zuidwestgevel"
     },
@@ -46,17 +51,27 @@
       "note_clean": "Concept"
     },
     {
-      "object_id": "360",
-      "note_raw": "\\Lrechtergebouw zuidoostgevel",
-      "note_clean": "zuidoostgevel"
-    },
-    {
       "object_id": "32F0",
       "note_raw": "+8600 P",
       "note_clean": "+8600 P"
     },
     {
       "object_id": "32F0",
+      "note_raw": "bk nok",
+      "note_clean": "bk nok"
+    },
+    {
+      "object_id": "3EE8",
+      "note_raw": "+8600 P",
+      "note_clean": "+8600 P"
+    },
+    {
+      "object_id": "3FC5",
+      "note_raw": "+8600 P",
+      "note_clean": "+8600 P"
+    },
+    {
+      "object_id": "3FC5",
       "note_raw": "bk nok",
       "note_clean": "bk nok"
     },
@@ -121,14 +136,14 @@
       "note_clean": "L"
     },
     {
-      "object_id": "3339",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;N",
-      "note_clean": "N"
-    },
-    {
       "object_id": "333E",
       "note_raw": "\\fArial|b1|i0|c0|p34|;M",
       "note_clean": "M"
+    },
+    {
+      "object_id": "3339",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;N",
+      "note_clean": "N"
     },
     {
       "object_id": "349F",
@@ -141,59 +156,109 @@
       "note_clean": "bk verdiepingsvloer"
     },
     {
-      "object_id": null,
+      "object_id": "303",
       "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P",
       "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W | brandwerend uitgevoerd (30 minuten)"
     },
     {
-      "object_id": null,
+      "object_id": "303",
       "note_raw": "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- goot aluminium, aluminiumkleurig\\P\\P\\P",
       "note_clean": "DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - goot aluminium, aluminiumkleurig"
     },
     {
-      "object_id": null,
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | U-waarde glas 1,1"
+      "object_id": "34E4",
+      "note_raw": "+6350 P",
+      "note_clean": "+6350 P"
+    },
+    {
+      "object_id": "34E4",
+      "note_raw": "bk kozijn",
+      "note_clean": "bk kozijn"
+    },
+    {
+      "object_id": "1401",
+      "note_raw": "+6350 P",
+      "note_clean": "+6350 P"
+    },
+    {
+      "object_id": "1401",
+      "note_raw": "+5000 P",
+      "note_clean": "+5000 P"
+    },
+    {
+      "object_id": "1401",
+      "note_raw": "+4000 P",
+      "note_clean": "+4000 P"
+    },
+    {
+      "object_id": "1401",
+      "note_raw": "+3600 P",
+      "note_clean": "+3600 P"
+    },
+    {
+      "object_id": "1401",
+      "note_raw": "+3030 P",
+      "note_clean": "+3030 P"
+    },
+    {
+      "object_id": "1401",
+      "note_raw": "+2340 P",
+      "note_clean": "+2340 P"
+    },
+    {
+      "object_id": "3AD1",
+      "note_raw": "+6350 P",
+      "note_clean": "+6350 P"
+    },
+    {
+      "object_id": "3F8C",
+      "note_raw": "+6350 P bk kozijn",
+      "note_clean": "+6350 P bk kozijn"
+    },
+    {
+      "object_id": "34E8",
+      "note_raw": "+5000 P",
+      "note_clean": "+5000 P"
+    },
+    {
+      "object_id": "34E8",
+      "note_raw": "ok kozijn",
+      "note_clean": "ok kozijn"
+    },
+    {
+      "object_id": "3AD5",
+      "note_raw": "+5000 P",
+      "note_clean": "+5000 P"
+    },
+    {
+      "object_id": "34EC",
+      "note_raw": "+6956 P",
+      "note_clean": "+6956 P"
+    },
+    {
+      "object_id": "34EC",
+      "note_raw": "bk goot",
+      "note_clean": "bk goot"
+    },
+    {
+      "object_id": "3ACD",
+      "note_raw": "+6956 P",
+      "note_clean": "+6956 P"
+    },
+    {
+      "object_id": "3EF0",
+      "note_raw": "+6956 P",
+      "note_clean": "+6956 P"
+    },
+    {
+      "object_id": "262",
+      "note_raw": "hemelwaterafvoer diameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig\\P\\P",
+      "note_clean": "hemelwaterafvoer diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
     },
     {
       "object_id": null,
       "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1",
       "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": null,
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+0",
-      "note_clean": "+0"
-    },
-    {
-      "object_id": null,
-      "note_raw": "doorsnede van aangrenzend gebouw\\Pdat niet tot Schipholweg 973 behoort",
-      "note_clean": "doorsnede van aangrenzend gebouw | dat niet tot Schipholweg 973 behoort"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+8970",
-      "note_clean": "+8970"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+3650",
-      "note_clean": "+3650"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+6900",
-      "note_clean": "+6900"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk dakrand bestaand gebouwdeel",
-      "note_clean": "bk dakrand bestaand gebouwdeel"
     },
     {
       "object_id": null,
@@ -202,198 +267,28 @@
     },
     {
       "object_id": null,
-      "note_raw": "272 / 1000",
-      "note_clean": "272 / 1000"
-    },
-    {
-      "object_id": null,
-      "note_raw": "272 / 1000",
-      "note_clean": "272 / 1000"
-    },
-    {
-      "object_id": null,
-      "note_raw": "KOLOM\\P- stalen HEA-140-profiel\\Pomkleed met trespa in zelfde groentint\\Pals trespabeplating op begane grondgevel\\P",
-      "note_clean": "KOLOM | - stalen HEA-140-profiel | omkleed met trespa in zelfde groentint | als trespabeplating op begane grondgevel"
-    },
-    {
-      "object_id": null,
       "note_raw": "NIEUW DAKOVERSTEK\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- stalen dakplaten 106 mm kleur lichtgrijs RAL 7035 in het zicht\\P\\P\\P\\P\\P\\P",
       "note_clean": "NIEUW DAKOVERSTEK | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - stalen dakplaten 106 mm kleur lichtgrijs RAL 7035 in het zicht"
     },
     {
       "object_id": null,
-      "note_raw": "+0",
-      "note_clean": "+0"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+8970",
-      "note_clean": "+8970"
-    },
-    {
-      "object_id": null,
       "note_raw": "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- goot aluminium, aluminiumkleurig\\P\\P\\P\\P",
       "note_clean": "DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - goot aluminium, aluminiumkleurig"
     },
     {
       "object_id": null,
-      "note_raw": "+6956 P",
-      "note_clean": "+6956 P"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+6350 P",
-      "note_clean": "+6350 P"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+5000 P",
-      "note_clean": "+5000 P"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+4000 P",
-      "note_clean": "+4000 P"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+3600 P",
-      "note_clean": "+3600 P"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+3030 P",
-      "note_clean": "+3030 P"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk goot",
-      "note_clean": "bk goot"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk kozijn",
-      "note_clean": "bk kozijn"
-    },
-    {
-      "object_id": null,
-      "note_raw": "ok kozijn",
-      "note_clean": "ok kozijn"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk overheaddeur",
-      "note_clean": "bk overheaddeur"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk beton",
-      "note_clean": "bk beton"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk kozijn",
-      "note_clean": "bk kozijn"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk verdiepingsvloer",
-      "note_clean": "bk verdiepingsvloer"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk nok",
-      "note_clean": "bk nok"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+2340 P",
-      "note_clean": "+2340 P"
-    },
-    {
-      "object_id": null,
-      "note_raw": "bk deur",
-      "note_clean": "bk deur"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "NIEUWE BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL\\P7014\\PRc-waarde 4,7 m2K/W\\P",
-      "note_clean": "NIEUWE BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL | 7014 | Rc-waarde 4,7 m2K/W"
-    },
-    {
-      "object_id": null,
-      "note_raw": "NIEUW KOZIJN\\Pkunststof kozijn\\Pafm. 1960 x 1350 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1",
-      "note_clean": "NIEUW KOZIJN | kunststof kozijn | afm. 1960 x 1350 mm | kleur wit RAL9001 | U-waarde glas 1,1"
-    },
-    {
-      "object_id": null,
       "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
       "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
     },
     {
       "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
+      "note_raw": "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P",
+      "note_clean": "kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1"
     },
     {
       "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
+      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1\\P",
+      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | U-waarde glas 1,1"
     },
     {
       "object_id": null,
@@ -407,313 +302,8 @@
     },
     {
       "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+800 P",
-      "note_clean": "+800 P"
-    },
-    {
-      "object_id": null,
-      "note_raw": "2",
-      "note_clean": "2"
-    },
-    {
-      "object_id": null,
-      "note_raw": "1",
-      "note_clean": "1"
-    },
-    {
-      "object_id": null,
       "note_raw": "27%",
       "note_clean": "27%"
-    },
-    {
-      "object_id": null,
-      "note_raw": "27%",
-      "note_clean": "27%"
-    },
-    {
-      "object_id": null,
-      "note_raw": "272 / 1000",
-      "note_clean": "272 / 1000"
-    },
-    {
-      "object_id": null,
-      "note_raw": "272 / 1000",
-      "note_clean": "272 / 1000"
-    },
-    {
-      "object_id": null,
-      "note_raw": "thermisch verzinkte stalen vluchttrap\\Poptrede 185 mm\\Paantrede: 185 mm\\Ptredebreedte: 800 mm",
-      "note_clean": "thermisch verzinkte stalen vluchttrap | optrede 185 mm | aantrede: 185 mm | tredebreedte: 800 mm"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+0",
-      "note_clean": "+0"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+8970",
-      "note_clean": "+8970"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+3650",
-      "note_clean": "+3650"
-    },
-    {
-      "object_id": null,
-      "note_raw": "| nieuwe gevelbekleding buitenspouwblad\\P| en bestaande kozijnen",
-      "note_clean": "| nieuwe gevelbekleding buitenspouwblad | | en bestaande kozijnen"
-    },
-    {
-      "object_id": null,
-      "note_raw": "glas glas",
-      "note_clean": "glas glas"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+6900",
-      "note_clean": "+6900"
-    },
-    {
-      "object_id": null,
-      "note_raw": "<-- bestaand gebouwdeel -->",
-      "note_clean": "<-- bestaand gebouwdeel -->"
-    },
-    {
-      "object_id": null,
-      "note_raw": "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- goot aluminium, aluminiumkleurig\\P\\P\\P\\P",
-      "note_clean": "DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - goot aluminium, aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "glas bestaand kozijn\\PU-waarde glas: 1,3 W/m2K\\P",
-      "note_clean": "glas bestaand kozijn | U-waarde glas: 1,3 W/m2K"
-    },
-    {
-      "object_id": null,
-      "note_raw": "thermisch verzinkte stalen vluchttrap\\Poptrede 185 mm\\Paantrede: 185 mm\\Ptredebreedte: 800 mm",
-      "note_clean": "thermisch verzinkte stalen vluchttrap | optrede 185 mm | aantrede: 185 mm | tredebreedte: 800 mm"
-    },
-    {
-      "object_id": null,
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
-      "note_clean": "kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": null,
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
-      "note_clean": "kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": null,
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
-      "note_clean": "kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": null,
-      "note_raw": "NIEUWE BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL\\P7014\\PRc-waarde 4,7 m2K/W\\P",
-      "note_clean": "NIEUWE BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL | 7014 | Rc-waarde 4,7 m2K/W"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+0",
-      "note_clean": "+0"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+4000",
-      "note_clean": "+4000"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+6900",
-      "note_clean": "+6900"
-    },
-    {
-      "object_id": null,
-      "note_raw": "+8600",
-      "note_clean": "+8600"
-    },
-    {
-      "object_id": null,
-      "note_raw": "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\Pgoot aluminium, aluminiumkleurig\\P\\P\\P\\P",
-      "note_clean": "DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | goot aluminium, aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "27%",
-      "note_clean": "27%"
-    },
-    {
-      "object_id": null,
-      "note_raw": "27%",
-      "note_clean": "27%"
-    },
-    {
-      "object_id": null,
-      "note_raw": "3",
-      "note_clean": "3"
-    },
-    {
-      "object_id": null,
-      "note_raw": "4",
-      "note_clean": "4"
-    },
-    {
-      "object_id": null,
-      "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P\\P",
-      "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W | brandwerend uitgevoerd (30 minuten)"
     },
     {
       "object_id": null,
@@ -722,28 +312,18 @@
     },
     {
       "object_id": null,
-      "note_raw": "+5000 P ok kozijn",
-      "note_clean": "+5000 P ok kozijn"
+      "note_raw": "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
+      "note_clean": "kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1"
     },
     {
       "object_id": null,
-      "note_raw": "27%",
-      "note_clean": "27%"
+      "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\P\\P",
+      "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W"
     },
     {
       "object_id": null,
-      "note_raw": "27%",
-      "note_clean": "27%"
-    },
-    {
-      "object_id": null,
-      "note_raw": "3",
-      "note_clean": "3"
-    },
-    {
-      "object_id": null,
-      "note_raw": "4",
-      "note_clean": "4"
+      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
+      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1"
     },
     {
       "object_id": null,
@@ -752,228 +332,88 @@
     },
     {
       "object_id": null,
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 4850 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 4850 mm | kleur wit RAL9001 | U-waarde glas 1,1"
-    },
-    {
-      "object_id": null,
       "note_raw": "gevelbekleding bovenzijde:\\Psandwichpaneel 100 mm\\Pkleur: donkergrijs RAL 7014\\PRC-waarde: 4,7 m2K/W\\P",
       "note_clean": "gevelbekleding bovenzijde: | sandwichpaneel 100 mm | kleur: donkergrijs RAL 7014 | RC-waarde: 4,7 m2K/W"
     },
     {
-      "object_id": null,
-      "note_raw": "GEVELOPBOUW\\P- aluminium zetwerk\\Pkleur donkergrijs RAL 7014\\P- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P- isolatie 100 mm\\PRc- waarde 4,7 m2K/W\\P",
-      "note_clean": "GEVELOPBOUW | - aluminium zetwerk | kleur donkergrijs RAL 7014 | - prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs | - isolatie 100 mm | Rc- waarde 4,7 m2K/W"
+      "object_id": "11B6",
+      "note_raw": "+0",
+      "note_clean": "+0"
     },
     {
-      "object_id": null,
-      "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
+      "object_id": "1402",
+      "note_raw": "+0",
+      "note_clean": "+0"
     },
     {
-      "object_id": null,
-      "note_raw": "AJVR Architect Jeroen Van Rijsbergen\\PDubbeleworststeeg 19\\P1016 AT Amsterdam\\Pjeroenvanrijsbergen@gmail.com\\P\\PKvK nummer: 57426821\\PBTW nummer: NL1812.29.997B01",
-      "note_clean": "AJVR Architect Jeroen Van Rijsbergen | Dubbeleworststeeg 19 | 1016 AT Amsterdam | jeroenvanrijsbergen@gmail.com | KvK nummer: 57426821 | BTW nummer: NL1812.29.997B01"
+      "object_id": "1402",
+      "note_raw": "bk beton",
+      "note_clean": "bk beton"
     },
     {
-      "object_id": null,
-      "note_raw": "\\fArial|b1|i0|c0|p34|;project\\fArial|b0|i0|c0|p34|;:\\Pnieuwbouw bedrijventerrein\\PSchipholweg 979a\\P2143 CG Boesingheliede\\P",
-      "note_clean": "project: | nieuwbouw bedrijventerrein | Schipholweg 979a | 2143 CG Boesingheliede"
-    },
-    {
-      "object_id": null,
-      "note_raw": "\\LKLEUR- EN MATERIAALSTAAT",
-      "note_clean": "- EN MATERIAALSTAAT"
-    },
-    {
-      "object_id": null,
-      "note_raw": "\\fArial|b1|i0|c0|p34|;onderdeel",
-      "note_clean": "onderdeel"
-    },
-    {
-      "object_id": null,
-      "note_raw": "\\fArial|b1|i0|c0|p34|;afwerking",
-      "note_clean": "afwerking"
-    },
-    {
-      "object_id": null,
-      "note_raw": "\\fArial|b1|i0|c0|p34|;kleur",
-      "note_clean": "kleur"
-    },
-    {
-      "object_id": null,
-      "note_raw": "borstwering",
-      "note_clean": "borstwering"
-    },
-    {
-      "object_id": null,
-      "note_raw": "prefab beton",
-      "note_clean": "prefab beton"
-    },
-    {
-      "object_id": null,
-      "note_raw": "lichtgrijs",
-      "note_clean": "lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "gevelbekleding",
-      "note_clean": "gevelbekleding"
-    },
-    {
-      "object_id": null,
-      "note_raw": "sandwichpanelen",
-      "note_clean": "sandwichpanelen"
-    },
-    {
-      "object_id": null,
-      "note_raw": "donkergrijs",
-      "note_clean": "donkergrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "RAL 7014",
-      "note_clean": "RAL 7014"
-    },
-    {
-      "object_id": null,
-      "note_raw": "goot",
-      "note_clean": "goot"
-    },
-    {
-      "object_id": null,
-      "note_raw": "aluminium",
-      "note_clean": "aluminium"
-    },
-    {
-      "object_id": null,
-      "note_raw": "aluminiumkleurig",
-      "note_clean": "aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "dak",
-      "note_clean": "dak"
-    },
-    {
-      "object_id": null,
-      "note_raw": "sandwichpanelen",
-      "note_clean": "sandwichpanelen"
-    },
-    {
-      "object_id": null,
-      "note_raw": "lichtgrijs",
-      "note_clean": "lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "RAL 7035",
-      "note_clean": "RAL 7035"
-    },
-    {
-      "object_id": null,
-      "note_raw": "hemelwaterafvoer",
-      "note_clean": "hemelwaterafvoer"
-    },
-    {
-      "object_id": null,
-      "note_raw": "aluminium",
-      "note_clean": "aluminium"
-    },
-    {
-      "object_id": null,
-      "note_raw": "aluminiumkleurig",
-      "note_clean": "aluminiumkleurig"
-    },
-    {
-      "object_id": null,
-      "note_raw": "overheaddeur",
-      "note_clean": "overheaddeur"
-    },
-    {
-      "object_id": null,
-      "note_raw": "staal, geisoleerd",
-      "note_clean": "staal, geisoleerd"
-    },
-    {
-      "object_id": null,
-      "note_raw": "lichtgrijs",
-      "note_clean": "lichtgrijs"
-    },
-    {
-      "object_id": null,
-      "note_raw": "RAL 7035",
-      "note_clean": "RAL 7035"
-    },
-    {
-      "object_id": null,
-      "note_raw": "loopdeur/kozijnen",
-      "note_clean": "loopdeur/kozijnen"
-    },
-    {
-      "object_id": null,
-      "note_raw": "kunststof",
-      "note_clean": "kunststof"
-    },
-    {
-      "object_id": null,
-      "note_raw": "kozijn:",
-      "note_clean": "kozijn:"
-    },
-    {
-      "object_id": null,
-      "note_raw": "wit",
-      "note_clean": "wit"
-    },
-    {
-      "object_id": null,
-      "note_raw": "RAL 9001",
-      "note_clean": "RAL 9001"
-    },
-    {
-      "object_id": null,
-      "note_raw": "draaiende deel/dichte deur:",
-      "note_clean": "draaiende deel/dichte deur:"
-    },
-    {
-      "object_id": null,
-      "note_raw": "lichtgrijs RAL 7035",
-      "note_clean": "lichtgrijs RAL 7035"
-    },
-    {
-      "object_id": "34E4",
-      "note_raw": "+6350 P",
-      "note_clean": "+6350 P"
-    },
-    {
-      "object_id": "34E4",
+      "object_id": "1402",
       "note_raw": "bk kozijn",
       "note_clean": "bk kozijn"
     },
     {
-      "object_id": "34E8",
-      "note_raw": "+5000 P",
-      "note_clean": "+5000 P"
+      "object_id": "1402",
+      "note_raw": "bk deur",
+      "note_clean": "bk deur"
     },
     {
-      "object_id": "34E8",
-      "note_raw": "ok kozijn",
-      "note_clean": "ok kozijn"
+      "object_id": "1402",
+      "note_raw": "+800 P",
+      "note_clean": "+800 P"
     },
     {
-      "object_id": "34EC",
-      "note_raw": "+6956 P",
-      "note_clean": "+6956 P"
+      "object_id": "1E61",
+      "note_raw": "+0",
+      "note_clean": "+0"
     },
     {
-      "object_id": "34EC",
-      "note_raw": "bk goot",
-      "note_clean": "bk goot"
+      "object_id": "1E61",
+      "note_raw": "thermisch verzinkte stalen vluchttrap\\Poptrede 185 mm\\Paantrede: 185 mm\\Ptredebreedte: 800 mm",
+      "note_clean": "thermisch verzinkte stalen vluchttrap | optrede 185 mm | aantrede: 185 mm | tredebreedte: 800 mm"
     },
     {
-      "object_id": "262",
-      "note_raw": "hemelwaterafvoer diameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig\\P\\P",
-      "note_clean": "hemelwaterafvoer diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+      "object_id": "2B4D",
+      "note_raw": "+0",
+      "note_clean": "+0"
+    },
+    {
+      "object_id": "1037",
+      "note_raw": "doorsnede van aangrenzend gebouw\\Pdat niet tot Schipholweg 973 behoort",
+      "note_clean": "doorsnede van aangrenzend gebouw | dat niet tot Schipholweg 973 behoort"
+    },
+    {
+      "object_id": "9D8",
+      "note_raw": "+8970",
+      "note_clean": "+8970"
+    },
+    {
+      "object_id": "9D8",
+      "note_raw": "+3650",
+      "note_clean": "+3650"
+    },
+    {
+      "object_id": "9D8",
+      "note_raw": "+6900",
+      "note_clean": "+6900"
+    },
+    {
+      "object_id": "9D8",
+      "note_raw": "bk dakrand bestaand gebouwdeel",
+      "note_clean": "bk dakrand bestaand gebouwdeel"
+    },
+    {
+      "object_id": "9D8",
+      "note_raw": "KOLOM\\P- stalen HEA-140-profiel\\Pomkleed met trespa in zelfde groentint\\Pals trespabeplating op begane grondgevel\\P",
+      "note_clean": "KOLOM | - stalen HEA-140-profiel | omkleed met trespa in zelfde groentint | als trespabeplating op begane grondgevel"
+    },
+    {
+      "object_id": "3519",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;1",
+      "note_clean": "1"
     },
     {
       "object_id": "3514",
@@ -981,9 +421,54 @@
       "note_clean": "2"
     },
     {
-      "object_id": "3519",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;1",
-      "note_clean": "1"
+      "object_id": "981",
+      "note_raw": "272 / 1000",
+      "note_clean": "272 / 1000"
+    },
+    {
+      "object_id": "A5F",
+      "note_raw": "272 / 1000",
+      "note_clean": "272 / 1000"
+    },
+    {
+      "object_id": "14FC",
+      "note_raw": "+8970",
+      "note_clean": "+8970"
+    },
+    {
+      "object_id": "14FC",
+      "note_raw": "+6956 P",
+      "note_clean": "+6956 P"
+    },
+    {
+      "object_id": "14FC",
+      "note_raw": "bk goot",
+      "note_clean": "bk goot"
+    },
+    {
+      "object_id": "14FC",
+      "note_raw": "bk kozijn",
+      "note_clean": "bk kozijn"
+    },
+    {
+      "object_id": "14FC",
+      "note_raw": "ok kozijn",
+      "note_clean": "ok kozijn"
+    },
+    {
+      "object_id": "14FC",
+      "note_raw": "bk overheaddeur",
+      "note_clean": "bk overheaddeur"
+    },
+    {
+      "object_id": "14FC",
+      "note_raw": "bk verdiepingsvloer",
+      "note_clean": "bk verdiepingsvloer"
+    },
+    {
+      "object_id": "14FC",
+      "note_raw": "bk nok",
+      "note_clean": "bk nok"
     },
     {
       "object_id": "355F",
@@ -1007,6 +492,11 @@
     },
     {
       "object_id": "3570",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
+      "object_id": "3570",
       "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
       "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
     },
@@ -1016,9 +506,24 @@
       "note_clean": "FF"
     },
     {
+      "object_id": "3575",
+      "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRAL 7014\\PRc- waarde 4,7 m2K/W\\P",
+      "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | RAL 7014 | Rc- waarde 4,7 m2K/W"
+    },
+    {
+      "object_id": "3575",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
       "object_id": "357A",
       "note_raw": "GG",
       "note_clean": "GG"
+    },
+    {
+      "object_id": "357A",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
     },
     {
       "object_id": "357A",
@@ -1031,9 +536,19 @@
       "note_clean": "HH"
     },
     {
+      "object_id": "357F",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
       "object_id": "3584",
       "note_raw": "II",
       "note_clean": "II"
+    },
+    {
+      "object_id": "3584",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
     },
     {
       "object_id": "3584",
@@ -1046,9 +561,19 @@
       "note_clean": "JJ"
     },
     {
+      "object_id": "3589",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
       "object_id": "358E",
       "note_raw": "KK",
       "note_clean": "KK"
+    },
+    {
+      "object_id": "358E",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
     },
     {
       "object_id": "358E",
@@ -1061,9 +586,24 @@
       "note_clean": "LL"
     },
     {
+      "object_id": "3593",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
+      "object_id": "3593",
+      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\P",
+      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm"
+    },
+    {
       "object_id": "3598",
       "note_raw": "MM",
       "note_clean": "MM"
+    },
+    {
+      "object_id": "3598",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
     },
     {
       "object_id": "36FB",
@@ -1071,104 +611,94 @@
       "note_clean": "+8970 P"
     },
     {
-      "object_id": "16CC",
-      "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRAL 7014\\PRc- waarde 4,7 m2K/W\\P",
-      "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | RAL 7014 | Rc- waarde 4,7 m2K/W"
+      "object_id": "36FB",
+      "note_raw": "NIEUWE BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL\\P7014\\PRc-waarde 4,7 m2K/W\\P",
+      "note_clean": "NIEUWE BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL | 7014 | Rc-waarde 4,7 m2K/W"
     },
     {
-      "object_id": "16CC",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
+      "object_id": "36FB",
+      "note_raw": "NIEUW KOZIJN\\Pkunststof kozijn\\Pafm. 1960 x 1350 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1",
+      "note_clean": "NIEUW KOZIJN | kunststof kozijn | afm. 1960 x 1350 mm | kleur wit RAL9001 | U-waarde glas 1,1"
     },
     {
-      "object_id": "14AE",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": "1356",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": "1289",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": "122F",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": "1351",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1"
-    },
-    {
-      "object_id": "108F",
-      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\P",
-      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm"
-    },
-    {
-      "object_id": "16CA",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "16CB",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "16CD",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "1648",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "16CE",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "1649",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "16CF",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "1754",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "1401",
+      "object_id": "36FB",
       "note_raw": "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
       "note_clean": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs"
-    },
-    {
-      "object_id": "3869",
-      "note_raw": "+4000 P",
-      "note_clean": "+4000 P"
-    },
-    {
-      "object_id": "1890",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | U-waarde glas 1,1"
     },
     {
       "object_id": "3898",
       "note_raw": "+8970 P",
       "note_clean": "+8970 P"
+    },
+    {
+      "object_id": "3AC9",
+      "note_raw": "+8970 P",
+      "note_clean": "+8970 P"
+    },
+    {
+      "object_id": "3AC9",
+      "note_raw": "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
+      "note_clean": "kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1"
+    },
+    {
+      "object_id": "E9A",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "14E7",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "14E9",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "14E3",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "14E5",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "E9C",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "14DD",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "14DF",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "14E1",
+      "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
+      "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "401F",
+      "note_raw": "+800 P",
+      "note_clean": "+800 P"
+    },
+    {
+      "object_id": "401F",
+      "note_raw": "bk beton",
+      "note_clean": "bk beton"
+    },
+    {
+      "object_id": "3869",
+      "note_raw": "+4000 P",
+      "note_clean": "+4000 P"
     },
     {
       "object_id": "389C",
@@ -1181,9 +711,24 @@
       "note_clean": "bk goot nieuw gebouwdeel"
     },
     {
-      "object_id": "389C",
-      "note_raw": "+6350 P bk kozijn",
-      "note_clean": "+6350 P bk kozijn"
+      "object_id": "1CE6",
+      "note_raw": "2",
+      "note_clean": "2"
+    },
+    {
+      "object_id": "1CE6",
+      "note_raw": "ligusterhaag\\Phoog 1 m",
+      "note_clean": "ligusterhaag | hoog 1 m"
+    },
+    {
+      "object_id": "1C74",
+      "note_raw": "1",
+      "note_clean": "1"
+    },
+    {
+      "object_id": "1C74",
+      "note_raw": "272 / 1000",
+      "note_clean": "272 / 1000"
     },
     {
       "object_id": "1BB2",
@@ -1191,14 +736,29 @@
       "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W | brandwerend uitgevoerd (30 minuten)"
     },
     {
-      "object_id": "1BB2",
-      "note_raw": "ligusterhaag\\Phoog 1 m",
-      "note_clean": "ligusterhaag | hoog 1 m"
+      "object_id": "1C42",
+      "note_raw": "27%",
+      "note_clean": "27%"
     },
     {
-      "object_id": "1CCE",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 4850 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 4850 mm | kleur wit RAL9001 | U-waarde glas 1,1"
+      "object_id": "1CF4",
+      "note_raw": "272 / 1000",
+      "note_clean": "272 / 1000"
+    },
+    {
+      "object_id": "392F",
+      "note_raw": "thermisch verzinkte stalen vluchttrap\\Poptrede 185 mm\\Paantrede: 185 mm\\Ptredebreedte: 800 mm",
+      "note_clean": "thermisch verzinkte stalen vluchttrap | optrede 185 mm | aantrede: 185 mm | tredebreedte: 800 mm"
+    },
+    {
+      "object_id": "392F",
+      "note_raw": "+6350 P bk kozijn",
+      "note_clean": "+6350 P bk kozijn"
+    },
+    {
+      "object_id": "3FE9",
+      "note_raw": "+6350 P",
+      "note_clean": "+6350 P"
     },
     {
       "object_id": "3933",
@@ -1206,64 +766,29 @@
       "note_clean": "+5000 P bk kozijn"
     },
     {
-      "object_id": "3942",
-      "note_raw": "AA",
-      "note_clean": "AA"
+      "object_id": "1E32",
+      "note_raw": "+8970",
+      "note_clean": "+8970"
     },
     {
-      "object_id": "3947",
-      "note_raw": "BB",
-      "note_clean": "BB"
+      "object_id": "1E32",
+      "note_raw": "+3650",
+      "note_clean": "+3650"
     },
     {
-      "object_id": "394C",
-      "note_raw": "CC",
-      "note_clean": "CC"
+      "object_id": "1E32",
+      "note_raw": "+6900",
+      "note_clean": "+6900"
     },
     {
-      "object_id": "3951",
-      "note_raw": "EE",
-      "note_clean": "EE"
+      "object_id": "1E32",
+      "note_raw": "glas bestaand kozijn\\PU-waarde glas: 1,3 W/m2K\\P",
+      "note_clean": "glas bestaand kozijn | U-waarde glas: 1,3 W/m2K"
     },
     {
-      "object_id": "3956",
-      "note_raw": "FF",
-      "note_clean": "FF"
-    },
-    {
-      "object_id": "395B",
-      "note_raw": "GG",
-      "note_clean": "GG"
-    },
-    {
-      "object_id": "3960",
-      "note_raw": "HH",
-      "note_clean": "HH"
-    },
-    {
-      "object_id": "3965",
-      "note_raw": "II",
-      "note_clean": "II"
-    },
-    {
-      "object_id": "396A",
-      "note_raw": "JJ",
-      "note_clean": "JJ"
-    },
-    {
-      "object_id": "396A",
-      "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)",
-      "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W | brandwerend uitgevoerd (30 minuten)"
-    },
-    {
-      "object_id": "396F",
-      "note_raw": "KK",
-      "note_clean": "KK"
-    },
-    {
-      "object_id": "3974",
-      "note_raw": "LL",
-      "note_clean": "LL"
+      "object_id": "1E32",
+      "note_raw": "NIEUWE BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL\\P7014\\PRc-waarde 4,7 m2K/W\\P",
+      "note_clean": "NIEUWE BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL | 7014 | Rc-waarde 4,7 m2K/W"
     },
     {
       "object_id": "3979",
@@ -1271,29 +796,84 @@
       "note_clean": "MM"
     },
     {
-      "object_id": "1E9D",
+      "object_id": "3974",
+      "note_raw": "LL",
+      "note_clean": "LL"
+    },
+    {
+      "object_id": "396F",
+      "note_raw": "KK",
+      "note_clean": "KK"
+    },
+    {
+      "object_id": "396F",
+      "note_raw": "hemelwaterafvoer diameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig\\P\\P",
+      "note_clean": "hemelwaterafvoer diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+    },
+    {
+      "object_id": "396A",
+      "note_raw": "JJ",
+      "note_clean": "JJ"
+    },
+    {
+      "object_id": "3965",
+      "note_raw": "II",
+      "note_clean": "II"
+    },
+    {
+      "object_id": "3960",
+      "note_raw": "HH",
+      "note_clean": "HH"
+    },
+    {
+      "object_id": "395B",
+      "note_raw": "GG",
+      "note_clean": "GG"
+    },
+    {
+      "object_id": "3956",
+      "note_raw": "FF",
+      "note_clean": "FF"
+    },
+    {
+      "object_id": "3951",
+      "note_raw": "EE",
+      "note_clean": "EE"
+    },
+    {
+      "object_id": "394C",
+      "note_raw": "CC",
+      "note_clean": "CC"
+    },
+    {
+      "object_id": "394C",
+      "note_raw": "| nieuwe gevelbekleding buitenspouwblad\\P| en bestaande kozijnen",
+      "note_clean": "| nieuwe gevelbekleding buitenspouwblad | | en bestaande kozijnen"
+    },
+    {
+      "object_id": "3947",
+      "note_raw": "BB",
+      "note_clean": "BB"
+    },
+    {
+      "object_id": "3942",
+      "note_raw": "AA",
+      "note_clean": "AA"
+    },
+    {
+      "object_id": "3942",
+      "note_raw": "<-- bestaand gebouwdeel -->",
+      "note_clean": "<-- bestaand gebouwdeel -->"
+    },
+    {
+      "object_id": "209D",
       "note_raw": "deur\\Pbestaand",
       "note_clean": "deur | bestaand"
     },
     {
-      "object_id": "3AC9",
-      "note_raw": "+8970 P",
-      "note_clean": "+8970 P"
-    },
-    {
-      "object_id": "3ACD",
-      "note_raw": "+6956 P",
-      "note_clean": "+6956 P"
-    },
-    {
-      "object_id": "3ACD",
-      "note_raw": "+6350 P",
-      "note_clean": "+6350 P"
-    },
-    {
-      "object_id": "3AD5",
-      "note_raw": "+5000 P",
-      "note_clean": "+5000 P"
+      "object_id": "1E91",
+      "note_raw": "glas glas",
+      "note_clean": "glas glas"
     },
     {
       "object_id": "3AD9",
@@ -1301,89 +881,44 @@
       "note_clean": "+0 P"
     },
     {
-      "object_id": "1EC6",
-      "note_raw": "hemelwaterafvoer diameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig\\P\\P",
-      "note_clean": "hemelwaterafvoer diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
+      "object_id": "3129",
+      "note_raw": "+0 P",
+      "note_clean": "+0 P"
     },
     {
-      "object_id": "3B0C",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;A",
-      "note_clean": "A"
+      "object_id": "3FA3",
+      "note_raw": "+0 P",
+      "note_clean": "+0 P"
     },
     {
-      "object_id": "3B11",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;B",
-      "note_clean": "B"
+      "object_id": "1EC5",
+      "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)",
+      "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W | brandwerend uitgevoerd (30 minuten)"
     },
     {
-      "object_id": "3B11",
-      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
-      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
+      "object_id": "235C",
+      "note_raw": "+4000",
+      "note_clean": "+4000"
     },
     {
-      "object_id": "3B16",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;C",
-      "note_clean": "C"
+      "object_id": "3B48",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;N",
+      "note_clean": "N"
     },
     {
-      "object_id": "3B1B",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;D",
-      "note_clean": "D"
+      "object_id": "3B48",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
     },
     {
-      "object_id": "3B1B",
-      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
-      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
+      "object_id": "3B4D",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;M",
+      "note_clean": "M"
     },
     {
-      "object_id": "3B20",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;E",
-      "note_clean": "E"
-    },
-    {
-      "object_id": "3B25",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;F",
-      "note_clean": "F"
-    },
-    {
-      "object_id": "3B25",
-      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
-      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "3B2A",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;G",
-      "note_clean": "G"
-    },
-    {
-      "object_id": "3B2F",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;H",
-      "note_clean": "H"
-    },
-    {
-      "object_id": "3B2F",
-      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
-      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "3B34",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;I",
-      "note_clean": "I"
-    },
-    {
-      "object_id": "3B39",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;J",
-      "note_clean": "J"
-    },
-    {
-      "object_id": "3B39",
-      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
-      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
-    },
-    {
-      "object_id": "3B3E",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;K",
-      "note_clean": "K"
+      "object_id": "3B4D",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
     },
     {
       "object_id": "3B43",
@@ -1396,19 +931,199 @@
       "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
     },
     {
-      "object_id": "3B48",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;N",
-      "note_clean": "N"
+      "object_id": "3B43",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
     },
     {
-      "object_id": "3B4D",
-      "note_raw": "\\fArial|b1|i0|c0|p34|;M",
-      "note_clean": "M"
+      "object_id": "3B43",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
     },
     {
-      "object_id": "264A",
-      "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\P\\P",
-      "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W"
+      "object_id": "3B3E",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;K",
+      "note_clean": "K"
+    },
+    {
+      "object_id": "3B3E",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B39",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;J",
+      "note_clean": "J"
+    },
+    {
+      "object_id": "3B39",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
+    },
+    {
+      "object_id": "3B39",
+      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
+      "object_id": "3B39",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B34",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;I",
+      "note_clean": "I"
+    },
+    {
+      "object_id": "3B34",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B2F",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;H",
+      "note_clean": "H"
+    },
+    {
+      "object_id": "3B2F",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
+    },
+    {
+      "object_id": "3B2F",
+      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
+      "object_id": "3B2F",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B2A",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;G",
+      "note_clean": "G"
+    },
+    {
+      "object_id": "3B2A",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B25",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;F",
+      "note_clean": "F"
+    },
+    {
+      "object_id": "3B25",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
+    },
+    {
+      "object_id": "3B25",
+      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
+      "object_id": "3B25",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B20",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;E",
+      "note_clean": "E"
+    },
+    {
+      "object_id": "3B20",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B1B",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;D",
+      "note_clean": "D"
+    },
+    {
+      "object_id": "3B1B",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
+    },
+    {
+      "object_id": "3B1B",
+      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
+      "object_id": "3B1B",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B16",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;C",
+      "note_clean": "C"
+    },
+    {
+      "object_id": "3B16",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B11",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;B",
+      "note_clean": "B"
+    },
+    {
+      "object_id": "3B11",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
+    },
+    {
+      "object_id": "3B11",
+      "note_raw": "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "note_clean": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K"
+    },
+    {
+      "object_id": "3B11",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "3B0C",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;A",
+      "note_clean": "A"
+    },
+    {
+      "object_id": "3B0C",
+      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
+    },
+    {
+      "object_id": "3B0C",
+      "note_raw": "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
+      "note_clean": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs"
+    },
+    {
+      "object_id": "307C",
+      "note_raw": "+6900",
+      "note_clean": "+6900"
+    },
+    {
+      "object_id": "307C",
+      "note_raw": "+8600",
+      "note_clean": "+8600"
+    },
+    {
+      "object_id": "307C",
+      "note_raw": "27%",
+      "note_clean": "27%"
+    },
+    {
+      "object_id": "2649",
+      "note_raw": "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\Pgoot aluminium, aluminiumkleurig\\P\\P\\P\\P",
+      "note_clean": "DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | goot aluminium, aluminiumkleurig"
     },
     {
       "object_id": "2C60",
@@ -1421,11 +1136,6 @@
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
     },
     {
-      "object_id": "29C7",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
-    },
-    {
       "object_id": "2A8B",
       "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
@@ -1436,12 +1146,7 @@
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
     },
     {
-      "object_id": "2946",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
-    },
-    {
-      "object_id": "2A72",
+      "object_id": "1E5C",
       "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
     },
@@ -1449,11 +1154,6 @@
       "object_id": "28C6",
       "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": "2945",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
     },
     {
       "object_id": "2A31",
@@ -1466,11 +1166,6 @@
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
     },
     {
-      "object_id": "2700",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
-    },
-    {
       "object_id": "2A18",
       "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
@@ -1479,11 +1174,6 @@
       "object_id": "1E7A",
       "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
-    },
-    {
-      "object_id": "26FE",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
     },
     {
       "object_id": "26EE",
@@ -1496,109 +1186,69 @@
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
     },
     {
-      "object_id": "2AD5",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
-    },
-    {
       "object_id": "2AA4",
       "note_raw": "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
       "note_clean": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig"
     },
     {
-      "object_id": "26D3",
-      "note_raw": "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
-      "note_clean": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1"
+      "object_id": "30AC",
+      "note_raw": "27%",
+      "note_clean": "27%"
     },
     {
-      "object_id": "281C",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1"
+      "object_id": "30AC",
+      "note_raw": "+5000 P ok kozijn",
+      "note_clean": "+5000 P ok kozijn"
     },
     {
-      "object_id": "2807",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1"
+      "object_id": "3EEC",
+      "note_raw": "3",
+      "note_clean": "3"
     },
     {
-      "object_id": "27F2",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1"
+      "object_id": "27EF",
+      "note_raw": "3",
+      "note_clean": "3"
     },
     {
-      "object_id": "2732",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1"
+      "object_id": "2B44",
+      "note_raw": "4",
+      "note_clean": "4"
     },
     {
-      "object_id": "2AD9",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1"
+      "object_id": "31B4",
+      "note_raw": "4",
+      "note_clean": "4"
     },
     {
-      "object_id": "2AA9",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1"
+      "object_id": "2819",
+      "note_raw": "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P\\P",
+      "note_clean": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W | brandwerend uitgevoerd (30 minuten)"
     },
     {
-      "object_id": "2ACB",
-      "note_raw": "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "note_clean": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1"
-    },
-    {
-      "object_id": "3EE8",
-      "note_raw": "+8600 P",
-      "note_clean": "+8600 P"
-    },
-    {
-      "object_id": "3129",
-      "note_raw": "+0 P",
-      "note_clean": "+0 P"
-    },
-    {
-      "object_id": "3EF0",
-      "note_raw": "+6956 P",
-      "note_clean": "+6956 P"
-    },
-    {
-      "object_id": "3EF0",
-      "note_raw": "+6350 P bk kozijn",
-      "note_clean": "+6350 P bk kozijn"
-    },
-    {
-      "object_id": "311F",
+      "object_id": "2804",
       "note_raw": "ligusterhaag\\Phoog 1 m",
       "note_clean": "ligusterhaag | hoog 1 m"
     },
     {
-      "object_id": "314C",
+      "object_id": "2822",
       "note_raw": "ligusterhaag\\Phoog 1 m",
       "note_clean": "ligusterhaag | hoog 1 m"
     },
     {
-      "object_id": "3FA3",
-      "note_raw": "+0 P",
-      "note_clean": "+0 P"
+      "object_id": "32BC",
+      "note_raw": "27%",
+      "note_clean": "27%"
     },
     {
-      "object_id": "3FC5",
-      "note_raw": "+8600 P",
-      "note_clean": "+8600 P"
-    },
-    {
-      "object_id": "3FC5",
-      "note_raw": "bk nok",
-      "note_clean": "bk nok"
+      "object_id": "3211",
+      "note_raw": "27%",
+      "note_clean": "27%"
     },
     {
       "object_id": "3FC9",
       "note_raw": "+6956 P",
       "note_clean": "+6956 P"
-    },
-    {
-      "object_id": "3FC9",
-      "note_raw": "+6350 P",
-      "note_clean": "+6350 P"
     },
     {
       "object_id": "3FC9",
@@ -1631,14 +1281,149 @@
       "note_clean": "bk kozijn"
     },
     {
-      "object_id": "401F",
-      "note_raw": "bk beton",
-      "note_clean": "bk beton"
+      "object_id": "27F8",
+      "note_raw": "GEVELOPBOUW\\P- aluminium zetwerk\\Pkleur donkergrijs RAL 7014\\P- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P- isolatie 100 mm\\PRc- waarde 4,7 m2K/W\\P",
+      "note_clean": "GEVELOPBOUW | - aluminium zetwerk | kleur donkergrijs RAL 7014 | - prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs | - isolatie 100 mm | Rc- waarde 4,7 m2K/W"
     },
     {
-      "object_id": "401F",
-      "note_raw": "+800 P",
-      "note_clean": "+800 P"
+      "object_id": "2ADF",
+      "note_raw": "AJVR Architect Jeroen Van Rijsbergen\\PDubbeleworststeeg 19\\P1016 AT Amsterdam\\Pjeroenvanrijsbergen@gmail.com\\P\\PKvK nummer: 57426821\\PBTW nummer: NL1812.29.997B01",
+      "note_clean": "AJVR Architect Jeroen Van Rijsbergen | Dubbeleworststeeg 19 | 1016 AT Amsterdam | jeroenvanrijsbergen@gmail.com | KvK nummer: 57426821 | BTW nummer: NL1812.29.997B01"
+    },
+    {
+      "object_id": "2ADF",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;project\\fArial|b0|i0|c0|p34|;:\\Pnieuwbouw bedrijventerrein\\PSchipholweg 979a\\P2143 CG Boesingheliede\\P",
+      "note_clean": "project: | nieuwbouw bedrijventerrein | Schipholweg 979a | 2143 CG Boesingheliede"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "\\LKLEUR- EN MATERIAALSTAAT",
+      "note_clean": "- EN MATERIAALSTAAT"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;onderdeel",
+      "note_clean": "onderdeel"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;afwerking",
+      "note_clean": "afwerking"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "borstwering",
+      "note_clean": "borstwering"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "prefab beton",
+      "note_clean": "prefab beton"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "gevelbekleding",
+      "note_clean": "gevelbekleding"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "sandwichpanelen",
+      "note_clean": "sandwichpanelen"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "goot",
+      "note_clean": "goot"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "aluminium",
+      "note_clean": "aluminium"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "dak",
+      "note_clean": "dak"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "hemelwaterafvoer",
+      "note_clean": "hemelwaterafvoer"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "overheaddeur",
+      "note_clean": "overheaddeur"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "staal, geisoleerd",
+      "note_clean": "staal, geisoleerd"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "loopdeur/kozijnen",
+      "note_clean": "loopdeur/kozijnen"
+    },
+    {
+      "object_id": "2A1A",
+      "note_raw": "kunststof",
+      "note_clean": "kunststof"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "\\fArial|b1|i0|c0|p34|;kleur",
+      "note_clean": "kleur"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "lichtgrijs",
+      "note_clean": "lichtgrijs"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "donkergrijs",
+      "note_clean": "donkergrijs"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "RAL 7014",
+      "note_clean": "RAL 7014"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "aluminiumkleurig",
+      "note_clean": "aluminiumkleurig"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "RAL 7035",
+      "note_clean": "RAL 7035"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "kozijn:",
+      "note_clean": "kozijn:"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "wit",
+      "note_clean": "wit"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "RAL 9001",
+      "note_clean": "RAL 9001"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "draaiende deel/dichte deur:",
+      "note_clean": "draaiende deel/dichte deur:"
+    },
+    {
+      "object_id": "2AC4",
+      "note_raw": "lichtgrijs RAL 7035",
+      "note_clean": "lichtgrijs RAL 7035"
     }
   ],
   "bom": [
@@ -1647,7 +1432,7 @@
       "quantity": 1
     },
     {
-      "description": "zuidwestgevel",
+      "description": "noordoostgevel",
       "quantity": 2
     },
     {
@@ -1655,7 +1440,7 @@
       "quantity": 2
     },
     {
-      "description": "noordoostgevel",
+      "description": "zuidwestgevel",
       "quantity": 2
     },
     {
@@ -1723,11 +1508,11 @@
       "quantity": 2
     },
     {
-      "description": "N",
+      "description": "M",
       "quantity": 2
     },
     {
-      "description": "M",
+      "description": "N",
       "quantity": 2
     },
     {
@@ -1744,15 +1529,127 @@
     },
     {
       "description": "DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - goot aluminium, aluminiumkleurig",
+      "quantity": 2
+    },
+    {
+      "description": "+6350 P",
+      "quantity": 4
+    },
+    {
+      "description": "bk kozijn",
+      "quantity": 5
+    },
+    {
+      "description": "+5000 P",
       "quantity": 3
     },
     {
+      "description": "+3600 P",
+      "quantity": 1
+    },
+    {
+      "description": "+3030 P",
+      "quantity": 1
+    },
+    {
+      "description": "+2340 P",
+      "quantity": 1
+    },
+    {
+      "description": "+6350 P bk kozijn",
+      "quantity": 2
+    },
+    {
+      "description": "ok kozijn",
+      "quantity": 3
+    },
+    {
+      "description": "+6956 P",
+      "quantity": 6
+    },
+    {
+      "description": "bk goot",
+      "quantity": 3
+    },
+    {
+      "description": "hemelwaterafvoer diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig",
+      "quantity": 2
+    },
+    {
       "description": "kunststof kozijn | afm. 1350 x 3000 mm | U-waarde glas 1,1",
-      "quantity": 4
+      "quantity": 2
+    },
+    {
+      "description": "NIEUW BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL 7014 | Rc- waarde 4,7 m2K/W",
+      "quantity": 1
+    },
+    {
+      "description": "NIEUW DAKOVERSTEK | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - stalen dakplaten 106 mm kleur lichtgrijs RAL 7035 in het zicht",
+      "quantity": 1
+    },
+    {
+      "description": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs",
+      "quantity": 2
+    },
+    {
+      "description": "kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1",
+      "quantity": 1
+    },
+    {
+      "description": "KOLOM | - stalen HEA-140-profiel | omkleed met trespa in zelfde groentint | als trespabeplating op begane grondgevel",
+      "quantity": 2
+    },
+    {
+      "description": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs",
+      "quantity": 15
+    },
+    {
+      "description": "27%",
+      "quantity": 6
+    },
+    {
+      "description": "kunststof kozijn | afm. 1350 x 4850 mm | kleur wit RAL9001 | U-waarde glas 1,1",
+      "quantity": 1
+    },
+    {
+      "description": "kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1",
+      "quantity": 2
+    },
+    {
+      "description": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W",
+      "quantity": 1
+    },
+    {
+      "description": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1",
+      "quantity": 1
+    },
+    {
+      "description": "DAKOPBOUW | - sandwich dakplaten, kleur grijs Rc- waarde 6,3 m2K/W | goot aluminium, kleur grijs",
+      "quantity": 1
+    },
+    {
+      "description": "gevelbekleding bovenzijde: | sandwichpaneel 100 mm | kleur: donkergrijs RAL 7014 | RC-waarde: 4,7 m2K/W",
+      "quantity": 1
     },
     {
       "description": "+0",
       "quantity": 4
+    },
+    {
+      "description": "bk beton",
+      "quantity": 2
+    },
+    {
+      "description": "bk deur",
+      "quantity": 1
+    },
+    {
+      "description": "+800 P",
+      "quantity": 2
+    },
+    {
+      "description": "thermisch verzinkte stalen vluchttrap | optrede 185 mm | aantrede: 185 mm | tredebreedte: 800 mm",
+      "quantity": 2
     },
     {
       "description": "doorsnede van aangrenzend gebouw | dat niet tot Schipholweg 973 behoort",
@@ -1775,72 +1672,88 @@
       "quantity": 1
     },
     {
-      "description": "NIEUW BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL 7014 | Rc- waarde 4,7 m2K/W",
-      "quantity": 1
+      "description": "1",
+      "quantity": 2
+    },
+    {
+      "description": "2",
+      "quantity": 2
     },
     {
       "description": "272 / 1000",
       "quantity": 4
     },
     {
-      "description": "KOLOM | - stalen HEA-140-profiel | omkleed met trespa in zelfde groentint | als trespabeplating op begane grondgevel",
-      "quantity": 2
-    },
-    {
-      "description": "NIEUW DAKOVERSTEK | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - stalen dakplaten 106 mm kleur lichtgrijs RAL 7035 in het zicht",
-      "quantity": 1
-    },
-    {
-      "description": "+6956 P",
-      "quantity": 6
-    },
-    {
-      "description": "+6350 P",
-      "quantity": 4
-    },
-    {
-      "description": "+5000 P",
-      "quantity": 3
-    },
-    {
-      "description": "+3600 P",
-      "quantity": 1
-    },
-    {
-      "description": "+3030 P",
-      "quantity": 1
-    },
-    {
-      "description": "bk goot",
-      "quantity": 3
-    },
-    {
-      "description": "bk kozijn",
-      "quantity": 5
-    },
-    {
-      "description": "ok kozijn",
-      "quantity": 3
-    },
-    {
       "description": "bk overheaddeur",
       "quantity": 1
     },
     {
-      "description": "bk beton",
+      "description": "AA",
       "quantity": 2
     },
     {
-      "description": "+2340 P",
+      "description": "BB",
+      "quantity": 2
+    },
+    {
+      "description": "CC",
+      "quantity": 2
+    },
+    {
+      "description": "EE",
+      "quantity": 2
+    },
+    {
+      "description": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K",
+      "quantity": 9
+    },
+    {
+      "description": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K",
+      "quantity": 10
+    },
+    {
+      "description": "FF",
+      "quantity": 2
+    },
+    {
+      "description": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | RAL 7014 | Rc- waarde 4,7 m2K/W",
       "quantity": 1
     },
     {
-      "description": "bk deur",
+      "description": "GG",
+      "quantity": 2
+    },
+    {
+      "description": "HH",
+      "quantity": 2
+    },
+    {
+      "description": "II",
+      "quantity": 2
+    },
+    {
+      "description": "JJ",
+      "quantity": 2
+    },
+    {
+      "description": "KK",
+      "quantity": 2
+    },
+    {
+      "description": "LL",
+      "quantity": 2
+    },
+    {
+      "description": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm",
       "quantity": 1
     },
     {
-      "description": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig",
-      "quantity": 22
+      "description": "MM",
+      "quantity": 2
+    },
+    {
+      "description": "+8970 P",
+      "quantity": 3
     },
     {
       "description": "NIEUWE BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL | 7014 | Rc-waarde 4,7 m2K/W",
@@ -1851,43 +1764,19 @@
       "quantity": 1
     },
     {
-      "description": "LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs",
-      "quantity": 14
+      "description": "hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig",
+      "quantity": 22
     },
     {
-      "description": "- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs",
-      "quantity": 24
-    },
-    {
-      "description": "+800 P",
-      "quantity": 2
-    },
-    {
-      "description": "2",
-      "quantity": 2
-    },
-    {
-      "description": "1",
-      "quantity": 2
-    },
-    {
-      "description": "27%",
-      "quantity": 6
-    },
-    {
-      "description": "thermisch verzinkte stalen vluchttrap | optrede 185 mm | aantrede: 185 mm | tredebreedte: 800 mm",
-      "quantity": 2
-    },
-    {
-      "description": "| nieuwe gevelbekleding buitenspouwblad | | en bestaande kozijnen",
+      "description": "bk goot nieuw gebouwdeel",
       "quantity": 1
     },
     {
-      "description": "glas glas",
-      "quantity": 1
+      "description": "ligusterhaag | hoog 1 m",
+      "quantity": 3
     },
     {
-      "description": "<-- bestaand gebouwdeel -->",
+      "description": "+5000 P bk kozijn",
       "quantity": 1
     },
     {
@@ -1895,7 +1784,23 @@
       "quantity": 1
     },
     {
-      "description": "kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1",
+      "description": "| nieuwe gevelbekleding buitenspouwblad | | en bestaande kozijnen",
+      "quantity": 1
+    },
+    {
+      "description": "<-- bestaand gebouwdeel -->",
+      "quantity": 1
+    },
+    {
+      "description": "deur | bestaand",
+      "quantity": 1
+    },
+    {
+      "description": "glas glas",
+      "quantity": 1
+    },
+    {
+      "description": "+0 P",
       "quantity": 3
     },
     {
@@ -1903,11 +1808,19 @@
       "quantity": 1
     },
     {
+      "description": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1",
+      "quantity": 7
+    },
+    {
       "description": "+8600",
       "quantity": 1
     },
     {
       "description": "DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | goot aluminium, aluminiumkleurig",
+      "quantity": 1
+    },
+    {
+      "description": "+5000 P ok kozijn",
       "quantity": 1
     },
     {
@@ -1919,19 +1832,11 @@
       "quantity": 2
     },
     {
-      "description": "kunststof kozijn | afm. 1350 x 4850 mm | kleur wit RAL9001 | U-waarde glas 1,1",
-      "quantity": 3
-    },
-    {
-      "description": "+5000 P ok kozijn",
+      "description": "+4950 P",
       "quantity": 1
     },
     {
-      "description": "DAKOPBOUW | - sandwich dakplaten, kleur grijs Rc- waarde 6,3 m2K/W | goot aluminium, kleur grijs",
-      "quantity": 1
-    },
-    {
-      "description": "gevelbekleding bovenzijde: | sandwichpaneel 100 mm | kleur: donkergrijs RAL 7014 | RC-waarde: 4,7 m2K/W",
+      "description": "+3650 P",
       "quantity": 1
     },
     {
@@ -1959,10 +1864,6 @@
       "quantity": 1
     },
     {
-      "description": "kleur",
-      "quantity": 1
-    },
-    {
       "description": "borstwering",
       "quantity": 1
     },
@@ -1971,23 +1872,11 @@
       "quantity": 1
     },
     {
-      "description": "lichtgrijs",
-      "quantity": 3
-    },
-    {
       "description": "gevelbekleding",
       "quantity": 1
     },
     {
       "description": "sandwichpanelen",
-      "quantity": 2
-    },
-    {
-      "description": "donkergrijs",
-      "quantity": 1
-    },
-    {
-      "description": "RAL 7014",
       "quantity": 1
     },
     {
@@ -1996,19 +1885,11 @@
     },
     {
       "description": "aluminium",
-      "quantity": 2
-    },
-    {
-      "description": "aluminiumkleurig",
-      "quantity": 2
+      "quantity": 1
     },
     {
       "description": "dak",
       "quantity": 1
-    },
-    {
-      "description": "RAL 7035",
-      "quantity": 2
     },
     {
       "description": "hemelwaterafvoer",
@@ -2031,6 +1912,30 @@
       "quantity": 1
     },
     {
+      "description": "kleur",
+      "quantity": 1
+    },
+    {
+      "description": "lichtgrijs",
+      "quantity": 1
+    },
+    {
+      "description": "donkergrijs",
+      "quantity": 1
+    },
+    {
+      "description": "RAL 7014",
+      "quantity": 1
+    },
+    {
+      "description": "aluminiumkleurig",
+      "quantity": 1
+    },
+    {
+      "description": "RAL 7035",
+      "quantity": 1
+    },
+    {
       "description": "kozijn:",
       "quantity": 1
     },
@@ -2048,126 +1953,6 @@
     },
     {
       "description": "lichtgrijs RAL 7035",
-      "quantity": 1
-    },
-    {
-      "description": "hemelwaterafvoer diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig",
-      "quantity": 2
-    },
-    {
-      "description": "AA",
-      "quantity": 2
-    },
-    {
-      "description": "BB",
-      "quantity": 2
-    },
-    {
-      "description": "CC",
-      "quantity": 2
-    },
-    {
-      "description": "EE",
-      "quantity": 2
-    },
-    {
-      "description": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K",
-      "quantity": 10
-    },
-    {
-      "description": "FF",
-      "quantity": 2
-    },
-    {
-      "description": "GG",
-      "quantity": 2
-    },
-    {
-      "description": "HH",
-      "quantity": 2
-    },
-    {
-      "description": "II",
-      "quantity": 2
-    },
-    {
-      "description": "JJ",
-      "quantity": 2
-    },
-    {
-      "description": "KK",
-      "quantity": 2
-    },
-    {
-      "description": "LL",
-      "quantity": 2
-    },
-    {
-      "description": "MM",
-      "quantity": 2
-    },
-    {
-      "description": "+8970 P",
-      "quantity": 3
-    },
-    {
-      "description": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | RAL 7014 | Rc- waarde 4,7 m2K/W",
-      "quantity": 1
-    },
-    {
-      "description": "stalen ge\u00efsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K",
-      "quantity": 9
-    },
-    {
-      "description": "kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1",
-      "quantity": 5
-    },
-    {
-      "description": "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm",
-      "quantity": 1
-    },
-    {
-      "description": "bk goot nieuw gebouwdeel",
-      "quantity": 1
-    },
-    {
-      "description": "+6350 P bk kozijn",
-      "quantity": 2
-    },
-    {
-      "description": "ligusterhaag | hoog 1 m",
-      "quantity": 3
-    },
-    {
-      "description": "+5000 P bk kozijn",
-      "quantity": 1
-    },
-    {
-      "description": "deur | bestaand",
-      "quantity": 1
-    },
-    {
-      "description": "+0 P",
-      "quantity": 3
-    },
-    {
-      "description": "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W",
-      "quantity": 1
-    },
-    {
-      "description": "stalen ge\u00efsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1",
-      "quantity": 7
-    },
-    {
-      "description": "kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1",
-      "quantity": 7
-    },
-    {
-      "description": "+4950 P",
-      "quantity": 1
-    },
-    {
-      "description": "+3650 P",
       "quantity": 1
     }
   ]

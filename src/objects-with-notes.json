@@ -17,34 +17,15 @@
     },
     "notes": [
       "200 gevels | datum: 16-06-2020 | wijz. A 30-11-2020 | wijz. B 05-08-2021 | wijz. C 28-02-2022 | wijz. E 30-03-2022 | wijz. H 28-07-2022 | wijz. I 28-10-2022 | wijz. J 23-12-2022 | schaal:\\P1:100",
+      "\\Lrechtergebouw noordoostgevel",
+      "\\Lrechtergebouw zuidoostgevel",
       "\\Llinkergebouw zuidwestgevel",
       "\\Llinkergebouw zuidoostgevel",
       "\\Llinkergebouw noordoostgevel",
       "\\Llinkergebouw noordwestgevel_",
       "\\Lrechtergebouw noordwestgevel_",
-      "\\Lrechtergebouw noordoostgevel",
       "\\Lrechtergebouw zuidwestgevel",
       "\\fArial|b1|i0|c0|p34|;Concept"
-    ]
-  },
-  {
-    "object": {
-      "id": "360",
-      "block": "32_DO_glas - 01-8595826-200_rechts",
-      "position": {
-        "x": 0.0,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 0.0,
-        "miny": 0.0,
-        "maxx": 0.0,
-        "maxy": 0.0
-      }
-    },
-    "notes": [
-      "\\Lrechtergebouw zuidoostgevel"
     ]
   },
   {
@@ -61,6 +42,47 @@
         "miny": 8349.999999999956,
         "maxx": 118071.8157962115,
         "maxy": 8849.999999999956
+      }
+    },
+    "notes": [
+      "+8600 P",
+      "bk nok"
+    ]
+  },
+  {
+    "object": {
+      "id": "3EE8",
+      "block": "Spot Elevations - 1_8-7718674-rechtergebouw noordoostgevel",
+      "position": {
+        "x": 544856.9353785464,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 454593.3724636187,
+        "miny": 8349.999999999956,
+        "maxx": 456159.0080711257,
+        "maxy": 8849.999999999956
+      }
+    },
+    "notes": [
+      "+8600 P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3FC5",
+      "block": "Spot Elevations - 1_8-7718674-rechtergebouw zuidwestgevel",
+      "position": {
+        "x": 375071.9884383641,
+        "y": 8600.00000000014
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 479741.73437453585,
+        "miny": 8349.999999999958,
+        "maxx": 481307.36998204293,
+        "maxy": 8849.999999999958
       }
     },
     "notes": [
@@ -310,26 +332,6 @@
   },
   {
     "object": {
-      "id": "3339",
-      "block": "Grid - r_4_0mm-300507-200_rechts",
-      "position": {
-        "x": 63437.00000000039,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 114602.45214629985,
-        "miny": -4017.922497573548,
-        "maxx": 115402.45214629985,
-        "maxy": -3217.922497573548
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;N"
-    ]
-  },
-  {
-    "object": {
       "id": "333E",
       "block": "Grid - r_4_0mm-300507-200_rechts",
       "position": {
@@ -346,6 +348,26 @@
     },
     "notes": [
       "\\fArial|b1|i0|c0|p34|;M"
+    ]
+  },
+  {
+    "object": {
+      "id": "3339",
+      "block": "Grid - r_4_0mm-300507-200_rechts",
+      "position": {
+        "x": 63437.00000000039,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 114602.45214629985,
+        "miny": -4017.922497573548,
+        "maxx": 115402.45214629985,
+        "maxy": -3217.922497573548
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;N"
     ]
   },
   {
@@ -370,168 +392,24 @@
     ]
   },
   {
-    "object": null,
+    "object": {
+      "id": "303",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-V1-200_rechts",
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 75929.29830014585,
+        "miny": -1.905846147565171e-10,
+        "maxx": 75999.29830014588,
+        "maxy": 6850.000000000011
+      }
+    },
     "notes": [
       "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P",
-      "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- goot aluminium, aluminiumkleurig\\P\\P\\P",
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1",
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1",
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1",
-      "+0",
-      "doorsnede van aangrenzend gebouw\\Pdat niet tot Schipholweg 973 behoort",
-      "+8970",
-      "+3650",
-      "+6900",
-      "bk dakrand bestaand gebouwdeel",
-      "NIEUW BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL 7014\\PRc- waarde 4,7 m2K/W\\P",
-      "272 / 1000",
-      "272 / 1000",
-      "KOLOM\\P- stalen HEA-140-profiel\\Pomkleed met trespa in zelfde groentint\\Pals trespabeplating op begane grondgevel\\P",
-      "NIEUW DAKOVERSTEK\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- stalen dakplaten 106 mm kleur lichtgrijs RAL 7035 in het zicht\\P\\P\\P\\P\\P\\P",
-      "+0",
-      "+8970",
-      "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- goot aluminium, aluminiumkleurig\\P\\P\\P\\P",
-      "+6956 P",
-      "+6350 P",
-      "+5000 P",
-      "+4000 P",
-      "+3600 P",
-      "+3030 P",
-      "bk goot",
-      "bk kozijn",
-      "ok kozijn",
-      "bk overheaddeur",
-      "bk beton",
-      "bk kozijn",
-      "bk verdiepingsvloer",
-      "bk nok",
-      "+2340 P",
-      "bk deur",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig",
-      "NIEUWE BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL\\P7014\\PRc-waarde 4,7 m2K/W\\P",
-      "NIEUW KOZIJN\\Pkunststof kozijn\\Pafm. 1960 x 1350 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "KOLOM\\P- stalen HEA-140-profiel\\Pomkleed met trespa in zelfde groentint\\Pals trespabeplating op begane grondgevel\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
-      "+800 P",
-      "2",
-      "1",
-      "27%",
-      "27%",
-      "272 / 1000",
-      "272 / 1000",
-      "thermisch verzinkte stalen vluchttrap\\Poptrede 185 mm\\Paantrede: 185 mm\\Ptredebreedte: 800 mm",
-      "+0",
-      "+8970",
-      "+3650",
-      "| nieuwe gevelbekleding buitenspouwblad\\P| en bestaande kozijnen",
-      "glas glas",
-      "+6900",
-      "<-- bestaand gebouwdeel -->",
-      "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- goot aluminium, aluminiumkleurig\\P\\P\\P\\P",
-      "glas bestaand kozijn\\PU-waarde glas: 1,3 W/m2K\\P",
-      "thermisch verzinkte stalen vluchttrap\\Poptrede 185 mm\\Paantrede: 185 mm\\Ptredebreedte: 800 mm",
-      "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
-      "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
-      "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
-      "NIEUWE BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL\\P7014\\PRc-waarde 4,7 m2K/W\\P",
-      "+0",
-      "+4000",
-      "+6900",
-      "+8600",
-      "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\Pgoot aluminium, aluminiumkleurig\\P\\P\\P\\P",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P",
-      "27%",
-      "27%",
-      "3",
-      "4",
-      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P\\P",
-      "kunststof kozijn\\Pafm. 1350 x 4850 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "+5000 P ok kozijn",
-      "27%",
-      "27%",
-      "3",
-      "4",
-      "DAKOPBOUW\\P- sandwich dakplaten, kleur grijs Rc- waarde 6,3 m2K/W\\Pgoot aluminium, kleur grijs\\P\\P\\P\\P",
-      "kunststof kozijn\\Pafm. 1350 x 4850 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
-      "gevelbekleding bovenzijde:\\Psandwichpaneel 100 mm\\Pkleur: donkergrijs RAL 7014\\PRC-waarde: 4,7 m2K/W\\P",
-      "GEVELOPBOUW\\P- aluminium zetwerk\\Pkleur donkergrijs RAL 7014\\P- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P- isolatie 100 mm\\PRc- waarde 4,7 m2K/W\\P",
-      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
-      "AJVR Architect Jeroen Van Rijsbergen\\PDubbeleworststeeg 19\\P1016 AT Amsterdam\\Pjeroenvanrijsbergen@gmail.com\\P\\PKvK nummer: 57426821\\PBTW nummer: NL1812.29.997B01",
-      "\\fArial|b1|i0|c0|p34|;project\\fArial|b0|i0|c0|p34|;:\\Pnieuwbouw bedrijventerrein\\PSchipholweg 979a\\P2143 CG Boesingheliede\\P",
-      "\\LKLEUR- EN MATERIAALSTAAT",
-      "\\fArial|b1|i0|c0|p34|;onderdeel",
-      "\\fArial|b1|i0|c0|p34|;afwerking",
-      "\\fArial|b1|i0|c0|p34|;kleur",
-      "borstwering",
-      "prefab beton",
-      "lichtgrijs",
-      "gevelbekleding",
-      "sandwichpanelen",
-      "donkergrijs",
-      "RAL 7014",
-      "goot",
-      "aluminium",
-      "aluminiumkleurig",
-      "dak",
-      "sandwichpanelen",
-      "lichtgrijs",
-      "RAL 7035",
-      "hemelwaterafvoer",
-      "aluminium",
-      "aluminiumkleurig",
-      "overheaddeur",
-      "staal, geisoleerd",
-      "lichtgrijs",
-      "RAL 7035",
-      "loopdeur/kozijnen",
-      "kunststof",
-      "kozijn:",
-      "wit",
-      "RAL 9001",
-      "draaiende deel/dichte deur:",
-      "lichtgrijs RAL 7035"
+      "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- goot aluminium, aluminiumkleurig\\P\\P\\P"
     ]
   },
   {
@@ -557,6 +435,71 @@
   },
   {
     "object": {
+      "id": "1401",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8360458-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 162382.2015676402,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 228174.65371393878,
+        "miny": 799.9999999998181,
+        "maxx": 228244.65371393878,
+        "maxy": 6850.000000000008
+      }
+    },
+    "notes": [
+      "+6350 P",
+      "+5000 P",
+      "+4000 P",
+      "+3600 P",
+      "+3030 P",
+      "+2340 P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3AD1",
+      "block": "Spot Elevations - 1_8-7718674-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 392682.7228675773,
+        "y": -2619.999999999721
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 274495.8600050094,
+        "miny": 6099.999999999986,
+        "maxx": 276061.4956125165,
+        "maxy": 6599.999999999986
+      }
+    },
+    "notes": [
+      "+6350 P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3F8C",
+      "block": "Spot Elevations - 1_8-7718674-rechtergebouw noordoostgevel",
+      "position": {
+        "x": 545426.7852238475,
+        "y": -2249.999999999968
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 455163.2223089198,
+        "miny": 6099.999999999988,
+        "maxx": 456728.85791642684,
+        "maxy": 6599.999999999988
+      }
+    },
+    "notes": [
+      "+6350 P bk kozijn"
+    ]
+  },
+  {
+    "object": {
       "id": "34E8",
       "block": "Spot Elevations - 1_8-7718674-200_rechts",
       "position": {
@@ -574,6 +517,26 @@
     "notes": [
       "+5000 P",
       "ok kozijn"
+    ]
+  },
+  {
+    "object": {
+      "id": "3AD5",
+      "block": "Spot Elevations - 1_8-7718674-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 392687.4831481763,
+        "y": -3969.999999999719
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 274500.6202856084,
+        "miny": 4749.999999999988,
+        "maxx": 276066.2558931155,
+        "maxy": 5249.999999999988
+      }
+    },
+    "notes": [
+      "+5000 P"
     ]
   },
   {
@@ -599,6 +562,46 @@
   },
   {
     "object": {
+      "id": "3ACD",
+      "block": "Spot Elevations - 1_8-7718674-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 392687.9034377629,
+        "y": -2013.999999999748
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 274501.04057519505,
+        "miny": 6705.999999999959,
+        "maxx": 276066.6761827021,
+        "maxy": 7205.999999999959
+      }
+    },
+    "notes": [
+      "+6956 P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3EF0",
+      "block": "Spot Elevations - 1_8-7718674-rechtergebouw noordoostgevel",
+      "position": {
+        "x": 544856.7506439175,
+        "y": -1644.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 454593.1877289898,
+        "miny": 6705.999999999956,
+        "maxx": 456158.82333649683,
+        "maxy": 7205.999999999956
+      }
+    },
+    "notes": [
+      "+6956 P"
+    ]
+  },
+  {
+    "object": {
       "id": "262",
       "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8503993-200_rechts",
       "position": {
@@ -615,6 +618,176 @@
     },
     "notes": [
       "hemelwaterafvoer diameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig\\P\\P"
+    ]
+  },
+  {
+    "object": null,
+    "notes": [
+      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1",
+      "NIEUW BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL 7014\\PRc- waarde 4,7 m2K/W\\P",
+      "NIEUW DAKOVERSTEK\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- stalen dakplaten 106 mm kleur lichtgrijs RAL 7035 in het zicht\\P\\P\\P\\P\\P\\P",
+      "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P- goot aluminium, aluminiumkleurig\\P\\P\\P\\P",
+      "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs",
+      "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P",
+      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1\\P",
+      "KOLOM\\P- stalen HEA-140-profiel\\Pomkleed met trespa in zelfde groentint\\Pals trespabeplating op begane grondgevel\\P",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs",
+      "27%",
+      "kunststof kozijn\\Pafm. 1350 x 4850 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
+      "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1",
+      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\P\\P",
+      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P",
+      "DAKOPBOUW\\P- sandwich dakplaten, kleur grijs Rc- waarde 6,3 m2K/W\\Pgoot aluminium, kleur grijs\\P\\P\\P\\P",
+      "gevelbekleding bovenzijde:\\Psandwichpaneel 100 mm\\Pkleur: donkergrijs RAL 7014\\PRC-waarde: 4,7 m2K/W\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "11B6",
+      "block": "32_DO_glas - 01-8647638-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 143947.2015676393,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 143947.2015676393,
+        "miny": 0.0,
+        "maxx": 143947.2015676393,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "+0"
+    ]
+  },
+  {
+    "object": {
+      "id": "1402",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8715042-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 162382.2015676402,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 228174.6537139383,
+        "miny": -1.797559434635332e-10,
+        "maxx": 228244.65371393843,
+        "maxy": 799.9999999998224
+      }
+    },
+    "notes": [
+      "+0",
+      "bk beton",
+      "bk kozijn",
+      "bk deur",
+      "+800 P"
+    ]
+  },
+  {
+    "object": {
+      "id": "1E61",
+      "block": "32_DO_glas - 01-8532440-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 348613.8629409259,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 348613.8629409259,
+        "miny": 0.0,
+        "maxx": 348613.8629409259,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "+0",
+      "thermisch verzinkte stalen vluchttrap\\Poptrede 185 mm\\Paantrede: 185 mm\\Ptredebreedte: 800 mm"
+    ]
+  },
+  {
+    "object": {
+      "id": "2B4D",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 438891.5685605963,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 438891.5685605963,
+        "miny": 0.0,
+        "maxx": 438891.5685605963,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "+0"
+    ]
+  },
+  {
+    "object": {
+      "id": "1037",
+      "block": "32_DO_glas - 01-8532440-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 125497.2015676404,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 125497.2015676404,
+        "miny": 0.0,
+        "maxx": 125497.2015676404,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "doorsnede van aangrenzend gebouw\\Pdat niet tot Schipholweg 973 behoort"
+    ]
+  },
+  {
+    "object": {
+      "id": "9D8",
+      "block": "200_VAE_63_spotlamp - rond-8711555-200_voor",
+      "position": {
+        "x": 61963.56699336352,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 139941.1091450135,
+        "miny": 6667.21664964508,
+        "maxx": 140101.1091450135,
+        "maxy": 6687.216649645079
+      }
+    },
+    "notes": [
+      "+8970",
+      "+3650",
+      "+6900",
+      "bk dakrand bestaand gebouwdeel",
+      "KOLOM\\P- stalen HEA-140-profiel\\Pomkleed met trespa in zelfde groentint\\Pals trespabeplating op begane grondgevel\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3519",
+      "block": "Grid - r_4_0mm-300507-200_voor",
+      "position": {
+        "x": 47263.82738855762,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 124747.36954020754,
+        "miny": -3766.581770282117,
+        "maxx": 125547.36954020754,
+        "maxy": -2966.581770282117
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;1"
     ]
   },
   {
@@ -639,22 +812,69 @@
   },
   {
     "object": {
-      "id": "3519",
-      "block": "Grid - r_4_0mm-300507-200_voor",
+      "id": "981",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8363247-200_voor",
       "position": {
-        "x": 47263.82738855762,
+        "x": 61963.56699336352,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 124747.36954020754,
-        "miny": -3766.581770282117,
-        "maxx": 125547.36954020754,
-        "maxy": -2966.581770282117
+        "minx": 124977.369540207,
+        "miny": 3249.999999999823,
+        "maxx": 125043.76954020704,
+        "maxy": 6830.655495531153
       }
     },
     "notes": [
-      "\\fArial|b1|i0|c0|p34|;1"
+      "272 / 1000"
+    ]
+  },
+  {
+    "object": {
+      "id": "A5F",
+      "block": "Rectangular Mullion - 32_rechts_67x100-8640298-200_voor",
+      "position": {
+        "x": 61963.56699336352,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 137534.44247834812,
+        "miny": 6284.999999999999,
+        "maxx": 138747.10914501478,
+        "maxy": 6351.999999999999
+      }
+    },
+    "notes": [
+      "272 / 1000"
+    ]
+  },
+  {
+    "object": {
+      "id": "14FC",
+      "block": "200_VAE_63_spotlamp - rond-8711555-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 162382.2015676402,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 227942.31948104774,
+        "miny": 6667.21664964503,
+        "maxx": 228102.31948104774,
+        "maxy": 6687.21664964503
+      }
+    },
+    "notes": [
+      "+8970",
+      "+6956 P",
+      "bk goot",
+      "bk kozijn",
+      "ok kozijn",
+      "bk overheaddeur",
+      "bk verdiepingsvloer",
+      "bk nok"
     ]
   },
   {
@@ -735,6 +955,7 @@
     },
     "notes": [
       "EE",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
       "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
     ]
   },
@@ -755,7 +976,9 @@
       }
     },
     "notes": [
-      "FF"
+      "FF",
+      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRAL 7014\\PRc- waarde 4,7 m2K/W\\P",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
     ]
   },
   {
@@ -776,6 +999,7 @@
     },
     "notes": [
       "GG",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
       "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
     ]
   },
@@ -796,7 +1020,8 @@
       }
     },
     "notes": [
-      "HH"
+      "HH",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
     ]
   },
   {
@@ -817,6 +1042,7 @@
     },
     "notes": [
       "II",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
       "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
     ]
   },
@@ -837,7 +1063,8 @@
       }
     },
     "notes": [
-      "JJ"
+      "JJ",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
     ]
   },
   {
@@ -858,6 +1085,7 @@
     },
     "notes": [
       "KK",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
       "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
     ]
   },
@@ -878,7 +1106,9 @@
       }
     },
     "notes": [
-      "LL"
+      "LL",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P",
+      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\P"
     ]
   },
   {
@@ -898,7 +1128,8 @@
       }
     },
     "notes": [
-      "MM"
+      "MM",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
     ]
   },
   {
@@ -918,368 +1149,10 @@
       }
     },
     "notes": [
-      "+8970 P"
-    ]
-  },
-  {
-    "object": {
-      "id": "16CC",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-8704325-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 100897.2015676399,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 185718.95130216458,
-        "miny": -10.00000000017948,
-        "maxx": 189940.95130216458,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRAL 7014\\PRc- waarde 4,7 m2K/W\\P",
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "14AE",
-      "block": "31_WI_RT62_BI_raam - BI_draaival_links-8656817-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 113197.20156764,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 177742.95130216517,
-        "miny": 5066.999999999996,
-        "maxx": 178692.65371393802,
-        "maxy": 6283.000000000005
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "1356",
-      "block": "31_WI_RT62_BI_raam - BI_draaival_links-8595850-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 100897.2015676401,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 190024.6537139392,
-        "miny": 5067.000000000001,
-        "maxx": 190955.24889039082,
-        "maxy": 6283.000000000008
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "1289",
-      "block": "31_WI_RT62_BI_raam - BI_draaival_links-8595850-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 113197.20156764,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 202324.65371393907,
-        "miny": 5067.000000000001,
-        "maxx": 203255.24889039074,
-        "maxy": 6283.000000000008
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "122F",
-      "block": "31_WI_RT62_BI_raam - BI_draaival_links-8501019-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 113197.20156764,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 214559.9513021647,
-        "miny": 5067.000000000005,
-        "maxx": 215555.24889039062,
-        "maxy": 6283.000000000002
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "1351",
-      "block": "31_WI_RT62_BI_raam - BI_draaival_links-V15-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 156247.2015676397,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 222444.0585374852,
-        "miny": 5067.000000000011,
-        "maxx": 223388.35612571109,
-        "maxy": 6283.000000000002
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 5215 mm\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "108F",
-      "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8647158-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 156244.6268873438,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 222376.98385718942,
-        "miny": 2962.99999999982,
-        "maxx": 223294.27681840622,
-        "maxy": 3029.99999999982
-      }
-    },
-    "notes": [
-      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "16CA",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-8718812-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 113197.20156764,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 173403.65371393907,
-        "miny": -10.00000000018219,
-        "maxx": 177675.65371393907,
-        "maxy": 3599.999999999818
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "16CB",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-8704325-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 95586.60639118616,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 180408.35612571082,
-        "miny": -10.00000000017948,
-        "maxx": 184630.35612571082,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "16CD",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-8704325-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 107886.4886740549,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 192708.23840857955,
-        "miny": -10.00000000017948,
-        "maxx": 196930.23840857958,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "1648",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-8704325-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 113197.20156764,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 198018.95130216467,
-        "miny": -10.00000000017948,
-        "maxx": 202240.9513021647,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "16CE",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-8704325-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 120186.6063911868,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 205008.35612571146,
-        "miny": -10.00000000017948,
-        "maxx": 209230.35612571146,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "1649",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-8704325-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 125497.2015676402,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 210318.95130216487,
-        "miny": -10.00000000017948,
-        "maxx": 214540.95130216487,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "16CF",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-8704325-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 132486.6063911868,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 217308.35612571146,
-        "miny": -10.00000000017948,
-        "maxx": 221530.35612571146,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "1754",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 4000mmx2700mm-V21-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 113197.20156764,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 223443.3561257112,
-        "miny": -10.00000000017948,
-        "maxx": 227665.3561257112,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 4000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas =\\P1,1 W/m2K\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "1401",
-      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8360458-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 162382.2015676402,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 228174.65371393878,
-        "miny": 799.9999999998181,
-        "maxx": 228244.65371393878,
-        "maxy": 6850.000000000008
-      }
-    },
-    "notes": [
+      "+8970 P",
+      "NIEUWE BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL\\P7014\\PRc-waarde 4,7 m2K/W\\P",
+      "NIEUW KOZIJN\\Pkunststof kozijn\\Pafm. 1960 x 1350 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1",
       "LED- wandarmatuur\\Ptype 2150 lumen of vergelijkbaar\\Pkleur armatuur: donkergrijs"
-    ]
-  },
-  {
-    "object": {
-      "id": "3869",
-      "block": "Spot Elevations - 1_8-7718674-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 113137.0654804313,
-        "y": -4969.999999998985
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 160923.61080419595,
-        "miny": 3750.000000000722,
-        "maxx": 162489.246411703,
-        "maxy": 4250.000000000722
-      }
-    },
-    "notes": [
-      "+4000 P"
-    ]
-  },
-  {
-    "object": {
-      "id": "1890",
-      "block": "Rectangular Mullion - 32_tussen_90x100-8501012-linkergebouw zuidoostgevel",
-      "position": {
-        "x": 67371.61660602524,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 168644.36634054995,
-        "miny": 5067.0,
-        "maxx": 168734.36634054995,
-        "maxy": 6283.0
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\PU-waarde glas 1,1\\P"
     ]
   },
   {
@@ -1304,6 +1177,248 @@
   },
   {
     "object": {
+      "id": "3AC9",
+      "block": "Spot Elevations - 1_8-7718674-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 392697.8629409256,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 274511.0000783577,
+        "miny": 8719.999999999707,
+        "maxx": 276076.6356858648,
+        "maxy": 9219.999999999707
+      }
+    },
+    "notes": [
+      "+8970 P",
+      "kunststof kozijn\\Pafm. 1350 x 2400 mm\\PU-waarde glas 1,1"
+    ]
+  },
+  {
+    "object": {
+      "id": "E9A",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 113197.20156764,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 174089.6537139379,
+        "miny": -1.797706452328697e-10,
+        "maxx": 176589.65371393788,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "14E7",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 121782.2015676404,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 182674.65371393829,
+        "miny": -1.797706452328697e-10,
+        "maxx": 185174.65371393829,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "14E9",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 126782.2015676405,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 187674.65371393837,
+        "miny": -1.797706452328697e-10,
+        "maxx": 190174.65371393837,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "14E3",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 134082.2015676402,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 194974.65371393808,
+        "miny": -1.797706452328697e-10,
+        "maxx": 197474.65371393808,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "14E5",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 139082.2015676404,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 199974.6537139383,
+        "miny": -1.797706452328697e-10,
+        "maxx": 202474.65371393829,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "E9C",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 146382.2015676403,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 207274.6537139382,
+        "miny": -1.797706452328697e-10,
+        "maxx": 209774.65371393817,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "14DD",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 151382.2015676404,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 212274.6537139383,
+        "miny": -1.797706452328697e-10,
+        "maxx": 214774.65371393829,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "14DF",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 158682.20156764,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 219574.6537139379,
+        "miny": -1.797706452328697e-10,
+        "maxx": 222074.65371393788,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "14E1",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 163682.2015676401,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 224574.65371393797,
+        "miny": -1.797706452328697e-10,
+        "maxx": 227074.65371393797,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
+    ]
+  },
+  {
+    "object": {
+      "id": "401F",
+      "block": "Spot Elevations - 1_8-7718674-rechtergebouw zuidwestgevel",
+      "position": {
+        "x": 375097.3357823793,
+        "y": 799.9999999999995
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 479767.081718551,
+        "miny": 549.9999999998175,
+        "maxx": 481332.71732605813,
+        "maxy": 1049.9999999998174
+      }
+    },
+    "notes": [
+      "+800 P",
+      "bk beton"
+    ]
+  },
+  {
+    "object": {
+      "id": "3869",
+      "block": "Spot Elevations - 1_8-7718674-linkergebouw zuidoostgevel",
+      "position": {
+        "x": 113137.0654804313,
+        "y": -4969.999999998985
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 160923.61080419595,
+        "miny": 3750.000000000722,
+        "maxx": 162489.246411703,
+        "maxy": 4250.000000000722
+      }
+    },
+    "notes": [
+      "+4000 P"
+    ]
+  },
+  {
+    "object": {
       "id": "389C",
       "block": "Spot Elevations - 1_8-7718674-linkergebouw noordoostgevel",
       "position": {
@@ -1320,8 +1435,49 @@
     },
     "notes": [
       "+6956 P",
-      "bk goot nieuw gebouwdeel",
-      "+6350 P bk kozijn"
+      "bk goot nieuw gebouwdeel"
+    ]
+  },
+  {
+    "object": {
+      "id": "1CE6",
+      "block": "300_90_VAE_parkeerplek - 2500x5000-7977994-linkergebouw noordoostgevel",
+      "position": {
+        "x": 317478.3466242338,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 237131.60227127757,
+        "miny": -1.797706452328697e-10,
+        "maxx": 239194.80447258268,
+        "maxy": 4.999999999820229
+      }
+    },
+    "notes": [
+      "2",
+      "ligusterhaag\\Phoog 1 m"
+    ]
+  },
+  {
+    "object": {
+      "id": "1C74",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8363247-linkergebouw noordoostgevel",
+      "position": {
+        "x": 317478.3466242338,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 254398.1440773905,
+        "miny": -1.797559434635332e-10,
+        "maxx": 254464.54407739063,
+        "maxy": 6830.655495531189
+      }
+    },
+    "notes": [
+      "1",
+      "272 / 1000"
     ]
   },
   {
@@ -1341,28 +1497,88 @@
       }
     },
     "notes": [
-      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P\\P\\P",
-      "ligusterhaag\\Phoog 1 m"
+      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P\\P\\P"
     ]
   },
   {
     "object": {
-      "id": "1CCE",
-      "block": "Rectangular Mullion - 32_tussen_90x100-8431527-linkergebouw noordoostgevel",
+      "id": "1C42",
+      "block": "Rectangular Mullion - 32_rechts_67x100-8640235-linkergebouw noordoostgevel",
       "position": {
-        "x": 316265.6799575671,
+        "x": 317478.3466242338,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 242277.21074405528,
-        "miny": 5067.0,
-        "maxx": 242367.21074405528,
-        "maxy": 6283.0
+        "minx": 243534.87741072202,
+        "miny": 6283.0,
+        "maxx": 244747.21074405534,
+        "maxy": 6350.0
       }
     },
     "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 4850 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P"
+      "27%"
+    ]
+  },
+  {
+    "object": {
+      "id": "1CF4",
+      "block": "200_VAE_63_spotlamp - rond-8711555-linkergebouw noordoostgevel",
+      "position": {
+        "x": 317478.3466242338,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 239336.38508782093,
+        "miny": 6667.216649644868,
+        "maxx": 239494.80447258416,
+        "maxy": 6687.216649644868
+      }
+    },
+    "notes": [
+      "272 / 1000"
+    ]
+  },
+  {
+    "object": {
+      "id": "392F",
+      "block": "Spot Elevations - 1_8-7718674-linkergebouw noordoostgevel",
+      "position": {
+        "x": 317462.4314172157,
+        "y": -2620.000000000356
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 256984.87335436582,
+        "miny": 6099.999999999351,
+        "maxx": 258550.50896187287,
+        "maxy": 6599.999999999351
+      }
+    },
+    "notes": [
+      "thermisch verzinkte stalen vluchttrap\\Poptrede 185 mm\\Paantrede: 185 mm\\Ptredebreedte: 800 mm",
+      "+6350 P bk kozijn"
+    ]
+  },
+  {
+    "object": {
+      "id": "3FE9",
+      "block": "Spot Elevations - 1_8-7718674-rechtergebouw zuidwestgevel",
+      "position": {
+        "x": 375069.0327008125,
+        "y": 6350.000000001201
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 479738.7786369842,
+        "miny": 6100.0000000010195,
+        "maxx": 481304.4142444913,
+        "maxy": 6600.0000000010195
+      }
+    },
+    "notes": [
+      "+6350 P"
     ]
   },
   {
@@ -1387,223 +1603,26 @@
   },
   {
     "object": {
-      "id": "3942",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "id": "1E32",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8363247-linkergebouw noordwestgevel_",
       "position": {
-        "x": 392697.8629409256,
+        "x": 401114.8629409255,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 342395.41079462453,
-        "miny": -2824.385279617326,
-        "maxx": 343195.41079462453,
-        "maxy": -2024.385279617326
+        "minx": 342725.4107946246,
+        "miny": -1.797559434635332e-10,
+        "maxx": 342795.4107946246,
+        "maxy": 6799.999999999724
       }
     },
     "notes": [
-      "AA"
-    ]
-  },
-  {
-    "object": {
-      "id": "3947",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 389072.8629409255,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 338770.4107946245,
-        "miny": -2824.385279617326,
-        "maxx": 339570.4107946245,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "BB"
-    ]
-  },
-  {
-    "object": {
-      "id": "394C",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 384172.8629409254,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 333870.41079462436,
-        "miny": -2824.385279617326,
-        "maxx": 334670.41079462436,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "CC"
-    ]
-  },
-  {
-    "object": {
-      "id": "3951",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 376772.8629409254,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 326470.41079462436,
-        "miny": -2824.385279617326,
-        "maxx": 327270.41079462436,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "EE"
-    ]
-  },
-  {
-    "object": {
-      "id": "3956",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 370622.8629409253,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 320320.41079462424,
-        "miny": -2824.385279617326,
-        "maxx": 321120.41079462424,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "FF"
-    ]
-  },
-  {
-    "object": {
-      "id": "395B",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 364472.8629409253,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 314170.41079462424,
-        "miny": -2824.385279617326,
-        "maxx": 314970.41079462424,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "GG"
-    ]
-  },
-  {
-    "object": {
-      "id": "3960",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 358322.8629409255,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 308020.4107946245,
-        "miny": -2824.385279617326,
-        "maxx": 308820.4107946245,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "HH"
-    ]
-  },
-  {
-    "object": {
-      "id": "3965",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 352172.8629409255,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 301870.4107946245,
-        "miny": -2824.385279617326,
-        "maxx": 302670.4107946245,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "II"
-    ]
-  },
-  {
-    "object": {
-      "id": "396A",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 346022.8629409255,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 295720.4107946245,
-        "miny": -2824.385279617326,
-        "maxx": 296520.4107946245,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "JJ",
-      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)"
-    ]
-  },
-  {
-    "object": {
-      "id": "396F",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 339872.8629409256,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 289570.41079462453,
-        "miny": -2824.385279617326,
-        "maxx": 290370.41079462453,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "KK"
-    ]
-  },
-  {
-    "object": {
-      "id": "3974",
-      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 333722.8629409258,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 283420.41079462477,
-        "miny": -2824.385279617326,
-        "maxx": 284220.41079462477,
-        "maxy": -2024.385279617326
-      }
-    },
-    "notes": [
-      "LL"
+      "+8970",
+      "+3650",
+      "+6900",
+      "glas bestaand kozijn\\PU-waarde glas: 1,3 W/m2K\\P",
+      "NIEUWE BUITENSPOUWBLAD\\P- sandwich wandpanelen, kleur donkergrijs RAL\\P7014\\PRc-waarde 4,7 m2K/W\\P"
     ]
   },
   {
@@ -1628,18 +1647,241 @@
   },
   {
     "object": {
-      "id": "1E9D",
-      "block": "Rectangular Mullion - 32_rechts_67x100-8753308-linkergebouw noordwestgevel_",
+      "id": "3974",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 333722.8629409258,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 283420.41079462477,
+        "miny": -2824.385279617326,
+        "maxx": 284220.41079462477,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "LL"
+    ]
+  },
+  {
+    "object": {
+      "id": "396F",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 339872.8629409256,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 289570.41079462453,
+        "miny": -2824.385279617326,
+        "maxx": 290370.41079462453,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "KK",
+      "hemelwaterafvoer diameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig\\P\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "396A",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 346022.8629409255,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 295720.4107946245,
+        "miny": -2824.385279617326,
+        "maxx": 296520.4107946245,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "JJ"
+    ]
+  },
+  {
+    "object": {
+      "id": "3965",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 352172.8629409255,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 301870.4107946245,
+        "miny": -2824.385279617326,
+        "maxx": 302670.4107946245,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "II"
+    ]
+  },
+  {
+    "object": {
+      "id": "3960",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 358322.8629409255,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 308020.4107946245,
+        "miny": -2824.385279617326,
+        "maxx": 308820.4107946245,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "HH"
+    ]
+  },
+  {
+    "object": {
+      "id": "395B",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 364472.8629409253,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 314170.41079462424,
+        "miny": -2824.385279617326,
+        "maxx": 314970.41079462424,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "GG"
+    ]
+  },
+  {
+    "object": {
+      "id": "3956",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 370622.8629409253,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 320320.41079462424,
+        "miny": -2824.385279617326,
+        "maxx": 321120.41079462424,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "FF"
+    ]
+  },
+  {
+    "object": {
+      "id": "3951",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 376772.8629409254,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 326470.41079462436,
+        "miny": -2824.385279617326,
+        "maxx": 327270.41079462436,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "EE"
+    ]
+  },
+  {
+    "object": {
+      "id": "394C",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 384172.8629409254,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 333870.41079462436,
+        "miny": -2824.385279617326,
+        "maxx": 334670.41079462436,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "CC",
+      "| nieuwe gevelbekleding buitenspouwblad\\P| en bestaande kozijnen"
+    ]
+  },
+  {
+    "object": {
+      "id": "3947",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 389072.8629409255,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 338770.4107946245,
+        "miny": -2824.385279617326,
+        "maxx": 339570.4107946245,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "BB"
+    ]
+  },
+  {
+    "object": {
+      "id": "3942",
+      "block": "Grid - r_4_0mm-300507-linkergebouw noordwestgevel_",
       "position": {
         "x": 392697.8629409256,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 337145.41079462424,
-        "miny": 5106.999999999999,
-        "maxx": 337160.4107946246,
-        "maxy": 6033.000000000001
+        "minx": 342395.41079462453,
+        "miny": -2824.385279617326,
+        "maxx": 343195.41079462453,
+        "maxy": -2024.385279617326
+      }
+    },
+    "notes": [
+      "AA",
+      "<-- bestaand gebouwdeel -->"
+    ]
+  },
+  {
+    "object": {
+      "id": "209D",
+      "block": "31_WI_RT62_BI_raam - BI_draaival_links-8757928-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 392697.8629409256,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 336850.1607946245,
+        "miny": 5072.00000000001,
+        "maxx": 337200.4107946246,
+        "maxy": 6283.000000000004
       }
     },
     "notes": [
@@ -1648,63 +1890,22 @@
   },
   {
     "object": {
-      "id": "3AC9",
-      "block": "Spot Elevations - 1_8-7718674-linkergebouw noordwestgevel_",
+      "id": "1E91",
+      "block": "Rectangular Mullion - 32_rechts_67x100-8745241-linkergebouw noordwestgevel_",
       "position": {
         "x": 392697.8629409256,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 274511.0000783577,
-        "miny": 8719.999999999707,
-        "maxx": 276076.6356858648,
-        "maxy": 9219.999999999707
+        "minx": 337145.41079462424,
+        "miny": 6033.000000000001,
+        "maxx": 337578.66079462465,
+        "maxy": 6100.0
       }
     },
     "notes": [
-      "+8970 P"
-    ]
-  },
-  {
-    "object": {
-      "id": "3ACD",
-      "block": "Spot Elevations - 1_8-7718674-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 392687.9034377629,
-        "y": -2013.999999999748
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 274501.04057519505,
-        "miny": 6705.999999999959,
-        "maxx": 276066.6761827021,
-        "maxy": 7205.999999999959
-      }
-    },
-    "notes": [
-      "+6956 P",
-      "+6350 P"
-    ]
-  },
-  {
-    "object": {
-      "id": "3AD5",
-      "block": "Spot Elevations - 1_8-7718674-linkergebouw noordwestgevel_",
-      "position": {
-        "x": 392687.4831481763,
-        "y": -3969.999999999719
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 274500.6202856084,
-        "miny": 4749.999999999988,
-        "maxx": 276066.2558931155,
-        "maxy": 5249.999999999988
-      }
-    },
-    "notes": [
-      "+5000 P"
+      "glas glas"
     ]
   },
   {
@@ -1729,247 +1930,124 @@
   },
   {
     "object": {
-      "id": "1EC6",
-      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8363247-linkergebouw noordwestgevel_",
+      "id": "3129",
+      "block": "90_SI_boom - eik-V45-rechtergebouw noordoostgevel",
       "position": {
-        "x": 348324.8629409255,
+        "x": 544856.9353785464,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 289935.4107946246,
-        "miny": -1.797559434635332e-10,
-        "maxx": 290005.4107946246,
-        "maxy": 6799.999999999724
+        "minx": 455057.4975856547,
+        "miny": 230.6214822515405,
+        "maxx": 455261.5323565674,
+        "maxy": 1012.326179198859
       }
     },
     "notes": [
-      "hemelwaterafvoer diameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig\\P\\P"
+      "+0 P"
     ]
   },
   {
     "object": {
-      "id": "3B0C",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "id": "3FA3",
+      "block": "Spot Elevations - 1_8-7718674-rechtergebouw zuidwestgevel",
+      "position": {
+        "x": 375206.093117366,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 479875.8390535377,
+        "miny": -250.000000000182,
+        "maxx": 481441.47466104483,
+        "maxy": 249.9999999998178
+      }
+    },
+    "notes": [
+      "+0 P"
+    ]
+  },
+  {
+    "object": {
+      "id": "1EC5",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8363247-linkergebouw noordwestgevel_",
+      "position": {
+        "x": 354474.8629409254,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 296085.4107946245,
+        "miny": -1.797559434635332e-10,
+        "maxx": 296155.4107946245,
+        "maxy": 6799.999999999724
+      }
+    },
+    "notes": [
+      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)"
+    ]
+  },
+  {
+    "object": {
+      "id": "235C",
+      "block": "Top Rail Type - Top Rail_Internal_-8087365-rechtergebouw noordwestgevel_",
       "position": {
         "x": 475027.9531759811,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 423062.5010296797,
-        "miny": -3811.215926953424,
-        "maxx": 423862.5010296797,
-        "maxy": -3011.215926953424
+        "minx": 359810.5010296791,
+        "miny": 1699.99999999982,
+        "maxx": 435216.0789795462,
+        "maxy": 1699.99999999982
       }
     },
     "notes": [
-      "\\fArial|b1|i0|c0|p34|;A"
+      "+4000"
     ]
   },
   {
     "object": {
-      "id": "3B11",
+      "id": "3B48",
       "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
       "position": {
-        "x": 470148.1839452119,
+        "x": 411590.9531759807,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 418182.7317989105,
+        "minx": 359625.5010296793,
         "miny": -3811.215926953424,
-        "maxx": 418982.7317989105,
+        "maxx": 360425.5010296793,
         "maxy": -3011.215926953424
       }
     },
     "notes": [
-      "\\fArial|b1|i0|c0|p34|;B",
-      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
+      "\\fArial|b1|i0|c0|p34|;N",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
     ]
   },
   {
     "object": {
-      "id": "3B16",
+      "id": "3B4D",
       "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
       "position": {
-        "x": 465268.4147144426,
+        "x": 416470.72240675,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 413302.9625681412,
+        "minx": 364505.2702604486,
         "miny": -3811.215926953424,
-        "maxx": 414102.9625681412,
+        "maxx": 365305.2702604486,
         "maxy": -3011.215926953424
       }
     },
     "notes": [
-      "\\fArial|b1|i0|c0|p34|;C"
-    ]
-  },
-  {
-    "object": {
-      "id": "3B1B",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 460388.6454836734,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 408423.193337372,
-        "miny": -3811.215926953424,
-        "maxx": 409223.193337372,
-        "maxy": -3011.215926953424
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;D",
-      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "3B20",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 455508.8762529041,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 403543.42410660273,
-        "miny": -3811.215926953424,
-        "maxx": 404343.42410660273,
-        "maxy": -3011.215926953424
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;E"
-    ]
-  },
-  {
-    "object": {
-      "id": "3B25",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 450629.1070221348,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 398663.6548758334,
-        "miny": -3811.215926953424,
-        "maxx": 399463.6548758334,
-        "maxy": -3011.215926953424
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;F",
-      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "3B2A",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 445749.3377913656,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 393783.8856450642,
-        "miny": -3811.215926953424,
-        "maxx": 394583.8856450642,
-        "maxy": -3011.215926953424
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;G"
-    ]
-  },
-  {
-    "object": {
-      "id": "3B2F",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 440869.5685605963,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 388904.1164142949,
-        "miny": -3811.215926953424,
-        "maxx": 389704.1164142949,
-        "maxy": -3011.215926953424
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;H",
-      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "3B34",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 435989.7993298271,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 384024.3471835257,
-        "miny": -3811.215926953424,
-        "maxx": 384824.3471835257,
-        "maxy": -3011.215926953424
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;I"
-    ]
-  },
-  {
-    "object": {
-      "id": "3B39",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 431110.0300990578,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 379144.57795275643,
-        "miny": -3811.215926953424,
-        "maxx": 379944.57795275643,
-        "maxy": -3011.215926953424
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;J",
-      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "3B3E",
-      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 426230.2608682885,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 374264.8087219871,
-        "miny": -3811.215926953424,
-        "maxx": 375064.8087219871,
-        "maxy": -3011.215926953424
-      }
-    },
-    "notes": [
-      "\\fArial|b1|i0|c0|p34|;K"
+      "\\fArial|b1|i0|c0|p34|;M",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
     ]
   },
   {
@@ -1990,67 +2068,293 @@
     },
     "notes": [
       "\\fArial|b1|i0|c0|p34|;L",
-      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P"
+      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
     ]
   },
   {
     "object": {
-      "id": "3B48",
+      "id": "3B3E",
       "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
       "position": {
-        "x": 411590.9531759807,
+        "x": 426230.2608682885,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 359625.5010296793,
+        "minx": 374264.8087219871,
         "miny": -3811.215926953424,
-        "maxx": 360425.5010296793,
+        "maxx": 375064.8087219871,
         "maxy": -3011.215926953424
       }
     },
     "notes": [
-      "\\fArial|b1|i0|c0|p34|;N"
+      "\\fArial|b1|i0|c0|p34|;K",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
     ]
   },
   {
     "object": {
-      "id": "3B4D",
+      "id": "3B39",
       "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
       "position": {
-        "x": 416470.72240675,
+        "x": 431110.0300990578,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 364505.2702604486,
+        "minx": 379144.57795275643,
         "miny": -3811.215926953424,
-        "maxx": 365305.2702604486,
+        "maxx": 379944.57795275643,
         "maxy": -3011.215926953424
       }
     },
     "notes": [
-      "\\fArial|b1|i0|c0|p34|;M"
+      "\\fArial|b1|i0|c0|p34|;J",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
     ]
   },
   {
     "object": {
-      "id": "264A",
-      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8363247-rechtergebouw noordwestgevel_",
+      "id": "3B34",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 435989.7993298271,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 384024.3471835257,
+        "miny": -3811.215926953424,
+        "maxx": 384824.3471835257,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;I",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3B2F",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 440869.5685605963,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 388904.1164142949,
+        "miny": -3811.215926953424,
+        "maxx": 389704.1164142949,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;H",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3B2A",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 445749.3377913656,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 393783.8856450642,
+        "miny": -3811.215926953424,
+        "maxx": 394583.8856450642,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;G",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3B25",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 450629.1070221348,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 398663.6548758334,
+        "miny": -3811.215926953424,
+        "maxx": 399463.6548758334,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;F",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3B20",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
       "position": {
         "x": 455508.8762529041,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 379509.5779527562,
-        "miny": 999.9999999998159,
-        "maxx": 379579.57795275626,
+        "minx": 403543.42410660273,
+        "miny": -3811.215926953424,
+        "maxx": 404343.42410660273,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;E",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3B1B",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 460388.6454836734,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 408423.193337372,
+        "miny": -3811.215926953424,
+        "maxx": 409223.193337372,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;D",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3B16",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 465268.4147144426,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 413302.9625681412,
+        "miny": -3811.215926953424,
+        "maxx": 414102.9625681412,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;C",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3B11",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 470148.1839452119,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 418182.7317989105,
+        "miny": -3811.215926953424,
+        "maxx": 418982.7317989105,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;B",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "kunststof loopdeur\\Pmet bovenlicht\\Pafm. 3030 x 985 mm\\PU-waarde glas =\\P1,1 W/m2K\\P\\P",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "3B0C",
+      "block": "Grid - r_4_0mm-300507-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 475027.9531759811,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 423062.5010296797,
+        "miny": -3811.215926953424,
+        "maxx": 423862.5010296797,
+        "maxy": -3011.215926953424
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;A",
+      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P",
+      "- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "307C",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-V41-rechtergebouw noordoostgevel",
+      "position": {
+        "x": 544856.9353785464,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 441222.6536220941,
+        "miny": -2.079104888252914e-10,
+        "maxx": 441289.05362209416,
         "maxy": 6850.0
       }
     },
     "notes": [
-      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\P\\P"
+      "+6900",
+      "+8600",
+      "27%"
+    ]
+  },
+  {
+    "object": {
+      "id": "2649",
+      "block": "300_28_ISR_kolom_buis - \u00f870x3_6 2-8363247-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 460388.6454836733,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 384389.34718352533,
+        "miny": 999.9999999998159,
+        "maxx": 384459.34718352545,
+        "maxy": 6850.0
+      }
+    },
+    "notes": [
+      "DAKOPBOUW\\P- sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\Pgoot aluminium, aluminiumkleurig\\P\\P\\P\\P"
     ]
   },
   {
@@ -2095,26 +2399,6 @@
   },
   {
     "object": {
-      "id": "29C7",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 3000mmx2700mm-V33-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 475027.9531759811,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 360335.7139813298,
-        "miny": -10.00000000017948,
-        "maxx": 363557.7139813298,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
       "id": "2A8B",
       "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8619841-rechtergebouw noordwestgevel_",
       "position": {
@@ -2155,38 +2439,18 @@
   },
   {
     "object": {
-      "id": "2946",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 3000mmx2700mm-8703527-rechtergebouw noordwestgevel_",
+      "id": "1E5C",
+      "block": "32_DO_glas - 01-8532440-linkergebouw noordwestgevel_",
       "position": {
-        "x": 471182.4147144419,
+        "x": 380397.8629409252,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 371131.039491217,
-        "miny": -10.00000000017948,
-        "maxx": 374353.039491217,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "2A72",
-      "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8619841-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 445749.3377913655,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 380711.88564506365,
-        "miny": -1.797559434635332e-10,
-        "maxx": 380778.88564506365,
-        "maxy": 2384.99999999982
+        "minx": 380397.8629409252,
+        "miny": 0.0,
+        "maxx": 380397.8629409252,
+        "maxy": 0.0
       }
     },
     "notes": [
@@ -2211,26 +2475,6 @@
     },
     "notes": [
       "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
-    ]
-  },
-  {
-    "object": {
-      "id": "2945",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 3000mmx2700mm-V32-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 475027.9531759811,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 380892.13439342694,
-        "miny": -10.00000000017948,
-        "maxx": 384114.13439342694,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P"
     ]
   },
   {
@@ -2275,26 +2519,6 @@
   },
   {
     "object": {
-      "id": "2700",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 3000mmx2700mm-8703527-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 490703.102762257,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 390651.7275390321,
-        "miny": -10.00000000017948,
-        "maxx": 393873.72753903206,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
       "id": "2A18",
       "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8619841-rechtergebouw noordwestgevel_",
       "position": {
@@ -2331,26 +2555,6 @@
     },
     "notes": [
       "hemelwaterafvoer\\Pdiameter 70 mm\\Pmateriaal: aluminium\\Pkleur aluminiumkleurig"
-    ]
-  },
-  {
-    "object": {
-      "id": "26FE",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 3000mmx2700mm-8703527-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 500462.8762529038,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 400411.50102967885,
-        "miny": -10.00000000017948,
-        "maxx": 403633.50102967885,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P"
     ]
   },
   {
@@ -2395,26 +2599,6 @@
   },
   {
     "object": {
-      "id": "2AD5",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 3000mmx2700mm-8703527-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 510222.1248397151,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 410170.7496164902,
-        "miny": -10.00000000017948,
-        "maxx": 413392.74961649015,
-        "maxy": 3599.99999999982
-      }
-    },
-    "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
       "id": "2AA4",
       "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8619841-rechtergebouw noordwestgevel_",
       "position": {
@@ -2435,304 +2619,203 @@
   },
   {
     "object": {
-      "id": "26D3",
-      "block": "300_31_VAE_OH_deur_glas_4x2laags - OH deur breedte 3000mmx2700mm-8703527-rechtergebouw noordwestgevel_",
+      "id": "30AC",
+      "block": "200_VAE_63_spotlamp - rond-8711555-rechtergebouw noordoostgevel",
       "position": {
-        "x": 519981.6633012536,
+        "x": 544856.9353785464,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 419930.2880780287,
-        "miny": -10.00000000017948,
-        "maxx": 423152.28807802865,
-        "maxy": 3599.99999999982
+        "minx": 454243.39322689816,
+        "miny": 6660.43988350342,
+        "maxx": 454333.39322689665,
+        "maxy": 6680.439883503419
       }
     },
     "notes": [
-      "stalen ge\u00efsoleerde\\Poverheaddeur\\Pafm. 3000 x 3600 mm\\Pglazen lichtstrook\\PU-waarde glas 1,1\\P"
+      "27%",
+      "+5000 P ok kozijn"
     ]
   },
   {
     "object": {
-      "id": "281C",
-      "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8509514-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 445749.3377913655,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 365326.483212099,
-        "miny": 5067.0,
-        "maxx": 365393.483212099,
-        "maxy": 6000.0
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "2807",
-      "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8509514-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 455508.8762529041,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 375086.0216736376,
-        "miny": 5067.0,
-        "maxx": 375153.0216736376,
-        "maxy": 6000.0
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "27F2",
-      "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8509514-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 465268.4147144426,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 384845.5601351761,
-        "miny": 5067.0,
-        "maxx": 384912.5601351761,
-        "maxy": 6000.0
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "2732",
-      "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8509514-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 475027.9531759811,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 394605.0985967146,
-        "miny": 5067.0,
-        "maxx": 394672.0985967146,
-        "maxy": 6000.0
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "2AD9",
-      "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8509514-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 484787.4916375196,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 404364.6370582531,
-        "miny": 5067.0,
-        "maxx": 404431.6370582531,
-        "maxy": 6000.0
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "2AA9",
-      "block": "Rectangular Mullion - 32_rechts_67x100_vlak-8509514-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 494547.0300990582,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 414124.17551979166,
-        "miny": 5067.0,
-        "maxx": 414191.17551979166,
-        "maxy": 6000.0
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "2ACB",
-      "block": "Rectangular Mullion - 32_links_67x100_vlak-8509530-rechtergebouw noordwestgevel_",
-      "position": {
-        "x": 500484.8940704844,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 422995.0394912179,
-        "miny": 5000.0,
-        "maxx": 423062.0394912179,
-        "maxy": 6000.0
-      }
-    },
-    "notes": [
-      "kunststof kozijn\\Pafm. 1350 x 3000 mm\\Pkleur wit RAL9001\\PU-waarde glas 1,1\\P"
-    ]
-  },
-  {
-    "object": {
-      "id": "3EE8",
+      "id": "3EEC",
       "block": "Spot Elevations - 1_8-7718674-rechtergebouw noordoostgevel",
       "position": {
-        "x": 544856.9353785464,
+        "x": 544688.9492103378,
+        "y": -8600.000000000144
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 454425.38629541016,
+        "miny": -250.00000000018736,
+        "maxx": 455991.0219029172,
+        "maxy": 249.99999999981264
+      }
+    },
+    "notes": [
+      "3"
+    ]
+  },
+  {
+    "object": {
+      "id": "27EF",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 465268.4147144425,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 454593.3724636187,
-        "miny": 8349.999999999956,
-        "maxx": 456159.0080711257,
-        "maxy": 8849.999999999956
+        "minx": 465268.4147144425,
+        "miny": 0.0,
+        "maxx": 465268.4147144425,
+        "maxy": 0.0
       }
     },
     "notes": [
-      "+8600 P"
+      "3"
     ]
   },
   {
     "object": {
-      "id": "3129",
-      "block": "90_SI_boom - eik-V45-rechtergebouw noordoostgevel",
+      "id": "2B44",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
       "position": {
-        "x": 544856.9353785464,
+        "x": 440869.5685605963,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 455057.4975856547,
-        "miny": 230.6214822515405,
-        "maxx": 455261.5323565674,
-        "maxy": 1012.326179198859
+        "minx": 440869.5685605963,
+        "miny": 0.0,
+        "maxx": 440869.5685605963,
+        "maxy": 0.0
       }
     },
     "notes": [
-      "+0 P"
+      "4"
     ]
   },
   {
     "object": {
-      "id": "3EF0",
-      "block": "Spot Elevations - 1_8-7718674-rechtergebouw noordoostgevel",
-      "position": {
-        "x": 544856.7506439175,
-        "y": -1644.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 454593.1877289898,
-        "miny": 6705.999999999956,
-        "maxx": 456158.82333649683,
-        "maxy": 7205.999999999956
-      }
-    },
-    "notes": [
-      "+6956 P",
-      "+6350 P bk kozijn"
-    ]
-  },
-  {
-    "object": {
-      "id": "311F",
-      "block": "90_SI_boom - eik-V44-rechtergebouw noordoostgevel",
-      "position": {
-        "x": 544856.9353785464,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 454557.4975856547,
-        "miny": 4.999999999784441,
-        "maxx": 455068.1733831483,
-        "maxy": 1020.756295260756
-      }
-    },
-    "notes": [
-      "ligusterhaag\\Phoog 1 m"
-    ]
-  },
-  {
-    "object": {
-      "id": "314C",
-      "block": "90_SI_boom - eik-V46-rechtergebouw noordoostgevel",
-      "position": {
-        "x": 544856.9353785464,
-        "y": 0.0
-      },
-      "attrs": {},
-      "bbox": {
-        "minx": 440098.93570835824,
-        "miny": -2.144223933704183e-10,
-        "maxx": 440568.1733831484,
-        "maxy": 1020.756295260756
-      }
-    },
-    "notes": [
-      "ligusterhaag\\Phoog 1 m"
-    ]
-  },
-  {
-    "object": {
-      "id": "3FA3",
-      "block": "Spot Elevations - 1_8-7718674-rechtergebouw zuidwestgevel",
+      "id": "31B4",
+      "block": "Railing - Railing-8087360-rechtergebouw zuidwestgevel",
       "position": {
         "x": 375206.093117366,
         "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 479875.8390535377,
-        "miny": -250.000000000182,
-        "maxx": 481441.47466104483,
-        "maxy": 249.9999999998178
+        "minx": 479721.20163130574,
+        "miny": -150.0000000001798,
+        "maxx": 479741.20163130574,
+        "maxy": 1699.99999999982
       }
     },
     "notes": [
-      "+0 P"
+      "4"
     ]
   },
   {
     "object": {
-      "id": "3FC5",
-      "block": "Spot Elevations - 1_8-7718674-rechtergebouw zuidwestgevel",
+      "id": "2819",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
       "position": {
-        "x": 375071.9884383641,
-        "y": 8600.00000000014
+        "x": 445749.3377913655,
+        "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 479741.73437453585,
-        "miny": 8349.999999999958,
-        "maxx": 481307.36998204293,
-        "maxy": 8849.999999999958
+        "minx": 445749.3377913655,
+        "miny": 0.0,
+        "maxx": 445749.3377913655,
+        "maxy": 0.0
       }
     },
     "notes": [
-      "+8600 P",
-      "bk nok"
+      "GEVELOPBOUW\\P- sandwich wandpanelen, kleur donkergrijs\\PRc- waarde 4,7 m2K/W\\Pbrandwerend uitgevoerd (30 minuten)\\P\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "2804",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 455508.8762529041,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 455508.8762529041,
+        "miny": 0.0,
+        "maxx": 455508.8762529041,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "ligusterhaag\\Phoog 1 m"
+    ]
+  },
+  {
+    "object": {
+      "id": "2822",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 443771.3377913655,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 443771.3377913655,
+        "miny": 0.0,
+        "maxx": 443771.3377913655,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "ligusterhaag\\Phoog 1 m"
+    ]
+  },
+  {
+    "object": {
+      "id": "32BC",
+      "block": "200_VAE_63_spotlamp - rond-8711555-rechtergebouw zuidwestgevel",
+      "position": {
+        "x": 375206.093117366,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 465729.63526901463,
+        "miny": 6660.439883503263,
+        "maxx": 465819.3965582399,
+        "maxy": 6680.439883503263
+      }
+    },
+    "notes": [
+      "27%"
+    ]
+  },
+  {
+    "object": {
+      "id": "3211",
+      "block": "Rectangular Mullion - 32_rechts_67x100-8640172-rechtergebouw zuidwestgevel",
+      "position": {
+        "x": 375206.093117366,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 471177.135269014,
+        "miny": 6283.0,
+        "maxx": 472389.635269014,
+        "maxy": 6350.0
+      }
+    },
+    "notes": [
+      "27%"
     ]
   },
   {
@@ -2753,7 +2836,6 @@
     },
     "notes": [
       "+6956 P",
-      "+6350 P",
       "bk goot",
       "bk kozijn"
     ]
@@ -2802,23 +2884,107 @@
   },
   {
     "object": {
-      "id": "401F",
-      "block": "Spot Elevations - 1_8-7718674-rechtergebouw zuidwestgevel",
+      "id": "27F8",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
       "position": {
-        "x": 375097.3357823793,
-        "y": 799.9999999999995
+        "x": 463290.4147144426,
+        "y": 0.0
       },
       "attrs": {},
       "bbox": {
-        "minx": 479767.081718551,
-        "miny": 549.9999999998175,
-        "maxx": 481332.71732605813,
-        "maxy": 1049.9999999998174
+        "minx": 463290.4147144426,
+        "miny": 0.0,
+        "maxx": 463290.4147144426,
+        "maxy": 0.0
       }
     },
     "notes": [
-      "bk beton",
-      "+800 P"
+      "GEVELOPBOUW\\P- aluminium zetwerk\\Pkleur donkergrijs RAL 7014\\P- prefab beton borstwering dik 80 mm\\Phoog 800 mm kleur lichtgrijs\\P- isolatie 100 mm\\PRc- waarde 4,7 m2K/W\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "2ADF",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 482809.4916375197,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 482809.4916375197,
+        "miny": 0.0,
+        "maxx": 482809.4916375197,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "AJVR Architect Jeroen Van Rijsbergen\\PDubbeleworststeeg 19\\P1016 AT Amsterdam\\Pjeroenvanrijsbergen@gmail.com\\P\\PKvK nummer: 57426821\\PBTW nummer: NL1812.29.997B01",
+      "\\fArial|b1|i0|c0|p34|;project\\fArial|b0|i0|c0|p34|;:\\Pnieuwbouw bedrijventerrein\\PSchipholweg 979a\\P2143 CG Boesingheliede\\P"
+    ]
+  },
+  {
+    "object": {
+      "id": "2A1A",
+      "block": "32_DO_glas - 01-8509510-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 480965.8171474074,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 480965.8171474074,
+        "miny": 0.0,
+        "maxx": 480965.8171474074,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "\\LKLEUR- EN MATERIAALSTAAT",
+      "\\fArial|b1|i0|c0|p34|;onderdeel",
+      "\\fArial|b1|i0|c0|p34|;afwerking",
+      "borstwering",
+      "prefab beton",
+      "gevelbekleding",
+      "sandwichpanelen",
+      "goot",
+      "aluminium",
+      "dak",
+      "hemelwaterafvoer",
+      "overheaddeur",
+      "staal, geisoleerd",
+      "loopdeur/kozijnen",
+      "kunststof"
+    ]
+  },
+  {
+    "object": {
+      "id": "2AC4",
+      "block": "32_DO_glas - 01-8509523-rechtergebouw noordwestgevel_",
+      "position": {
+        "x": 484787.4916375196,
+        "y": 0.0
+      },
+      "attrs": {},
+      "bbox": {
+        "minx": 484787.4916375196,
+        "miny": 0.0,
+        "maxx": 484787.4916375196,
+        "maxy": 0.0
+      }
+    },
+    "notes": [
+      "\\fArial|b1|i0|c0|p34|;kleur",
+      "lichtgrijs",
+      "donkergrijs",
+      "RAL 7014",
+      "aluminiumkleurig",
+      "RAL 7035",
+      "kozijn:",
+      "wit",
+      "RAL 9001",
+      "draaiende deel/dichte deur:",
+      "lichtgrijs RAL 7035"
     ]
   }
 ]

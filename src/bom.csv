@@ -1,8 +1,8 @@
 description,quantity
 200 gevels | datum: 16-06-2020 | wijz. A 30-11-2020 | wijz. B 05-08-2021 | wijz. C 28-02-2022 | wijz. E 30-03-2022 | wijz. H 28-07-2022 | wijz. I 28-10-2022 | wijz. J 23-12-2022 | schaal: | 1:100,1
-zuidwestgevel,2
-zuidoostgevel,2
 noordoostgevel,2
+zuidoostgevel,2
+zuidwestgevel,2
 noordwestgevel_,2
 Concept,1
 +8600 P,3
@@ -19,115 +19,115 @@ I,2
 J,2
 K,2
 L,2
-N,2
 M,2
+N,2
 +4000 P,3
 bk verdiepingsvloer,2
 "GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W | brandwerend uitgevoerd (30 minuten)",4
-"DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - goot aluminium, aluminiumkleurig",3
-"kunststof kozijn | afm. 1350 x 3000 mm | U-waarde glas 1,1",4
+"DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - goot aluminium, aluminiumkleurig",2
++6350 P,4
+bk kozijn,5
++5000 P,3
++3600 P,1
++3030 P,1
++2340 P,1
++6350 P bk kozijn,2
+ok kozijn,3
++6956 P,6
+bk goot,3
+hemelwaterafvoer diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig,2
+"kunststof kozijn | afm. 1350 x 3000 mm | U-waarde glas 1,1",2
+"NIEUW BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL 7014 | Rc- waarde 4,7 m2K/W",1
+"NIEUW DAKOVERSTEK | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - stalen dakplaten 106 mm kleur lichtgrijs RAL 7035 in het zicht",1
+LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs,2
+"kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1",1
+KOLOM | - stalen HEA-140-profiel | omkleed met trespa in zelfde groentint | als trespabeplating op begane grondgevel,2
+- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs,15
+27%,6
+"kunststof kozijn | afm. 1350 x 4850 mm | kleur wit RAL9001 | U-waarde glas 1,1",1
+"kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1",2
+"GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W",1
+"kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1",1
+"DAKOPBOUW | - sandwich dakplaten, kleur grijs Rc- waarde 6,3 m2K/W | goot aluminium, kleur grijs",1
+"gevelbekleding bovenzijde: | sandwichpaneel 100 mm | kleur: donkergrijs RAL 7014 | RC-waarde: 4,7 m2K/W",1
 +0,4
+bk beton,2
+bk deur,1
++800 P,2
+thermisch verzinkte stalen vluchttrap | optrede 185 mm | aantrede: 185 mm | tredebreedte: 800 mm,2
 doorsnede van aangrenzend gebouw | dat niet tot Schipholweg 973 behoort,1
 +8970,3
 +3650,2
 +6900,3
 bk dakrand bestaand gebouwdeel,1
-"NIEUW BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL 7014 | Rc- waarde 4,7 m2K/W",1
-272 / 1000,4
-KOLOM | - stalen HEA-140-profiel | omkleed met trespa in zelfde groentint | als trespabeplating op begane grondgevel,2
-"NIEUW DAKOVERSTEK | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | - stalen dakplaten 106 mm kleur lichtgrijs RAL 7035 in het zicht",1
-+6956 P,6
-+6350 P,4
-+5000 P,3
-+3600 P,1
-+3030 P,1
-bk goot,3
-bk kozijn,5
-ok kozijn,3
-bk overheaddeur,1
-bk beton,2
-+2340 P,1
-bk deur,1
-hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig,22
-"NIEUWE BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL | 7014 | Rc-waarde 4,7 m2K/W",2
-"NIEUW KOZIJN | kunststof kozijn | afm. 1960 x 1350 mm | kleur wit RAL9001 | U-waarde glas 1,1",1
-LED- wandarmatuur | type 2150 lumen of vergelijkbaar | kleur armatuur: donkergrijs,14
-- prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs,24
-+800 P,2
-2,2
 1,2
-27%,6
-thermisch verzinkte stalen vluchttrap | optrede 185 mm | aantrede: 185 mm | tredebreedte: 800 mm,2
-| nieuwe gevelbekleding buitenspouwblad | | en bestaande kozijnen,1
-glas glas,1
-<-- bestaand gebouwdeel -->,1
-"glas bestaand kozijn | U-waarde glas: 1,3 W/m2K",1
-"kunststof kozijn | afm. 1350 x 2400 mm | U-waarde glas 1,1",3
-+4000,1
-+8600,1
-"DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | goot aluminium, aluminiumkleurig",1
-3,2
-4,2
-"kunststof kozijn | afm. 1350 x 4850 mm | kleur wit RAL9001 | U-waarde glas 1,1",3
-+5000 P ok kozijn,1
-"DAKOPBOUW | - sandwich dakplaten, kleur grijs Rc- waarde 6,3 m2K/W | goot aluminium, kleur grijs",1
-"gevelbekleding bovenzijde: | sandwichpaneel 100 mm | kleur: donkergrijs RAL 7014 | RC-waarde: 4,7 m2K/W",1
-"GEVELOPBOUW | - aluminium zetwerk | kleur donkergrijs RAL 7014 | - prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs | - isolatie 100 mm | Rc- waarde 4,7 m2K/W",1
-AJVR Architect Jeroen Van Rijsbergen | Dubbeleworststeeg 19 | 1016 AT Amsterdam | jeroenvanrijsbergen@gmail.com | KvK nummer: 57426821 | BTW nummer: NL1812.29.997B01,1
-project: | nieuwbouw bedrijventerrein | Schipholweg 979a | 2143 CG Boesingheliede,1
-- EN MATERIAALSTAAT,1
-onderdeel,1
-afwerking,1
-kleur,1
-borstwering,1
-prefab beton,1
-lichtgrijs,3
-gevelbekleding,1
-sandwichpanelen,2
-donkergrijs,1
-RAL 7014,1
-goot,1
-aluminium,2
-aluminiumkleurig,2
-dak,1
-RAL 7035,2
-hemelwaterafvoer,1
-overheaddeur,1
-"staal, geisoleerd",1
-loopdeur/kozijnen,1
-kunststof,1
-kozijn:,1
-wit,1
-RAL 9001,1
-draaiende deel/dichte deur:,1
-lichtgrijs RAL 7035,1
-hemelwaterafvoer diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig,2
+2,2
+272 / 1000,4
+bk overheaddeur,1
 AA,2
 BB,2
 CC,2
 EE,2
+"stalen geïsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K",9
 "kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm | U-waarde glas = | 1,1 W/m2K",10
 FF,2
+"GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | RAL 7014 | Rc- waarde 4,7 m2K/W",1
 GG,2
 HH,2
 II,2
 JJ,2
 KK,2
 LL,2
+kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm,1
 MM,2
 +8970 P,3
-"GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | RAL 7014 | Rc- waarde 4,7 m2K/W",1
-"stalen geïsoleerde | overheaddeur | afm. 4000 x 3600 mm | glazen lichtstrook | U-waarde glas = | 1,1 W/m2K",9
-"kunststof kozijn | afm. 1350 x 5215 mm | U-waarde glas 1,1",5
-kunststof loopdeur | met bovenlicht | afm. 3030 x 985 mm,1
+"NIEUWE BUITENSPOUWBLAD | - sandwich wandpanelen, kleur donkergrijs RAL | 7014 | Rc-waarde 4,7 m2K/W",2
+"NIEUW KOZIJN | kunststof kozijn | afm. 1960 x 1350 mm | kleur wit RAL9001 | U-waarde glas 1,1",1
+hemelwaterafvoer | diameter 70 mm | materiaal: aluminium | kleur aluminiumkleurig,22
 bk goot nieuw gebouwdeel,1
-+6350 P bk kozijn,2
 ligusterhaag | hoog 1 m,3
 +5000 P bk kozijn,1
+"glas bestaand kozijn | U-waarde glas: 1,3 W/m2K",1
+| nieuwe gevelbekleding buitenspouwblad | | en bestaande kozijnen,1
+<-- bestaand gebouwdeel -->,1
 deur | bestaand,1
+glas glas,1
 +0 P,3
-"GEVELOPBOUW | - sandwich wandpanelen, kleur donkergrijs | Rc- waarde 4,7 m2K/W",1
++4000,1
 "stalen geïsoleerde | overheaddeur | afm. 3000 x 3600 mm | glazen lichtstrook | U-waarde glas 1,1",7
-"kunststof kozijn | afm. 1350 x 3000 mm | kleur wit RAL9001 | U-waarde glas 1,1",7
++8600,1
+"DAKOPBOUW | - sandwich dakplaten, kleur lichtgrijs RAL 7035 Rc- waarde 6,3 m2K/W | brandwerend uitgevoerd (30 minuten) | goot aluminium, aluminiumkleurig",1
++5000 P ok kozijn,1
+3,2
+4,2
 +4950 P,1
 +3650 P,1
+"GEVELOPBOUW | - aluminium zetwerk | kleur donkergrijs RAL 7014 | - prefab beton borstwering dik 80 mm | hoog 800 mm kleur lichtgrijs | - isolatie 100 mm | Rc- waarde 4,7 m2K/W",1
+AJVR Architect Jeroen Van Rijsbergen | Dubbeleworststeeg 19 | 1016 AT Amsterdam | jeroenvanrijsbergen@gmail.com | KvK nummer: 57426821 | BTW nummer: NL1812.29.997B01,1
+project: | nieuwbouw bedrijventerrein | Schipholweg 979a | 2143 CG Boesingheliede,1
+- EN MATERIAALSTAAT,1
+onderdeel,1
+afwerking,1
+borstwering,1
+prefab beton,1
+gevelbekleding,1
+sandwichpanelen,1
+goot,1
+aluminium,1
+dak,1
+hemelwaterafvoer,1
+overheaddeur,1
+"staal, geisoleerd",1
+loopdeur/kozijnen,1
+kunststof,1
+kleur,1
+lichtgrijs,1
+donkergrijs,1
+RAL 7014,1
+aluminiumkleurig,1
+RAL 7035,1
+kozijn:,1
+wit,1
+RAL 9001,1
+draaiende deel/dichte deur:,1
+lichtgrijs RAL 7035,1

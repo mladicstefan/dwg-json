@@ -1,6 +1,9 @@
+import logging
 from collections import deque
-from typing import Any, List, Dict, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 from utils.geometry import distance
+
+logger = logging.getLogger(__name__)
 
 
 class RelationBuilder:
@@ -21,6 +24,7 @@ class RelationBuilder:
         self.max_tol = max_tol
 
     def build(self) -> List[Dict[str, Any]]:
+        logger.info("Building relations for %d texts", len(self.texts))
         relations: List[Dict[str, Any]] = []
         for txt in self.texts:
             found, path = self._find_object(txt)
@@ -32,6 +36,7 @@ class RelationBuilder:
                     "linePath": path,
                 }
             )
+        logger.info("Finished relations: %d total", len(relations))
         return relations
 
     def _find_object(

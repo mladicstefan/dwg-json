@@ -1,17 +1,22 @@
+import logging
 from ezdxf.filemanagement import readfile
 from typing import Any, Dict, List
 import math
 
+logger = logging.getLogger(__name__)
 Entity = Dict[str, Any]
 
 
 class DXFParser:
     def __init__(self, path: str):
+        logger.info("Loading DXF file: %s", path)
         self.doc = readfile(path)
         self.layouts = list(self.doc.layouts)
 
     def gather_entities(self) -> List[Any]:
-        return [e for layout in self.layouts for e in layout]
+        ents = [e for layout in self.layouts for e in layout]
+        logger.info("Gathered %d raw entities", len(ents))
+        return ents
 
     def extract_texts(self, entities: List[Any]) -> List[Entity]:
         result: List[Entity] = []
@@ -25,6 +30,7 @@ class DXFParser:
             result.append(
                 {"id": e.dxf.handle, "position": {"x": x, "y": y}, "text": clean}
             )
+        logger.info("Extracted %d text entities", len(result))
         return result
 
     def extract_inserts(self, entities: List[Any]) -> List[Entity]:
@@ -48,6 +54,7 @@ class DXFParser:
                     "bbox": bbox,
                 }
             )
+        logger.info("Extracted %d INSERT blocks", len(inserts))
         return inserts
 
     def extract_lines(self, entities: List[Any]) -> List[Entity]:
@@ -84,6 +91,7 @@ class DXFParser:
                         "end": {"x": cx + r, "y": cy},
                     }
                 )
+        logger.info("Extracted %d line fragments", len(lines))
         return lines
 
     def _compute_bbox(self, insert: Any, ix: float, iy: float) -> Dict[str, float]:
@@ -108,19 +116,16 @@ class DXFParser:
                 continue
             for pt in pts:
                 x, y, *_ = pt
-                if x < minx:
-                    minx = x
-                if y < miny:
-                    miny = y
-                if x > maxx:
-                    maxx = x
-                if y > maxy:
-                    maxy = y
+                minx, miny = min(minx, x), min(miny, y)
+                maxx, maxy = max(maxx, x), max(maxy, y)
         if not all(map(math.isfinite, (minx, miny, maxx, maxy))):
-            return {"minx": ix, "miny": iy, "maxx": ix, "maxy": iy}
-        return {
-            "minx": minx + ix,
-            "miny": miny + iy,
-            "maxx": maxx + ix,
-            "maxy": maxy + iy,
-        }
+            bbox = {"minx": ix, "miny": iy, "maxx": ix, "maxy": iy}
+        else:
+            bbox = {
+                "minx": minx + ix,
+                "miny": miny + iy,
+                "maxx": maxx + ix,
+                "maxy": maxy + iy,
+            }
+        logger.debug("Computed bbox for block '%s': %s", insert.dxf.name, bbox)
+        return bbox
