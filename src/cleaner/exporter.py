@@ -7,14 +7,13 @@ from .normalizer import normalize_note
 
 class CleanerService:
     def __init__(self, source: Path):
-        self.data = write_json
         self.source = source
 
     def run(self) -> None:
-        entries = self._load()
+        entries = [e for e in self._load() if isinstance(e, dict)]
         records = [
             {
-                "object_id": e.get("object", {}).get("id"),
+                "object_id": (e.get("object") or {}).get("id"),
                 "note_raw": n,
                 "note_clean": normalize_note(n),
             }

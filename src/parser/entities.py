@@ -34,7 +34,7 @@ class DXFParser:
                 continue
             x, y, *_ = e.dxf.insert
             attrs: Dict[str, str] = {}
-            for att in getattr(e, "attribs", []):  # type: ignore
+            for att in getattr(e, "attribs", []):
                 raw = getattr(att.dxf, "text", "")
                 clean = " ".join(raw.replace("\n", " ").split())
                 attrs[att.dxf.tag] = clean
@@ -65,7 +65,7 @@ class DXFParser:
                     }
                 )
             elif t == "LWPOLYLINE":
-                pts = list(getattr(e, "get_points", lambda *args: [])("xy"))  # type: ignore
+                pts = list(getattr(e, "get_points", lambda *args: [])("xy"))
                 for (x1, y1), (x2, y2) in zip(pts, pts[1:]):
                     lines.append(
                         {
@@ -99,20 +99,23 @@ class DXFParser:
             if t == "LINE":
                 pts = [e.dxf.start, e.dxf.end]
             elif t == "LWPOLYLINE":
-                pts = list(getattr(e, "get_points", lambda *args: [])("xy"))  # type: ignore
+                pts = list(getattr(e, "get_points", lambda *args: [])("xy"))
             elif t == "CIRCLE":
                 cx, cy, *_ = e.dxf.center
                 r = e.dxf.radius
                 pts = [(cx - r, cy - r), (cx + r, cy + r)]
             else:
                 continue
-            for x, y in pts:
-                minx, miny, maxx, maxy = (
-                    min(minx, x),
-                    min(miny, y),
-                    max(maxx, x),
-                    max(maxy, y),
-                )
+            for pt in pts:
+                x, y, *_ = pt
+                if x < minx:
+                    minx = x
+                if y < miny:
+                    miny = y
+                if x > maxx:
+                    maxx = x
+                if y > maxy:
+                    maxy = y
         if not all(map(math.isfinite, (minx, miny, maxx, maxy))):
             return {"minx": ix, "miny": iy, "maxx": ix, "maxy": iy}
         return {
