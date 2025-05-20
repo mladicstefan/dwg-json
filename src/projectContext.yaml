@@ -1,0 +1,99 @@
+project_name: DWG_BoM_Extractor
+description: >
+  This project processes .DWG architectural drawing files and extracts structured Bill of Materials (BoM) data
+  by connecting drawn geometry and free-floating text using both spatial logic and semantic AI techniques.
+  Unlike Revit, DWG lacks formal object-text bindings, so lines and relative positions are used to infer relations.
+
+goals:
+  - Parse DWG into objects, text, and connecting lines
+  - Construct a spatial graph of entities based on coordinates
+  - Use AI to infer semantic relationships between texts and objects
+  - Extract structured fields from text like material, dimensions, U-values, etc.
+  - Output structured, traceable BoM entries
+  - Include manual correction loop for human validation and future AI improvement
+
+data_sources:
+  - type: JSON
+    origin: Cleaned output from DWG parser (e.g. `cleaned.json`)
+    structure:
+      - object_id: optional string (nullable if note is not connected)
+      - note_raw: raw string as extracted from DWG
+      - note_clean: cleaned and normalized version of note_raw
+      - coordinates: optional — to be merged from DXF entity data
+  - type: DXF
+    entities:
+      - TEXT / MTEXT
+      - LINE (used to infer relations)
+      - SHAPE or LWPOLYLINE (used to infer physical objects)
+
+pipeline:
+  - step: DWG Preprocessing
+    tools: [ezdxf, custom Python scripts]
+    output: structured JSON with all texts, objects, and line coordinates
+
+  - step: Graph Construction
+    method: Build undirected spatial graph
+    details:
+      - Nodes: All entities (texts, objects)
+      - Edges: Lines connecting entities
+      - Proximity rules: fallback when lines are missing (e.g., within 50mm)
+
+  - step: Semantic Matching
+    method: Embedding + vector similarity
+    model: sentence-transformers/all-MiniLM-L6-v2
+    goal: Predict which text block belongs to which object
+    fallback: Use rules when confidence is low
+
+  - step: Field Extraction
+    method: regex + rule-based NLP
+    fields:
+      - type
+      - width
+      - height
+      - color
+      - material
+      - U-value
+    optional: Use OpenAI or fine-tuned LLM for hard cases
+
+  - step: Validation + Feedback
+    tool: Streamlit or custom UI
+    features:
+      - Show object-text links
+      - Allow edits
+      - Export corrected matches for model improvement
+
+  - step: BoM Output
+    format: JSON, CSV, Excel
+    schema:
+      - object_id: string
+      - type: string
+      - material: string
+      - width: string
+      - height: string
+      - color: string
+      - glass_U_value: string
+      - location: [x, y]
+
+technical_constraints:
+  - DWG files do not contain explicit object-text bindings
+  - Relations are inferred by lines and coordinates
+  - Notes may have duplicate or ambiguous content
+  - Needs to handle both standard patterns and noisy edge cases
+
+optional_extensions:
+  - Add GPT-4-based fallback for ambiguous mappings
+  - Retrain embedding matcher based on user-validated matches
+  - Use Dockerized microservices for scalable deployment
+
+tags:
+  [
+    DWG,
+    BoM,
+    CAD parsing,
+    Semantic AI,
+    Construction Tech,
+    Graph AI,
+    NLP,
+    Regex,
+    SentenceTransformer,
+  ]
