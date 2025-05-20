@@ -6,4 +6,4 @@ PointLike = Union[Position, List[Any]]
 
 
 def distance(a: Any, b: Any) -> float:
-    return hypot(a["x"] - b["x"], a["y"] - b["y"])
+    return hypot(a["x"] - b["x"], a["y"] - b["y"])  # euclidian distance

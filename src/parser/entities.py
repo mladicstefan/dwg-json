@@ -19,6 +19,11 @@ class DXFParser:
         return ents
 
     def extract_texts(self, entities: List[Any]) -> List[Entity]:
+        """
+        args: DXF entites (all objects)
+        gathers all text entities (descriptions)
+        returns: List[Entity]: List of dictionaries containing text ID, position, and cleaned text.
+        """
         result: List[Entity] = []
         for e in entities:
             t = e.dxftype()
@@ -34,6 +39,11 @@ class DXFParser:
         return result
 
     def extract_inserts(self, entities: List[Any]) -> List[Entity]:
+        """
+        args: entities
+        gets all inserts (instances of blocks in DXF) and all their data and calls _compute_bbox to calc their bounds box
+        returns: List[Entity]: List of block insertions with ID, block name, position, attributes, and bounding box.
+        """
         inserts: List[Entity] = []
         for e in entities:
             if e.dxftype() != "INSERT":
@@ -58,6 +68,11 @@ class DXFParser:
         return inserts
 
     def extract_lines(self, entities: List[Any]) -> List[Entity]:
+        """
+        args: entities
+        gets lines from entities and returns JSON of start & end coordinates
+        returns: List[Entity]: List of line fragments with start and end positions.
+        """
         lines: List[Entity] = []
         for e in entities:
             t = e.dxftype()
@@ -95,6 +110,11 @@ class DXFParser:
         return lines
 
     def _compute_bbox(self, insert: Any, ix: float, iy: float) -> Dict[str, float]:
+        """
+        args: insert & it's coordinates
+        calculates bounds area for object
+        returns: Dict[str, float]: Dictionary with keys representing the global-space bounding box.
+        """
         minx, miny, maxx, maxy = (
             float("inf"),
             float("inf"),

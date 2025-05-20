@@ -7,11 +7,21 @@ logger = logging.getLogger(__name__)
 
 
 class _QueueEntry(TypedDict):
-    pos: Dict[str, float]
-    path: List[str]
+    pos: Dict[str, float]  # current pos in traversal
+    path: List[str]  # path walked
 
 
 class RelationBuilder:
+    """
+    Finds relations by analyizing Object - Line - Text position
+    texts: clustered note entries (with positions)
+    objects: DXF inserts (with bounding boxes)
+    lines: line fragments that could link notes to objects
+    line_tol: small link distance (direct neighbor)
+    chain_tol: how far the next point can be in a chain
+    max_tol: maximum allowed search envelope
+    """
+
     def __init__(
         self,
         texts: List[Dict[str, Any]],
@@ -29,6 +39,11 @@ class RelationBuilder:
         self.max_tol = max_tol
 
     def build(self) -> List[Dict[str, Any]]:
+        """
+        args: none
+        calls _find_object method to walk a line & find linked object
+        returns: established relationship (see more on lines 58-61) or None
+        """
         logger.info(
             "Building relations (%d texts → %d objects)",
             len(self.texts),
@@ -36,13 +51,14 @@ class RelationBuilder:
         )
         results: List[Dict[str, Any]] = []
         for txt in self.texts:
+            # tries to find closest object to txt(x,y)
             found, path = self._find_object(txt["position"])
             results.append(
                 {
-                    "textId": txt["id"],
-                    "objectId": found["id"] if found else None,
-                    "note": txt["text"],
-                    "linePath": path,
+                    "textId": txt["id"],  # which txt
+                    "objectId": found["id"] if found else None,  # matched obj id
+                    "note": txt["text"],  # txt value
+                    "linePath": path,  # lineId walked
                 }
             )
         logger.info("Relations complete: %d items", len(results))
@@ -51,6 +67,11 @@ class RelationBuilder:
     def _find_object(
         self, pos: Dict[str, float]
     ) -> Tuple[Optional[Dict[str, Any]], List[str]]:
+        """
+        args: the x,y coordinates of a txt object
+        tries either finding text embedded in object or walking the line and picking the closest to the end
+        returns:
+        """
         tol = self.line_tol
         # try expanding bbox
         while tol <= self.max_tol:
@@ -64,6 +85,7 @@ class RelationBuilder:
                     )
                 )
                 return hits[0], []
+            # if not in bounds, walk the line
             found, path = self._bfs(pos, tol)
             if found:
                 return found, path
@@ -81,15 +103,22 @@ class RelationBuilder:
     def _bfs(
         self, start: Dict[str, float], tol: float
     ) -> Tuple[Optional[Dict[str, Any]], List[str]]:
+        """
+        args: start (x,y) of text, allowed distance to walk
+        traverses line network, starting from text
+        returns:
+        matched object (or None)
+        list of line IDs used to reach it (may be empty or len 1)
+        """
         visited = set()
         queue: deque[_QueueEntry] = deque([{"pos": start, "path": []}])
         while queue:
             cur = queue.popleft()
             # direct bbox hit?
             for o in self.objects:
-                if self._in_bbox(cur["pos"], o["bbox"], tol):
+                if self._in_bbox(cur["pos"], o["bbox"], tol):  # current pos == bbox?
                     return o, cur["path"]
-            # follow line‐chains
+            # follow next line if there are multiple
             for ln in self.lines:
                 lid = ln["id"]
                 if lid in visited:
@@ -97,7 +126,9 @@ class RelationBuilder:
                 maxd = self.chain_tol if cur["path"] else self.line_tol
                 for end in ("start", "end"):
                     if distance(cur["pos"], ln[end]) <= maxd:
-                        visited.add(lid)
-                        other = "end" if end == "start" else "start"
-                        queue.append({"pos": ln[other], "path": cur["path"] + [lid]})
+                        visited.add(lid)  # don't visit again
+                        other = "end" if end == "start" else "start"  # switch sides
+                        queue.append(
+                            {"pos": ln[other], "path": cur["path"] + [lid]}
+                        )  # push other side
         return None, []
