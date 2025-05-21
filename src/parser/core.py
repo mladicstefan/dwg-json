@@ -15,6 +15,25 @@ logger = logging.getLogger(__name__)
 
 
 class ParserService:
+    """
+    The full DXF-to-object-note relation pipeline.
+
+    Responsibilities:
+    - Parses raw DXF entities (texts, inserts, lines)
+    - Clusters fragmented text into coherent note blocks
+    - Computes distance tolerances for spatial matching
+    - Matches notes to objects using visual proximity and chained line traversal
+    - Deduplicates conflicting matches based on proximity
+    - Outputs a structured object→notes mapping for downstream consumption
+
+    Designed as the central coordination point for all logic components:
+    - DXFParser handles raw geometry extraction
+    - RelationBuilder matches notes to objects
+    - Optimizer selects ideal matching tolerance
+    - Duplicate filter resolves ambiguity
+    - Final output is written as 'objects-with-notes.json'
+    """
+
     def __init__(self, path: str):
         logger.info("Initializing parser for %s", path)
         self.parser = DXFParser(path)
@@ -26,7 +45,7 @@ class ParserService:
         # sort descending Y
         texts = sorted(raw_texts, key=lambda t: -t["position"]["y"])
         ys = [t["position"]["y"] for t in texts]
-        # y‐tolerance = median of the smallest half of adjacent Y‐gaps
+        # gets median y-gap between lines and defines a horizontal row
         gaps = sorted(abs(y2 - y1) for y1, y2 in zip(ys, ys[1:]))
         half = max(1, len(gaps) // 2)
         y_tol = statistics.median(gaps[:half])
@@ -120,7 +139,7 @@ class ParserService:
             {"line_tol": line_tol, "chain_tol": chain_tol, "max_tol": max_tol},
         )
 
-        # 4) cluster the texts *before* matching
+        # 4) cluster the texts before matching
         clustered = self._cluster_texts(raw_txt)
         write_json(Path("clustered-texts.json"), clustered)
 
